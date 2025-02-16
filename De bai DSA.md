@@ -48,7 +48,8 @@ Các dãy con thoả mãn điều kiện tìm được liệt kê trên màn hì
 
 Cho a<sub>i</sub>, c<sub>i</sub>, W, N (i =1, 2,..,N; N£100) là những số nguyên dương và tập hợp
 
-![download](https://user-images.githubusercontent.com/64203006/163585339-596099cc-2785-4081-a14b-02fade62c9a4.png)
+![CTDL_003](https://github.com/user-attachments/assets/7fa80626-46bc-4941-a3cb-1cb1e3fc4557)
+
 
 Hãy viết chương trình tìm phương án tối ưu XOPT =(x<sub>1</sub>,x<sub>2</sub>,..,x<sub>N</sub>) và giá trị tối ưu FOPT=F(XOPT) của hàm mục tiêu
 
