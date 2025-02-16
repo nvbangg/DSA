@@ -1,23 +1,6 @@
-
 # Đề cấu trúc dữ liệu và giải thuật
 
 ## Generation
-![DSA11030](https://github.com/user-attachments/assets/b66a19ff-94fd-4f4a-a22a-25f612ceb648)
-![DSA11029](https://github.com/user-attachments/assets/596fc3ca-9733-4339-b41d-52464f84db18)
-![DSA11016](https://github.com/user-attachments/assets/ea1a4253-05b1-4536-b4c8-ca3718b3ef19)
-![DSA11015](https://github.com/user-attachments/assets/e1d3335b-19c6-4650-aa0b-0fe52ce5d368)
-![DSA11014](https://github.com/user-attachments/assets/0336c75c-73c8-48d4-bd5f-ce5d64bfeb47)
-![DSA11008](https://github.com/user-attachments/assets/1eece064-5a4d-4ba4-ad15-d35ecd459332)
-![DSA11006](https://github.com/user-attachments/assets/0d6043a1-85ab-4304-9a76-f33d9d67440a)
-![DSA11005](https://github.com/user-attachments/assets/8f28f263-5928-47ce-902c-e3f9bad9e182)
-![DSA11004](https://github.com/user-attachments/assets/4d1d3c80-4b19-4016-934a-26c1fb1e1507)
-![DSA11001](https://github.com/user-attachments/assets/0d522c7c-6bd9-4172-a98b-2289eacdd67e)
-![DSA10012](https://github.com/user-attachments/assets/9ba8d029-f8a8-47a8-a066-1701ddae6537)
-![DSA09031](https://github.com/user-attachments/assets/94813e1a-7b61-4b3c-aca1-0a5634b280f6)
-![DSA09030](https://github.com/user-attachments/assets/d2084e47-72cd-469a-99cb-a0685097c7e8)
-![DSA09028](https://github.com/user-attachments/assets/e2c2d581-3e41-497a-bcf7-4dde8db4881a)
-![DSA08029](https://github.com/user-attachments/assets/e65fda3d-9527-4104-a369-3f648d491a26)
-![DSA08025](https://github.com/user-attachments/assets/aa1cfa2e-eb24-45bd-b481-9f80d1d51fed)
 
 ### CTDL_001 - THUẬT TOÁN SINH
 
@@ -7552,8 +7535,7 @@ Nếu không tìm được số nào, in ra -1.
 
 Cho một quân mã trên bàn cờ vua tại vị trí ST. Nhiệm vụ của bạn là hãy tìm số bước di chuyển ít nhất để đưa quân mã tới vị trí EN.
 
-![download](https://user-images.githubusercontent.com/64203006/165969742-543ef438-3a51-416f-a1b6-ea64dc9830b5.png)
-
+![DSA08025](https://github.com/user-attachments/assets/aa1cfa2e-eb24-45bd-b481-9f80d1d51fed)
 
 **Input:** 
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
@@ -7591,7 +7573,7 @@ f6 f6
 
 Có một chiếc bảng hình chữ nhật với 6 miếng ghép, trên mỗi miếng ghép được điền một số nguyên trong khoảng từ 1 đến 6. Tại mỗi bước, chọn một hình vuông (bên trái hoặc bên phải), rồi quay theo chiều kim đồng hồ.
 
-![download](https://user-images.githubusercontent.com/64203006/165971824-6a62601a-f4ea-4e81-ab54-978c348bc794.png)
+![DSA08029](https://github.com/user-attachments/assets/e65fda3d-9527-4104-a369-3f648d491a26)
 
 Yêu cầu: Cho một trạng thái của bảng, hãy tính số phép biến đổi ít nhất để đưa bảng đến trạng thái đích.
 
@@ -8302,7 +8284,7 @@ YES
 
 Một trong những bài toán kinh điển của lý thuyết đồ thị là bài toán Tô màu đồ thị. Bài toán được phát biểu như sau: Cho đồ thị vô hướng G =<V, E> được biểu diễn dưới dạng danh sách cạnh và số M. Nhiệm vụ của bạn là kiểm tra xem đồ thị có thể tô màu các đỉnh bằng nhiều nhất M màu sao cho hai đỉnh kề nhau đều có màu khác nhau hay không?
 
-![mcolor](https://user-images.githubusercontent.com/64203006/168848471-8c83421f-919a-46d1-ad94-39610c19d5d9.png)
+![DSA09028](https://github.com/user-attachments/assets/e2c2d581-3e41-497a-bcf7-4dde8db4881a)
 
 **Input:** 
 - Dòng đầu tiên đưa vào số lượng bộ test T.
@@ -8364,7 +8346,7 @@ NO
 
 Đồ thị hai phía là một đồ thị đặc biệt, trong đó tập các đỉnh có thể được chia thành hai tập không giao nhau thỏa mãn điều kiện không có cạnh nối hai đỉnh bất kỳ thuộc cùng một tập. Cho đồ thị N đỉnh và M cạnh, bạn hãy kiểm tra đồ thị đã cho có phải là một đồ thị hai phía hay không?
 
-![download](https://user-images.githubusercontent.com/64203006/168848951-c7396d42-f9cd-47c2-ad13-531dd3d21585.png)
+![DSA09030](https://github.com/user-attachments/assets/d2084e47-72cd-469a-99cb-a0685097c7e8)
 
 **Input:** 
 - Dòng đầu tiên là số lượng bộ test T (T ≤  20).
@@ -8407,7 +8389,7 @@ Dòng đầu tiên gồm 3 số nguyên dương N, K và M (1 ≤  N ≤  100, K
 **Output:** 
 In ra số cặp chú cừu bị xa cách tìm được.
 
-![download](https://user-images.githubusercontent.com/64203006/168849278-f062cf88-46e5-453e-be0a-d7d1fd4847fa.png)
+![DSA09031](https://github.com/user-attachments/assets/94813e1a-7b61-4b3c-aca1-0a5634b280f6)
 
 **input**
 ```
@@ -9007,7 +8989,7 @@ Cho một bảng số kích thước N x M. Chi phí khi đi qua ô (i,j) bằng
 
 Cho một đồ thị có hướng gồm N đỉnh và M cạnh. Nhiệm vụ của bạn là hãy tính khoảng cách trung bình ngắn nhất giữa hai node bất kì nếu như chúng liên thông với nhau. Input đảm bảo rằng trong một nhóm liên thông, nếu như u đi tới được v thì v cũng đi tới được v với mọi cặp u, v.
 
-![download](https://user-images.githubusercontent.com/64203006/168857532-7c2d984e-5752-4ecb-b0dc-ea000eb75ed8.png)
+![DSA10012](https://github.com/user-attachments/assets/9ba8d029-f8a8-47a8-a066-1701ddae6537)
 
 **Input:** 
 Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test bắt đầu bởi hai số nguyên N và M (1 ≤ N ≤ 100, M ≤ N*(N-1)/2). M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối đơn hướng từ u tới v.
@@ -9141,7 +9123,7 @@ Cho đồ thị có trọng số G=<V, E> được biểu diễn dưới dạng 
 
 Cây biểu thức là một cây nhị phân trong đó mỗi node trung gian là một phép toán, mỗi node lá là một toán hạng. Ví dụ với biểu thức P = 3 + ((5+9)*2) sẽ được biểu diễn như cây dưới đây.
 
-![download](https://user-images.githubusercontent.com/64203006/169007933-244975f7-9522-4d52-b552-8e4ae66351b3.png)
+![DSA11001](https://github.com/user-attachments/assets/0d522c7c-6bd9-4172-a98b-2289eacdd67e)
 
 Đối với cây biểu thức, duyệt theo thứ tự trước ta sẽ được biểu thức tiền tố, duyệt theo thứ tự sau ta sẽ được biểu thức hậu tố, duyệt theo thứ tự giữa ta được biểu thức trung tố. Chú ý, cây biểu thức luôn là cây nhị phân đầy (mỗi node trung gian đều có hai node con).
 
@@ -9172,7 +9154,7 @@ w * l - r + b
 
 Cho một cây biểu thức là một cây nhị phân đầy đủ bao gồm các phép toán +, -, \*. / và một số toán hạng có giá trị nguyên. Nhiệm vụ của bạn là hãy tính toán giá trị biểu thức được biểu diễn trên cây nhị phân đầy đủ. Ví dụ với cây dưới đây là biểu diễn của biểu thức P = ( (5\*4) + (100-20)) sẽ cho ta giá trị là 100.
 
-![download](https://user-images.githubusercontent.com/64203006/169007933-244975f7-9522-4d52-b552-8e4ae66351b3.png)
+![DSA11002](https://github.com/user-attachments/assets/0d522c7c-6bd9-4172-a98b-2289eacdd67e)
 
 **Input:** 
 - Dòng đầu tiên đưa vào số lượng bộ test T.
@@ -9240,7 +9222,7 @@ Postorder: 4 5 2 6 3 1
 
 Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo Level-order. Phép duyệt level-order trên cây là phép thăm node theo từng mức của cây. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt level-order: 20  8  22  4  12  10  14.
 
-![download](https://user-images.githubusercontent.com/64203006/169009802-2135ce8f-a90a-438f-b2ba-1880ca41afd1.png)
+![DSA11004](https://github.com/user-attachments/assets/4d1d3c80-4b19-4016-934a-26c1fb1e1507)
 
 **Input:** 
 - Dòng đầu tiên đưa vào số lượng bộ test T.
@@ -9273,7 +9255,7 @@ Inorder : 4 8 10 12 14 20 22
 
 Level order: 20 8 22 4 12 10 14
 
-![download](https://user-images.githubusercontent.com/64203006/169010113-4e97345a-8ab4-4a80-a119-1dcee7b563f1.png)
+![DSA11005](https://github.com/user-attachments/assets/8f28f263-5928-47ce-902c-e3f9bad9e182)
 
 **Input:** 
 - Dòng đầu tiên đưa vào số lượng bộ test T.
@@ -9304,7 +9286,7 @@ Level order: 20 8 22 4 12 10 14
 
 Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo xoắn ốc (spiral-order). Phép. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt spiral-order: 1 2 3  4 5 6 7.
 
-![download](https://user-images.githubusercontent.com/64203006/169011045-205133d5-c04a-4345-a8dc-5fadfc4474d1.png)
+![DSA11006](https://github.com/user-attachments/assets/0d6043a1-85ab-4304-9a76-f33d9d67440a)
 
 **Input:** 
 - Dòng đầu tiên đưa vào số lượng bộ test T.
@@ -9333,7 +9315,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo xoắn ốc
 
 Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem tất cả các node lá của cây có cùng một mức hay không? Ví dụ với cây dưới đây sẽ cho ta kết quả là Yes.
 
-![download](https://user-images.githubusercontent.com/64203006/169011286-ce6cfa9d-491f-476f-93a1-ce33d1250eff.png)
+![DSA11008](https://github.com/user-attachments/assets/1eece064-5a4d-4ba4-ad15-d35ecd459332)
 
 **Input:** 
 - Dòng đầu tiên đưa vào số lượng bộ test T.
@@ -9450,7 +9432,7 @@ Cho hai cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị
 
 Cho cây nhị phân, nhiệm vụ của bạn là tính tổng của tất cả các node lá bên phải trên cây? Ví dụ với cây dưới đây ta có kết quả là 2.
 
-![download](https://user-images.githubusercontent.com/64203006/169011952-af885f76-dac8-4383-bfbf-52c99259c2f7.png)
+![DSA11014](https://github.com/user-attachments/assets/0336c75c-73c8-48d4-bd5f-ce5d64bfeb47)
 
 **Input:** 
 - Dòng đầu tiên đưa vào số lượng bộ test T.
@@ -9479,7 +9461,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là tính tổng của tất cả
 
 Cho cây nhị phân có giá trị mỗi node là một số, nhiệm vụ của bạn là tìm tổng lớn nhất từ một node lá này sang một node lá khác? Ví dụ với cây dưới đây ta có tổng lớn nhất là 27.
 
-![download](https://user-images.githubusercontent.com/64203006/169012115-bb74c4be-9cd3-42aa-be5c-81d3eec5adfd.png)
+![DSA11015](https://github.com/user-attachments/assets/e1d3335b-19c6-4650-aa0b-0fe52ce5d368)
 
 **Input:** 
 - Dòng đầu tiên đưa vào số lượng bộ test T.
@@ -9505,7 +9487,7 @@ Cho cây nhị phân có giá trị mỗi node là một số, nhiệm vụ củ
 
 Cho cây nhị phân, nhiệm vụ của bạn là dịch chuyển cây nhị phân thành cây nhị phân tìm kiếm. Phép dịch chuyển phải bảo toàn được cấu trúc cây nhị phân ban đầu. Ví dụ dưới đây sẽ minh họa phép dịch chuyển:
 
-![download](https://user-images.githubusercontent.com/64203006/169010358-f97283fb-99b4-492f-9295-ec971388af20.png)
+![DSA11016](https://github.com/user-attachments/assets/ea1a4253-05b1-4536-b4c8-ca3718b3ef19)
 
 **Input:** 
 - Dòng đầu tiên đưa vào số lượng bộ test T.
@@ -9865,7 +9847,7 @@ Cho một cây có N node, gốc tại  1. Độ cao của một node u được
 
 Cho một cây có N node, gốc tại 1. Với mỗi node lá, bạn hãy in ra đường đi từ node gốc tới nó.
 
-![download](https://user-images.githubusercontent.com/64203006/169013925-4ff88c1c-5188-4149-9402-efc1d0db2b4b.png)
+![DSA11029](https://github.com/user-attachments/assets/596fc3ca-9733-4339-b41d-52464f84db18)
 
 **Input:** 
 - Dòng đầu tiên là số lượng bộ test T( T≤ 20).
@@ -9901,7 +9883,7 @@ Cho một cây có N node, gốc tại 1. Với mỗi node lá, bạn hãy in ra
 
 Cho một cây có N node, gốc tại 1. Có Q truy vấn, mỗi truy vấn yêu cầu bạn tìm khoảng cách giữa hai node u và v.
 
-![download](https://user-images.githubusercontent.com/64203006/169014221-3c74e339-ba32-445a-8570-8893ee77ce3a.png)
+![DSA11030](https://github.com/user-attachments/assets/b66a19ff-94fd-4f4a-a22a-25f612ceb648)
 
 **Input:** 
 - Dòng đầu tiên là số lượng bộ test T( T≤ 20).
