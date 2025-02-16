@@ -1,6 +1,23 @@
+
 # Đề cấu trúc dữ liệu và giải thuật
 
 ## Generation
+![DSA11030](https://github.com/user-attachments/assets/b66a19ff-94fd-4f4a-a22a-25f612ceb648)
+![DSA11029](https://github.com/user-attachments/assets/596fc3ca-9733-4339-b41d-52464f84db18)
+![DSA11016](https://github.com/user-attachments/assets/ea1a4253-05b1-4536-b4c8-ca3718b3ef19)
+![DSA11015](https://github.com/user-attachments/assets/e1d3335b-19c6-4650-aa0b-0fe52ce5d368)
+![DSA11014](https://github.com/user-attachments/assets/0336c75c-73c8-48d4-bd5f-ce5d64bfeb47)
+![DSA11008](https://github.com/user-attachments/assets/1eece064-5a4d-4ba4-ad15-d35ecd459332)
+![DSA11006](https://github.com/user-attachments/assets/0d6043a1-85ab-4304-9a76-f33d9d67440a)
+![DSA11005](https://github.com/user-attachments/assets/8f28f263-5928-47ce-902c-e3f9bad9e182)
+![DSA11004](https://github.com/user-attachments/assets/4d1d3c80-4b19-4016-934a-26c1fb1e1507)
+![DSA11001](https://github.com/user-attachments/assets/0d522c7c-6bd9-4172-a98b-2289eacdd67e)
+![DSA10012](https://github.com/user-attachments/assets/9ba8d029-f8a8-47a8-a066-1701ddae6537)
+![DSA09031](https://github.com/user-attachments/assets/94813e1a-7b61-4b3c-aca1-0a5634b280f6)
+![DSA09030](https://github.com/user-attachments/assets/d2084e47-72cd-469a-99cb-a0685097c7e8)
+![DSA09028](https://github.com/user-attachments/assets/e2c2d581-3e41-497a-bcf7-4dde8db4881a)
+![DSA08029](https://github.com/user-attachments/assets/e65fda3d-9527-4104-a369-3f648d491a26)
+![DSA08025](https://github.com/user-attachments/assets/aa1cfa2e-eb24-45bd-b481-9f80d1d51fed)
 
 ### CTDL_001 - THUẬT TOÁN SINH
 
