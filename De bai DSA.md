@@ -48,11 +48,11 @@ Các dãy con thoả mãn điều kiện tìm được liệt kê trên màn hì
 
 Cho a<sub>i</sub>, c<sub>i</sub>, W, N (i =1, 2,..,N; N£100) là những số nguyên dương và tập hợp
 
-![download](https://user-images.githubusercontent.com/64203006/163585339-596099cc-2785-4081-a14b-02fade62c9a4.png)
+![CTDL_003](https://github.com/user-attachments/assets/7fa80626-46bc-4941-a3cb-1cb1e3fc4557)
 
 Hãy viết chương trình tìm phương án tối ưu XOPT =(x<sub>1</sub>,x<sub>2</sub>,..,x<sub>N</sub>) và giá trị tối ưu FOPT=F(XOPT) của hàm mục tiêu
 
-![download](https://user-images.githubusercontent.com/64203006/163585512-e3d93877-5c6f-4a50-bb73-6b6c5d718902.png)
+![CTDL_003](https://github.com/user-attachments/assets/436626ca-94bd-495d-bdda-b450c6a21aba)
 
 Dữ liệu vào cho bởi file data.in theo khuôn dạng sau:
 
@@ -1551,7 +1551,7 @@ Cho một xâu s. Xâu F(s) được xác định bằng cách ghép xâu xâu s
 
 Thực hiện liên tiếp các bước cộng xâu như trên với xâu mới thu được, ta có được xâu X.
 
-![download](https://user-images.githubusercontent.com/64203006/163589667-637e3c59-f78e-4c8e-ba7e-3f88b283f2fc.png)
+![DSA02021](https://github.com/user-attachments/assets/16b0f8c7-af6f-42db-adda-278dc6253242)
 
 Nhiệm vụ của bạn là hãy xác định kí tự thứ N trong xâu X là kí tự nào?
 
@@ -6466,7 +6466,7 @@ Cho hai đa thức có bậc không quá 10000 (chỉ viết ra các phần tử
 
 Cho N cột, mỗi cột có chiều cao bằng H[i]. Bạn hãy tìm hình chữ nhật lớn nhất bị che phủ bởi các cột?
 
-<img width="279" alt="download" src="https://user-images.githubusercontent.com/64203006/164464014-3905aa14-3464-41a9-851e-d2e63816cd8c.png">
+<img width="279" alt="DSA07019" src="https://github.com/user-attachments/assets/099d0600-ad0f-48a9-ac5c-688d2d9304f3" />
 
 **Input:** 
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
@@ -6584,7 +6584,7 @@ Tí muốn tấm biển quảng cáo của mình thật đặc biệt, nên Tí 
 
 Các bạn hãy giúp Tí tính thử xem tấm biển quảng cáo của Tí có kích thước lớn nhất bằng bao nhiêu (kích thước ở đây là độ dài cạnh hình vuông).
 
-![download](https://user-images.githubusercontent.com/64203006/164464958-3e77cb17-e203-4610-b132-8bf5f78c4079.jpg)
+![DSA07024](https://github.com/user-attachments/assets/b36fa398-62dd-4852-8799-30b7e55e00e9)
 
 **Input:** 
 Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test bắt đầu bởi số nguyên N (N ≤ 100 000). Dòng tiếp theo gồm N số nguyên A[i] (1 ≤ A[i] ≤ 10<sup>9</sup>).
@@ -7335,7 +7335,7 @@ S##
 
 HEXGAME là một trò chơi xếp hình gồm 10 miếng ghép hình lục giác đều, trên mỗi miếng ghép được điền một số nguyên, có 8 miếng được điền số  từ 1 đến 8 và có hai miếng điền số 0. Các miếng liên kết với nhau tạo thành lưới tổ ong. Ban đầu các miếng ghép ở vị trí như hình vẽ. Tại mỗi bước, chọn một miếng ghép có đúng 6 miếng ghép kề cạnh làm tâm, rồi xoay một nấc 6 miếng ghép kề cạnh đó theo chiều kim đồng hồ. Như vậy chỉ có hai cách chọn tâm, đó là chọn tâm bên trái và chọn tâm bên phải.
 
-![download](https://user-images.githubusercontent.com/64203006/165966213-7f176848-3767-4aa8-800e-06d62a8781ca.png)
+![DSA08016](https://github.com/user-attachments/assets/8d3d725b-ad1b-4f9c-8fec-fd61c7b22ef3)
 
 Yêu cầu: Cho một trạng thái của trò chơi (nhận được sau một dãy biến đổi từ trạng thái ban đầu), hãy tính số phép biến đổi ít nhất để đưa về trạng thái ban đầu.
 
