@@ -8,7 +8,10 @@ int main()
     int s = 0;
     for (int i = 1; i <= n; ++i)
     {
-        s += pow(-1, i + 1) * i;
+        if (i % 2 == 0)
+            s -= i;
+        else
+            s += i;
     }
     cout << s;
 }
