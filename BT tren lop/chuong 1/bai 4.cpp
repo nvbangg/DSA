@@ -18,20 +18,19 @@ vector<pair<int, int>> thua_so(int n)
         res.push_back({n, 1});
     return res;
 }
-void TestCase()
-{
-    int n;
-    cin >> n;
-    vector<pair<int, int>> res = thua_so(n);
-    for (int i = 0; i < res.size(); ++i)
-        cout << res[i].first << " (" << res[i].second << ")";
-    cout << endl;
-}
 int main()
 {
     int T;
     cin >> T;
-    while (T--)
-        TestCase();
+    for (int k = 1; k <= T; ++k)
+    {
+        cout << "Test " << k << " ";
+        int n;
+        cin >> n;
+        vector<pair<int, int>> res = thua_so(n);
+        for (int i = 0; i < res.size(); ++i)
+            cout << res[i].first << " (" << res[i].second << ")";
+        cout << endl;
+    }
     return 0;
 }
