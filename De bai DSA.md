@@ -4011,7 +4011,7 @@ Với mỗi test, in ra đáp án tìm được trên một dòng.
 ### DSA_P035 - HÀNH TRÌNH DU LỊCH - 2
 
 Công ty X chuyên tổ chức các hành trình du lịch trong vùng lãnh thổ gồm N điểm du lịch trọng điểm, được đánh số từ 1 tới N. Hệ thống giao thông trong vùng gồm M tuyến đường một chiều khác nhau, tuyến đường thứ j (j = 1,2,…M) cho phép đi từ địa điểm uj tới địa điểm vj với chi phí đi lại là số nguyên dương c (uj, vj). Công ty vừa nhận được một hợp đồng yêu cầu xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch 1 và đi thăm K địa điểm du lịch s1, s2, …, sk (khác địa điểm 1) và sau đó quay về địa điểm xuất phát 1 với tổng chi phí là nhỏ nhất.
-![alt text](image.png)
+![DSA_P035](https://github.com/user-attachments/assets/b3a0fb87-ba0e-43f7-91b9-3e86dc7efd6e)
 Yêu cầu: Cho thông tin về hệ thống giao thông và k địa điểm du lịch s1, s2, …, sk. Hãy xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch 1 và đi thăm k địa điểm, sau đó quay về địa điểm du lịch 1 với tổng chi phí nhỏ nhất.
 
 **Input:** 
@@ -4072,7 +4072,7 @@ Với mỗi test, in ra đáp án tìm được trên một dòng.
 ### DSA_P040 - CHỌN Ô - 2
 
 Cho một bảng kích thước 4 x N (gồm N cột). Mỗi ô (i, j) có điểm bằng A[i][j]. Bạn cần chọn một tập hợp các ô sao cho điểm đạt được là lớn nhất, và trong các ô được chọn, không có 2 ô nào có chung cạnh.
-![alt text](image-1.png)
+![DSA_P040](https://github.com/user-attachments/assets/d46d1ab9-3c13-4744-90a9-613abc175338)
 Ví dụ với bảng có N = 3 như hình vẽ trên. Cách chọn tập tối ưu là (3,1), (1, 2), (4, 2) và (3, 3).
 
 **Input:** 
@@ -4416,7 +4416,7 @@ Một chiếc cầu thang có N bậc. Mỗi bước, bạn được phép bư�
 ### DSA05014 - CATALAN NUMBER
 
 Catalan Number là dãy số thỏa mãn biểu thức:
-![alt text](image-2.png)
+![DSA05014](https://github.com/user-attachments/assets/984bdf12-3fa5-478c-8c40-df9457b3844c)
 Dưới đây là một số số Catalan với n=0, 1,2,.. : 1, 1, 2, 5, 14, 42, 132, 429,… Cho số tự nhiên N. Nhiệm vụ của bạn là đưa ra số Catalan thứ N.
 **Input:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
