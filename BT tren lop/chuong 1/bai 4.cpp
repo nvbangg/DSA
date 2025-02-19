@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+//! PHÂN TÍCH THỪA SỐ NGUYÊN TỐ
 vector<pair<int, int>> thua_so(int n)
 {
     vector<pair<int, int>> res;
@@ -24,12 +25,12 @@ int main()
     cin >> T;
     for (int k = 1; k <= T; ++k)
     {
-        cout << "Test " << k << " ";
+        cout << "Test " << k << ": ";
         int n;
         cin >> n;
         vector<pair<int, int>> res = thua_so(n);
         for (int i = 0; i < res.size(); ++i)
-            cout << res[i].first << " (" << res[i].second << ")";
+            cout << res[i].first << "(" << res[i].second << ") ";
         cout << endl;
     }
     return 0;
