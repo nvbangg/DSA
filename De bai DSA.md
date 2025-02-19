@@ -345,6 +345,36 @@ ABAAA
 BAAAB
 BBAAA
 ```
+### DSA01010 - TẬP QUÂN SỰ
+
+Tại Chương Mỹ Resort, vào nửa đêm, cả trung đội nhận lệnh tập trung ở sân. Mỗi chiến sỹ được đánh số từ 1 đến N (1<N<40). Giám thị yêu cầu chọn ra một dãy K chiến sỹ để tập đội ngũ và cứ lần lượt duyệt hết tất cả các khả năng chọn K người như vậy từ nhỏ đến lớn (theo số thứ tự). Bài toán đặt ra là cho một nhóm K chiến sỹ hiện đang phải tập đội ngũ, hãy tính xem trong lượt chọn K người tiếp theo thì mấy người trong nhóm cũ sẽ được tạm nghỉ. Nếu đã là nhóm cuối cùng thì tất cả đều sẽ được nghỉ.
+
+**Input:** 
+Dòng đầu ghi số bộ test, không quá 20. Mỗi bộ test viết trên hai dòng
+
+- Dòng 1: hai số nguyên dương N và K (K<N)
+- Dòng 2 ghi K số thứ tự của các chiến sỹ đang phải tập đội ngũ (viết từ nhỏ đến lớn)
+
+**Output:**
+Với mỗi bộ dữ liệu in ra số lượng chiến sỹ được tạm nghỉ.
+
+**input**
+```
+3
+5 3
+1 3 5
+5 3
+1 4 5
+6 4
+3 4 5 6
+```
+
+**output**
+```
+1
+2
+4
+```
 
 ### DSA01011 - HOÁN VỊ TIẾP THEO CỦA CHUỖI SỐ
 
@@ -639,7 +669,7 @@ Cho xâu nhị phân X\[\], nhiệm vụ của bạn là hãy đưa ra xâu nh�
 111110
 ```
 
-### DSA01021 - TỔ HỢP TIẾP THEO - DSA01010 - TẬP QUÂN SỰ
+### DSA01021 - TỔ HỢP TIẾP THEO
 
 Cho số nguyên dương (1<N<40) và số nguyên dương K<N. Với 1 tổ hợp chập K phần tử của N, hãy cho biết tổ hợp tiếp theo sẽ có bao nhiêu phần tử mới. Nếu tổ hợp đã cho là cuối cùng thì kết quả là K.  
 
@@ -906,6 +936,40 @@ Dòng đầu ghi số cách tìm được. Mỗi dòng tiếp theo ghi một cá
 
 ## Backtracking
 
+### DSA_P016 - SẮP XẾP QUÂN HẬU
+
+Cho một bàn cờ 8 x 8, mỗi ô có một giá trị A[i][j] nhất định (0 ≤ A[i][j] ≤ 100), tương ứng với điểm số đạt được nếu như bạn đặt một quân cờ vào đó.
+
+Nhiệm vụ của bạn là đặt 8 quân hậu lên bàn cờ, sao cho không có 2 quân nào ăn nhau, và số điểm đạt được là lớn nhất.
+
+**Input**
+
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+Mỗi test gồm 8 dòng, mỗi dòng 8 số nguyên mô tả bàn cờ.
+
+**Output**
+
+Với mỗi test, ghi ra thứ tự bộ test và giá trị điểm lớn nhất đạt được trên một dòng.
+
+**Ví dụ**
+
+**input**
+```
+1
+1 2 3 4 5 6 7 8
+9 10 11 12 13 14 15 16
+17 18 19 20 21 22 23 24
+25 26 27 28 29 30 31 32
+33 34 35 36 37 38 39 40
+41 42 43 44 45 46 47 48
+48 50 51 52 53 54 55 56
+57 58 59 60 61 62 63 64
+```
+
+**ouput**
+```
+Test 1: 260
+```
 
 ### DSA01024 - ĐẶT TÊN - 1
 
@@ -3909,6 +3973,166 @@ Với mỗi test ghi ra kết quả tính được trên một dòng.
 
 ## Dynamic Programming
 
+### DSA_P029 - HÀNH TRÌNH DU LỊCH - 1
+
+Trong kì nghỉ hè năm nay Tí được bố thưởng cho 1 tour du lịch quanh N đất nước tươi đẹp với nhiều thắng cảnh nổi tiếng. Tất nhiên Tí sẽ đi bằng máy bay.
+
+Giá vé máy bay từ đất nước i đến đất nước j là C[i][j] (dĩ nhiên C[i][j] có thể khác C[j][i]). Tuy được bố thưởng cho nhiều tiền để đi du lịch nhưng Tí cũng muốn tìm cho mình 1 hành trình với chi phí rẻ nhất có thể để dành tiền mua quà về tặng mọi người.
+
+Bạn hãy giúp Tí tìm 1 hành trình đi qua tất cả các nước, mỗi nước đúng 1 lần sao cho chi phí là bé nhất nhé.
+
+**Input:** 
+Dòng đầu tiên là số lượng bộ test T (T <= 20).
+
+Mỗi test bắt đầu bởi số nguyên dương N (5 <= N <= 15).
+
+N dòng tiếp theo, mỗi dòng gồm N số nguyên mô tả chi phí C[i][j] (1<= C[i][j] <= 10000).
+
+**Output:** 
+Với mỗi test, in ra đáp án tìm được trên một dòng.
+
+**input**
+```
+1
+6
+0 1 2 1 3 4
+5 0 3 2 3 4
+4 1 0 2 1 2
+4 2 5 0 4 3
+2 5 3 5 0 2
+5 4 3 3 1 0
+```
+
+**output**
+```
+8
+```
+
+### DSA_P035 - HÀNH TRÌNH DU LỊCH - 2
+
+Công ty X chuyên tổ chức các hành trình du lịch trong vùng lãnh thổ gồm N điểm du lịch trọng điểm, được đánh số từ 1 tới N. Hệ thống giao thông trong vùng gồm M tuyến đường một chiều khác nhau, tuyến đường thứ j (j = 1,2,…M) cho phép đi từ địa điểm uj tới địa điểm vj với chi phí đi lại là số nguyên dương c (uj, vj). Công ty vừa nhận được một hợp đồng yêu cầu xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch 1 và đi thăm K địa điểm du lịch s1, s2, …, sk (khác địa điểm 1) và sau đó quay về địa điểm xuất phát 1 với tổng chi phí là nhỏ nhất.
+![alt text](image.png)
+Yêu cầu: Cho thông tin về hệ thống giao thông và k địa điểm du lịch s1, s2, …, sk. Hãy xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch 1 và đi thăm k địa điểm, sau đó quay về địa điểm du lịch 1 với tổng chi phí nhỏ nhất.
+
+**Input:** 
+• Dòng thứ nhất chứa 3 số nguyên N, M, K (N <= 1000, M <= 10^5, K <= 15).
+• Dòng thứ hai chứa K số nguyên dương s1, s2, …, sk.
+• M dòng tiếp, mỗi dòng gồm 3 số nguyên u, v, c (u != v, c <= 10^9) mô tả thông tin về tuyến đường giữa địa điểm u và v có độ dài bằng c.
+
+**Output:** 
+In ra một số nguyên là tổng chi phí nhỏ nhất tìm được. Nếu không tìm được một hành trình du lịch nào, in ra số -1.
+
+**input**
+```
+6 8 2
+2 5
+1 2 4
+2 4 2
+4 3 3
+3 1 4
+4 1 5
+3 5 5
+5 3 1
+5 6 7
+```
+
+**output**
+```
+19
+```
+### DSA_P039 - CHỌN Ô - 1
+
+Cho ma trận kích thước N x N (1 <= a[i][j] <= 10^6). Hãy chọn N ô, mỗi hàng một ô, một cột một ô, sao cho tổng các phần tử được chọn là lớn nhất.
+
+**Input:** 
+Dòng đầu tiên là số lượng bộ test T (T <= 20).
+Mỗi test bắt đầu bởi số nguyên dương N (2 <= N <= 20).
+N dòng tiếp theo, mỗi dòng gồm N số nguyên mô tả ma trận.
+**Output:** 
+Với mỗi test, in ra đáp án tìm được trên một dòng.
+
+**input**
+```
+2
+3
+3 1 2
+1 1 2
+1 4 2
+2
+1 2
+2 1
+```
+
+**output**
+```
+9
+4
+```
+
+### DSA_P040 - CHỌN Ô - 2
+
+Cho một bảng kích thước 4 x N (gồm N cột). Mỗi ô (i, j) có điểm bằng A[i][j]. Bạn cần chọn một tập hợp các ô sao cho điểm đạt được là lớn nhất, và trong các ô được chọn, không có 2 ô nào có chung cạnh.
+![alt text](image-1.png)
+Ví dụ với bảng có N = 3 như hình vẽ trên. Cách chọn tập tối ưu là (3,1), (1, 2), (4, 2) và (3, 3).
+
+**Input:** 
+Dòng đầu tiên là số lượng bộ test T (T <= 20).
+Mỗi test bắt đầu bởi số nguyên dương N (1 <= N <= 10000).
+4 dòng tiếp theo, mỗi dòng gồm N số A[i][j], là điểm tại ô (i,j) (-10000 <= A[i][j] <= 10000).
+
+**Output:** 
+Với mỗi test, in ra đáp án tìm được trên một dòng.
+
+**input**
+```
+2
+3
+-1 9 3
+-4 5 -6
+7 8 9
+9 7 2
+2
+-1 -5
+-2 -6
+-3 -7
+-4 -8
+```
+
+**output**
+```
+32
+-1
+```
+
+### DSA_P296 - DÃY CON TỔNG LỚN NHẤT
+
+Cho dãy số A[] có N phần tử là các số nguyên, chỉ số tính từ 1.
+
+Với mỗi cặp vị trí L và R, hãy in ra tổng lớn nhất có thể của dãy con nào đó trong đoạn từ vị trí L đến vị trí R. Chú ý: tính cả dãy con rỗng (không có phần tử nào).
+
+**Input:** 
+Dòng đầu ghi 2 số N và Q (không quá 100.000).
+
+Dòng tiếp theo ghi N số của dãy A[], các số có trị tuyệt đối không quá 100.000.
+
+Q dòng tiếp theo, mỗi dòng ghi một cặp số L, R (1 ≤ L ≤ R ≤ N).
+**Output:** 
+Ghi ra Q dòng, lần lượt là tổng lớn nhất tính được với mỗi cặp (L, R) tương ứng.
+
+**input**
+```
+5 2
+-1 2 -3 4 -5
+2 4
+3 3
+```
+
+**output**
+```
+6
+0
+```
+
 ### DSA05001 - XÂU CON CHUNG DÀI NHẤT
 
 Cho 2 xâu S1 và S2. Hãy tìm xâu con chung dài nhất của 2 xâu này *(các phần tử không nhất thiết phải liên tiếp nhau).*
@@ -4040,7 +4264,8 @@ Cho dãy số A[] gồm N số. Nhiệm vụ của bạn là tìm tổng lớn n
 11
 ```
 
-### DSA05007 - TỔNG LỚN NHẤT CỦA DÃY CON KHÔNG KỀ NHAU -- DSAKT110 - NHÀ KHÔNG KỀ NHAU
+### DSA05007 - TỔNG LỚN NHẤT CỦA DÃY CON KHÔNG KỀ NHAU 
+### DSAKT110 - NHÀ KHÔNG KỀ NHAU
 
 Có N ngôi nhà trên một dãy phố, mỗi ngôi nhà chứa đựng một số lượng tài sản khác nhau. Một tên trộm muốn ăp cắp được nhiều nhất tài sản của dãy phố nhưng không muốn lấy tài sản của hai nhà kề nhau. Hãy cho biết, bằng cách đó tên trộm có thể đánh cắp được nhiều nhất bao nhiêu tài sản.
 
@@ -4092,6 +4317,54 @@ YES
 NO
 ```
 
+### DSA05010 - DÃY CON DÀI NHẤT CÓ TỔNG CHIA HẾT CHO K
+
+Cho một dãy gồm n ( n ≤ 1000) số nguyên dương A1, A2, ..., An và số nguyên dương k (k ≤ 50). Hãy tìm dãy con gồm nhiều phần tử nhất của dãy đã cho sao cho tổng các phần tử của dãy con này chia hết cho k. 
+
+**Input:**
+Dòng đầu ghi số bộ test T (T<10). Mỗi bộ test gồm 2 dòng. Dòng đầu tiên chứa hai số n, k.  Dòng tiếp theo ghi n số của dãy A. Các số đều không vượt quá 100.  
+
+**Output:**
+Gồm 1 dòng duy nhất ghi số lượng phần tử của dãy con dài nhất thoả mãn. Dữ liệu vào luôn đảm bảo sẽ có ít nhất một dãy con có tổng chia hết cho k.
+
+**input**
+```
+1
+10 3
+2 3 5 7 9 6 12 7 11 15
+```
+
+**output**
+```
+9
+```
+
+### DSA05011 - SỐ CÓ TỔNG CHỮ SỐ BẰNG K
+
+Cho 2 số nguyên N và K. Bạn hãy đếm số lượng các số có N chữ số mà tổng các chữ số của nó bằng K. Lưu ý, chữ số 0 ở đầu không được chấp nhận.
+
+**Input:**
+- Dòng đầu tiên là số lượng bộ test T (T ≤ 50).
+- Mỗi test gồm 2 số nguyên N và K (1 ≤ N ≤ 100, 0 ≤ K ≤ 50000).
+
+**Output:**
+Với mỗi test, in ra đáp số tìm được theo modulo 109+7 trên một dòng.
+
+**input**
+```
+3
+2 2
+2 5
+3 6
+```
+
+**output**
+```
+2
+5
+21
+```
+
 ### DSA05012 - TỔ HỢP C(n, k)
 
 Cho 2 số nguyên n, k. Bạn hãy tính C(n, k) modulo 10<sup>9</sup>+7.
@@ -4116,7 +4389,7 @@ Cho 2 số nguyên n, k. Bạn hãy tính C(n, k) modulo 10<sup>9</sup>+7.
 120
 ```
 
-### DSA05013 - BẬC THANG -- DSA05034 - TỔNG SỐ CÁCH DI CHUYỂN
+### DSA05013 - BẬC THANG
 
 Một chiếc cầu thang có N bậc. Mỗi bước, bạn được phép bước lên trên tối đa K bước. Hỏi có tất cả bao nhiêu cách bước để đi hết cầu thang? (Tổng số bước đúng bằng N).
 
@@ -4138,6 +4411,34 @@ Một chiếc cầu thang có N bậc. Mỗi bước, bạn được phép bư�
 ```
 2
 5
+```
+
+### DSA05014 - CATALAN NUMBER
+
+Catalan Number là dãy số thỏa mãn biểu thức:
+![alt text](image-2.png)
+Dưới đây là một số số Catalan với n=0, 1,2,.. : 1, 1, 2, 5, 14, 42, 132, 429,… Cho số tự nhiên N. Nhiệm vụ của bạn là đưa ra số Catalan thứ N.
+**Input:**
+- Dòng đầu tiên đưa vào số lượng bộ test T.
+- Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số nguyên n.
+- T, n thỏa mãn ràng buộc: 1 ≤ T ≤ 100;  1 ≤ n ≤ 100.
+
+**Output:**
+Đưa ra kết quả mỗi test theo từng dòng.
+
+**input**
+```
+3
+5
+4
+10
+```
+
+**output**
+```
+42
+14
+16796
 ```
 
 ### DSA05017 - DÃY SỐ BI-TONIC
