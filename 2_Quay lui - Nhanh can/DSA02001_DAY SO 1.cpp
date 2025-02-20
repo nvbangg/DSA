@@ -9,14 +9,14 @@ void out(int n)
     cout << a[n - 1];
     cout << "]\n";
 }
-void backtrack(int i)
+void Try(int i)
 {
     if (i == 0)
         return;
     out(i);
     for (int j = 0; j < i - 1; ++j)
         a[j] = a[j] + a[j + 1];
-    backtrack(i - 1);
+    Try(i - 1);
 }
 void TestCase()
 {
@@ -25,7 +25,7 @@ void TestCase()
     a.resize(n);
     for (auto &x : a)
         cin >> x;
-    backtrack(n);
+    Try(n);
 }
 int main()
 {

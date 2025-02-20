@@ -9,7 +9,7 @@ void out()
         cout << v[a[i] - 1] << " ";
     cout << endl;
 }
-void backtrack(int i)
+void Try(int i)
 {
     for (int j = a[i - 1] + 1; j <= n - k + i; j++)
     {
@@ -17,7 +17,7 @@ void backtrack(int i)
         if (i == k)
             out();
         else
-            backtrack(i + 1);
+            Try(i + 1);
     }
 }
 int main()
@@ -36,5 +36,5 @@ int main()
     a.resize(k + 1);
     a[0] = 0;
     n = v.size();
-    backtrack(1);
+    Try(1);
 }

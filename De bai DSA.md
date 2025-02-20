@@ -4901,6 +4901,35 @@ Cho danh sách liên kết đơn lưu giữ các số nguyên được quản l�
 1 4 5 7 8 9
 ```
 
+### DSA_P011 - ĐẾM SỐ VẬT CẢN TRÊN MÊ CUNG
+
+Một mê cung được mô tả dưới dạng ma trận ký tự trong đó dấu ‘.’ là mô tả ô trống, không có vật cản, dấu ‘#’ mô tả một vật cản. Các vật cản sẽ ghép lại với nhau thành vật cản lớn hơn nếu nó liền kề theo hàng hoặc cột.
+
+Hãy đếm xem trong mê cung có bao nhiêu vật cản.
+
+**Input:** 
+Dong đầu ghi số hai số N, M là số hàng và số cột của mê cung.
+
+N dòng tiếp theo mô tả mê cung trong đó chỉ có các ký tự ‘.’ và ‘#’.
+
+**Output:** 
+Ghi ra số vật cản đếm được.
+
+**input**
+```
+5 6
+.#....
+..#...
+..#..#
+...##.
+.#....
+```
+
+**output**
+```
+5
+```
+
 ### DSA06001 - SẮP XẾP XEN KẼ
 
 Cho mảng A[] gồm n số nguyên khác nhau. Hãy đưa ra các phần tử của mảng theo khuôn dạng lớn nhất, nhỏ nhất, lớn thứ hai, nhỏ thứ 2, … Ví dụ với A[] = {9, 7, 12, 8, 6, 5} ta đưa ra : 12, 5, 9, 6, 8, 7.
@@ -5969,6 +5998,32 @@ Cho dãy số A[] gồm có N phần tử. Nhiệm vụ của bạn là hãy tì
 ```
 5
 NO
+```
+
+### DSA06040 - GIAO CỦA BA DÃY SỐ
+
+Cho ba dãy số A[], B[], C[] gồm N1, N2, N3 phần tử đã được sắp xếp. Hãy đưa ra các phần tử có mặt trong cả ba dãy theo thứ tự tăng dần. Nếu không có đáp án, in ra -1.
+
+**Input:** 
+- Dòng đầu tiên đưa vào số lượng bộ test T.
+- Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm bốn dòng: dòng thứ nhất đưa vào N1, N2, N3 là số phần tử của mảng A[], B[], C[]; các dòng tiếp theo đưa vào 3 dãy A[], B[], C[].
+- Ràng buộc: 1≤T≤100; 1≤ N1, N2, N3 ≤10^6, 0≤ A[i], B[j], C[k] ≤10^18.
+
+**Output:** 
+- Đưa ra kết quả mỗi test theo từng dòng.
+
+**input**
+```
+1
+6 5 8
+1 5 10 20 40 80
+6 7 20 80 100
+3 4 15 20 30 70 80 120
+```
+
+**output**
+```
+20 80
 ```
 
 ### DSA06041 - SỐ XUẤT HIỆN NHIỀU NHẤT
