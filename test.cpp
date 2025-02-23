@@ -1,7 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
+void TestCase()
+{
 
+}
 int main()
 {
-    cout << "Thành công";
+    int T;
+    cin >> T;
+    while (T--)
+        TestCase();
+    return 0;
 }

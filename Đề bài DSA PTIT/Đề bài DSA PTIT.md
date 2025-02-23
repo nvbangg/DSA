@@ -1,4 +1,4 @@
-# Đề cấu trúc dữ liệu và giải thuật
+# Đề cấu trúc dữ liệu và giải thuật PTIT
 
 ## Generation
 
@@ -14,12 +14,12 @@ Ví dụ với n = 4 ta tìm được 4 xâu nhị phân thuận nghịch như d
 1 1 1 1
 ```
 
-**input**
+**input:**
 ```
 4
 ```
 
-**output**
+**output:**
 ```
 0 0 0 0
 0 1 1 0
@@ -47,11 +47,9 @@ Các dãy con thoả mãn điều kiện tìm được liệt kê trên màn hì
 ### CTDL_003 - PHƯƠNG ÁN TỐI ƯU
 
 Cho a<sub>i</sub>, c<sub>i</sub>, W, N (i =1, 2,..,N; N£100) là những số nguyên dương và tập hợp
-
-![CTDL_003](image/CTDL_003.png)
+![CTDL_003(1)](image/CTDL_003(1).png)
 
 Hãy viết chương trình tìm phương án tối ưu XOPT =(x<sub>1</sub>,x<sub>2</sub>,..,x<sub>N</sub>) và giá trị tối ưu FOPT=F(XOPT) của hàm mục tiêu
-
 ![CTDL_003](image/CTDL_003.png)
 
 Dữ liệu vào cho bởi file data.in theo khuôn dạng sau:
@@ -65,14 +63,14 @@ Giá trị tối ưu FOPT và phương án XOPT tìm được sẽ liệt kê tr
 - Dòng đầu tiên ghi lại giá trị tối ưu FOPT;
 - Dòng kế tiếp ghi lại phương án tối ưu XOPT. Hai phần tử khác nhau của phương án tối ưu được viết cách nhau bởi một khoảng trống.
 
-**input**
+**input:**
 ```
 4 10                
 6 5 3 7  
 5 4 6 5
 ```
 
-**output**
+**output:**
 ```
 13
 1 0 0 1
@@ -82,20 +80,20 @@ Giá trị tối ưu FOPT và phương án XOPT tìm được sẽ liệt kê tr
 
 Cho dãy gồm N số phân biệt AN = {a1, a2, .., aN } và số tự nhiên K (K<=N<=100). Ta gọi một dãy con tăng dần bậc K của dãy số AN là một dãy các số gồm K phần tử trong dãy đó thỏa mãn tính chất tăng dần. Bài toán được đặt ra là in ra màn hình số các dãy con tăng dần bậc K của dãy số AN. Ví dụ :
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên ghi lại hai số N và K tương ứng với số phần tử của dãy số và bậc của dãy con.
 - Dòng kế tiếp : N số của dãy số AN, các số trong dãy không lớn hơn 100. 
 
-**Output:**
+**Đầu ra:**
 - In ra ra kết quả tìm được.
 
-**input**
+**input:**
 ```
 5 3
 2 5 15 10 20 
 ```
 
-**output**
+**output:**
 ```
 7
 ```
@@ -104,22 +102,22 @@ Cho dãy gồm N số phân biệt AN = {a1, a2, .., aN } và số tự nhiên K
 
 Cho xâu nhị phân X[], nhiệm vụ của bạn là hãy đưa ra xâu nhị phân tiếp theo của X[]. Ví dụ X[] =”010101” thì xâu nhị phân tiếp theo của X[] là “010110”.
 
-Input:
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu nhi phân X.
 - T, X[] thỏa mãn ràng buộc: 1≤T≤100; 1≤length(X)≤10<sup>3</sup>.
 
-Output:
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 010101
 111111
 ```
 
-**output**
+**output:**
 ```
 010110
 000000
@@ -129,17 +127,15 @@ Output:
 
 Cho hai số N, K và một tập con K phần tử X[] =(X1, X2,.., XK) của 1, 2, .., N. Nhiệm vụ của bạn là hãy đưa ra tập con K phần tử tiếp theo của X[]. Ví dụ N=5, K=3, X[] ={2, 3, 4} thì tập con tiếp theo của X[] là {2, 3, 5}.
 
-Input:
-
+**Đầu vào:**
 * Dòng đầu tiên đưa vào số lượng test T.
 * Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu nhi phân X.
 * T, X[] thỏa mãn ràng buộc: 1≤T≤100; 1≤length(X)≤10<sup>3</sup>.
 
-Output:
-
+**Đầu ra:**
 * Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5 3
@@ -148,7 +144,7 @@ Output:
 3 4 5
 ```
 
-**output**
+**output:**
 ```
 2 3 4
 1 2 3
@@ -158,17 +154,15 @@ Output:
 
 Cho số tự nhiên N và một hoán vị X\[\] của 1, 2, .., N. Nhiệm vụ của bạn là đưa ra hoán vị tiếp theo của X\[\]. Ví dụ N=5, X\[\] = {1, 2, 3, 4, 5} thì hoán vị tiếp theo của X\[\] là {1, 2, 3, 5, 4}.
 
-Input:
-
+**Đầu vào:**
 * Dòng đầu tiên đưa vào số lượng test T.
 * Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là số N; dòng tiếp theo đưa vào hoán vị X\[\] của 1, 2, .., N.
 * T, N, X\[\] thỏa mãn ràng buộc: 1≤T≤100; 1≤ N≤10<sup>3</sup>.
 
-Output:
-
+**Đầu ra:**
 * Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5 
@@ -177,7 +171,7 @@ Output:
 5 4 3 2 1
 ```
 
-**output**
+**output:**
 ```
 1 2 3 5 4
 1 2 3 4 5
@@ -187,25 +181,22 @@ Output:
 
 Cho hai số nguyên dương N và K. Nhiệm vụ của bạn là hãy liệt kê tất cả các tập con K phần tử của 1, 2, .., N. Ví dụ với N=5, K=3 ta có 10 tập con của 1, 2, 3, 4, 5 như sau: {1, 2, 3}, {1, 2, 4},{1, 2, 5},{1, 3, 4},{1, 3, 5},{1, 4, 5},{2, 3, 4},{2, 3, 5},{2, 4, 5},{3, 4, 5}.
 
-Input:
-
+**Đầu vào:**
 * Dòng đầu tiên đưa vào số lượng test T.
 * Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một cặp số tự nhiên N, K được viết trên một dòng.
 * T, n thỏa mãn ràng buộc: 1≤T≤100; 1≤k ≤ n≤15.
 
-Output:
-
+**Đầu ra:**
 * Đưa ra kết quả mỗi test theo từng dòng.
 
-
-**input**
+**input:**
 ```
 2
 4 3
 5 3
 ```
 
-**output**
+**output:**
 ```
 123 124 134 234
 123 124 125 134 135 145 234 235 245 345
@@ -215,24 +206,22 @@ Output:
 
 Cho số nguyên dương N. Nhiệm vụ của bạn là hãy liệt kê tất cả các hoán vị của 1, 2, .., N. Ví dụ với N = 3 ta có kết quả: 123, 132, 213, 231, 312, 321.
 
-Input:
-
+**Đầu vào:**
 * Dòng đầu tiên đưa vào số lượng test T.
 * Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng.
 * T, n thỏa mãn ràng buộc: 1≤T, N≤10.
 
-Output:
-
+**Đầu ra:**
 * Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 2
 3
 ```
 
-**output**
+**output:**
 ```
 12 21
 123 132 213 231 312 321
@@ -242,24 +231,22 @@ Output:
 
 Cho số nguyên dương N. Nhiệm vụ của bạn là hãy liệt kê tất cả các hoán vị của 1, 2, .., N theo thứ tự ngược. Ví dụ với N = 3 ta có kết quả: 321, 312, 231, 213, 132, 123.
 
-Input:
-
+**Đầu vào:**
 * Dòng đầu tiên đưa vào số lượng test T.
 * Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng.
 * T, n thỏa mãn ràng buộc: 1≤T, N≤10.
 
-Output:
-
+**Đầu ra:**
 * Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 2
 3
 ```
 
-**output**
+**output:**
 ```
 21 12 
 321 312 231 213 132 123
@@ -269,24 +256,22 @@ Output:
 
 Xâu ký tự str được gọi là xâu AB nếu mỗi ký tự trong xâu hoặc là ký tự ‘A’ hoặc là ký tự ‘B’. Ví dụ xâu str=”ABBABB” là xâu AB độ dài 6. Nhiệm vụ của bạn là hãy liệt kê tất cả các xâu AB có độ dài n.
 
-Input:
-
+**Đầu vào:**
 * Dòng đầu tiên đưa vào số lượng test T.
 * Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên n.
 * T, n thỏa mãn ràng buộc: 1≤T≤10; 1≤n≤10.
 
-Output:
-
+**Đầu ra:**
 * Đưa ra kết quả mỗi test theo từng dòng. Mỗi xâu cách nhau 1 khoảng trống.
 
-**input**
+**input:**
 ```
 2
 2
 3
 ```
 
-**output**
+**output:**
 ```
 AA AB BA BB
 AAA AAB ABA ABB BAA BAB BBA BBB
@@ -296,18 +281,20 @@ AAA AAB ABA ABB BAA BAB BBA BBB
 
 Hãy in ra tất cả các xâu nhị phân độ dài N, có K bit 1 theo thứ tự từ điển tăng dần.
 
-Input: Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm 2 số nguyên N, K (1 ≤ K ≤ N ≤ 16).
+**Đầu vào:**
+Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm 2 số nguyên N, K (1 ≤ K ≤ N ≤ 16).
 
-Output:  Với mỗi test, in ra đáp án tìm được, mỗi xâu in ra trên một dòng.
+**Đầu ra:**
+Với mỗi test, in ra đáp án tìm được, mỗi xâu in ra trên một dòng.
 
-**input**
+**input:**
 ```
 2
 4 2
 3 2
 ```
 
-**output**
+**output:**
 ```
 0011
 0101
@@ -322,21 +309,21 @@ Output:  Với mỗi test, in ra đáp án tìm được, mỗi xâu in ra trên
 
 ### DSA01009 - XÂU AB ĐẶC BIỆT
 
-Một xâu kí tự S = (s1, s2, .., sn) được gọi là xâu AB độ dài n nếu với mọi si∈S thì si hoặc là kí tự A hoặc si là kí tự B . Ví dụ xâu S = “ABABABAB” là một xâu AB độ dài 8. Cho số tự nhiên N và số tự nhiên K (1£K<N£15 được nhập từ bàn phím), hãy viết chương trình liệt kê tất cả các xâu AB có độ dài N chứa duy nhất một dãy K kí tự A liên tiếp.
+Một xâu kí tự S = (s1, s2, .., sn) được gọi là xâu AB độ dài n nếu với mọi si∈S thì si hoặc là kí tự A hoặc si là kí tự B . Ví dụ xâu S = “ABABABAB” là một xâu AB độ dài 8. Cho số tự nhiên N và số tự nhiên K (1£K< N£15 được nhập từ bàn phím), hãy viết chương trình liệt kê tất cả các xâu AB có độ dài N chứa duy nhất một dãy K kí tự A liên tiếp.
 
-**Input:** 
+**Đầu vào:**
 chỉ có một dòng ghi hai số N và K.
 
-**Output:**
+**Đầu ra:**
 - Dòng đầu tiên ghi lại số các xâu AB thỏa mãn yêu cầu bài toán;
 - Những dòng kế tiếp, mỗi dòng ghi lại một xâu AB thỏa mãn. Các xâu được ghi ra theo thứ tự từ điển.
 
-**input**
+**input:**
 ```
 5 3
 ```
 
-**output**
+**output:**
 ```
 5
 AAABA
@@ -345,20 +332,21 @@ ABAAA
 BAAAB
 BBAAA
 ```
+
 ### DSA01010 - TẬP QUÂN SỰ
 
-Tại Chương Mỹ Resort, vào nửa đêm, cả trung đội nhận lệnh tập trung ở sân. Mỗi chiến sỹ được đánh số từ 1 đến N (1<N<40). Giám thị yêu cầu chọn ra một dãy K chiến sỹ để tập đội ngũ và cứ lần lượt duyệt hết tất cả các khả năng chọn K người như vậy từ nhỏ đến lớn (theo số thứ tự). Bài toán đặt ra là cho một nhóm K chiến sỹ hiện đang phải tập đội ngũ, hãy tính xem trong lượt chọn K người tiếp theo thì mấy người trong nhóm cũ sẽ được tạm nghỉ. Nếu đã là nhóm cuối cùng thì tất cả đều sẽ được nghỉ.
+Tại Chương Mỹ Resort, vào nửa đêm, cả trung đội nhận lệnh tập trung ở sân. Mỗi chiến sỹ được đánh số từ 1 đến N (1 < N < 40). Giám thị yêu cầu chọn ra một dãy K chiến sỹ để tập đội ngũ và cứ lần lượt duyệt hết tất cả các khả năng chọn K người như vậy từ nhỏ đến lớn (theo số thứ tự). Bài toán đặt ra là cho một nhóm K chiến sỹ hiện đang phải tập đội ngũ, hãy tính xem trong lượt chọn K người tiếp theo thì mấy người trong nhóm cũ sẽ được tạm nghỉ. Nếu đã là nhóm cuối cùng thì tất cả đều sẽ được nghỉ.
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu ghi số bộ test, không quá 20. Mỗi bộ test viết trên hai dòng
 
-- Dòng 1: hai số nguyên dương N và K (K<N)
+- Dòng 1: hai số nguyên dương N và K (K < N)
 - Dòng 2 ghi K số thứ tự của các chiến sỹ đang phải tập đội ngũ (viết từ nhỏ đến lớn)
 
-**Output:**
+**Đầu ra:**
 Với mỗi bộ dữ liệu in ra số lượng chiến sỹ được tạm nghỉ.
 
-**input**
+**input:**
 ```
 3
 5 3
@@ -369,7 +357,7 @@ Với mỗi bộ dữ liệu in ra số lượng chiến sỹ được tạm ngh
 3 4 5 6
 ```
 
-**output**
+**output:**
 ```
 1
 2
@@ -388,13 +376,13 @@ Ví dụ:
 
 Cũng có trường hợp sẽ không thể có hoán vị kế tiếp. Ví dụ như khi đầu vào là chuỗi 987.  
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên ghi số nguyên  t là số bộ test (1 ≤ t ≤ 1000).  Mỗi bộ test có một dòng, đầu tiên là số thứ tự bộ test, một dấu cách, sau đó là chuỗi các ký tự số, tối đa 80 phần tử.  
 
-**Output:**
+**Đầu ra:**
 Với mỗi bộ test hãy đưa ra một dòng gồm thứ tự bộ test, một dấu cách, tiếp theo đó là hoán vị kế tiếp hoặc chuỗi “BIGGEST” nếu không có hoán vị kế tiếp. 
 
-**input**
+**input:**
 ```
 3
 1 123
@@ -402,7 +390,7 @@ Với mỗi bộ test hãy đưa ra một dòng gồm thứ tự bộ test, mộ
 3 987
 ```
 
-**output**
+**output:**
 ```
 1 132
 2 279134423799
@@ -413,22 +401,22 @@ Với mỗi bộ test hãy đưa ra một dòng gồm thứ tự bộ test, mộ
 
 Số nhị phân được xem là cách mặc định biểu diễn các số. Tuy nhiên, trong nhiều ứng dụng của điện tử và truyền thông lại dùng một biến thể của mã nhị phân đó là mã Gray. Mã Gray độ dài n có mã đầu tiên là n số 0, mã kế tiếp của nó là một xâu nhị phân độ dài n khác biệt với xâu trước đó một bít. Ví dụ với n=3 ta có 2<sup>3</sup> mã Gray như sau: 000, 001, 011, 010, 110, 111, 101, 100. Hãy viết chương trình liệt kê các mã Gray có độ dài n.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng test T.
 - T dòng kế tiếp ghi lại mỗi dòng một test. Mỗi test là một số tự nhiên n.
 - T, n thỏa mãn ràng buộc: 1≤T, n≤10.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 3
 4
 ```
 
-**output**
+**output:**
 ```
 000 001 011 010 110 111 101 100
 0000 0001 0011 0010 0110 0111 0101 0100 1100 1101 1111 1110 1010 1011 1001 1000
@@ -438,23 +426,22 @@ Số nhị phân được xem là cách mặc định biểu diễn các số. T
 
 Số nhị phân được xem là cách mặc định biểu diễn các số. Tuy nhiên, trong nhiều ứng dụng của điện tử và truyền thông lại dùng một biến thể của mã nhị phân đó là mã Gray. Mã Gray độ dài n có mã đầu tiên là n số 0, mã kế tiếp của nó là một xâu nhị phân độ dài n khác biệt với xâu trước đó một bít. Ví dụ với n=3 ta có 2<sup>3</sup> mã Gray như sau: 000, 001, 011, 010, 110, 111, 101, 100. Hãy viết chương trình chuyển đổi một xâu mã Gray X có độ dài n thành một xâu mã nhị phân.
 
-
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng test T.
 - T dòng kế tiếp ghi lại mỗi dòng một test. Mỗi test là một số tự nhiên n.
 - T, n thỏa mãn ràng buộc: 1≤T, n≤10.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 01101
 01011
 ```
 
-**output**
+**output:**
 ```
 01001
 01101
@@ -468,14 +455,14 @@ Các tập hợp là hoán vị của nhau chỉ được tính là một.
 
 Ví dụ với n = 9, k = 3, s = 23, {6, 8, 9} là tập hợp duy nhất thỏa mãn.
 
-**Input:** 
+**Đầu vào:**
 - Gồm nhiều bộ test (không quá 100 test).
 - Mỗi bộ test gồm 3 số nguyên n, k, s với 1 ≤ n ≤ 20, 1 ≤ k ≤ 10 và 1 ≤ s ≤ 155. Input kết thúc bởi 3 số 0.
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test in ra số lượng các tập hợp thỏa mãn điều kiện đề bài.
 
-**input**
+**input:**
 ```
 9 3 23
 9 3 22
@@ -489,7 +476,7 @@ Ví dụ với n = 9, k = 3, s = 23, {6, 8, 9} là tập hợp duy nhất thỏa
 0 0 0
 ```
 
-**output**
+**output:**
 ```
 1
 2
@@ -506,13 +493,13 @@ Ví dụ với n = 9, k = 3, s = 23, {6, 8, 9} là tập hợp duy nhất thỏa
 
 Cho số nguyên N. Nhiệm vụ của bạn cần tìm số nguyên X nhỏ nhất là bội của N, và X chỉ chứa hai chữ số 0 và 9.
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T ≤ 10000). Mỗi bộ test chứa số nguyên N trên một dòng (1 ≤ N ≤ 500).
 
-**Output:**
+**Đầu ra:**
 Với mỗi test in ra đáp án tìm được trên một dòng.
 
-**input**
+**input:**
 ```
 3
 2
@@ -520,7 +507,7 @@ Với mỗi test in ra đáp án tìm được trên một dòng.
 11
 ```
 
-**output**
+**output:**
 ```
 90
 90
@@ -531,22 +518,22 @@ Với mỗi test in ra đáp án tìm được trên một dòng.
 
 Cho số nguyên dương N. Nhiệm vụ của bạn là hãy liệt kê tất cả các cách phân tích số tự nhiên N thành tổng các số tự nhiên nhỏ hơn hoặc bằng N. Phép hoán vị vủa một cách được xem là giống nhau. Ví dụ với N = 5 ta có kết quả là: (5), (4, 1), (3, 2), (3, 1, 1), (2, 2, 1), (2, 1, 1, 1), (1, 1, 1, 1, 1) .
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng.
 - T, n thỏa mãn ràng buộc: 1≤T, N≤10.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4
 5
 ```
 
-**output**
+**output:**
 ```
 (4) (3 1) (2 2) (2 1 1) (1 1 1 1)
 (5) (4 1) (3 2) (3 1 1) (2 2 1) (2 1 1 1) (1 1 1 1 1)
@@ -556,22 +543,22 @@ Cho số nguyên dương N. Nhiệm vụ của bạn là hãy liệt kê tất c
 
 Số nhị phân được xem là cách mặc định biểu diễn các số. Tuy nhiên, trong nhiều ứng dụng của điện tử và truyền thông lại dùng một biến thể của mã nhị phân đó là mã Gray. Mã Gray độ dài n có mã đầu tiên là n số 0, mã kế tiếp của nó là một xâu nhị phân độ dài n khác biệt với xâu trước đó một bít. Ví dụ với n=3 ta có 2<sup>3</sup> mã Gray như sau: 000, 001, 011, 010, 110, 111, 101, 100. Hãy viết chương trình chuyển đổi một xâu mã nhị phân X có độ dài n thành một xâu mã Gray.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng test T.
 - T dòng kế tiếp ghi lại mỗi dòng một test. Mỗi test là một số tự nhiên n.
 - T, n thỏa mãn ràng buộc: 1≤T, n≤10.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 01001
 01101
 ```
 
-**output**
+**output:**
 ```
 01101
 01011
@@ -581,15 +568,15 @@ Số nhị phân được xem là cách mặc định biểu diễn các số. T
 
 Cho hai số N, K và một tập con K phần tử X[] =(X1, X2,.., XK) của 1, 2, .., N. Nhiệm vụ của bạn là hãy đưa ra tập con K phần tử trước đó của X[]. Ví dụ N=5, K=3, X[] ={2, 3, 5} thì tập con trước đó của X[] là {2, 3, 4}. Chú ý nếu tập con trong input là đầu tiên thì trước đó là tập con cuối cùng.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là hai số N và K; dòng tiếp theo đưa vào K phần tử của X[] là một tập con K phần tử của 1, 2, .., N.
 - T, K, N, X[] thỏa mãn ràng buộc: 1≤T≤100; 1≤K≤N≤10<sup>3</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5  3
@@ -598,7 +585,7 @@ Cho hai số N, K và một tập con K phần tử X[] =(X1, X2,.., XK) của 1
 1  2  3
 ```
 
-**output**
+**output:**
 ```
 2 3 4
 3 4 5
@@ -615,25 +602,22 @@ Giả sử một xâu ký tự được coi là HAHA nếu thỏa mãn các đi�
 
 Cho trước độ dài N, hãy liệt kê tất cả các xâu ký tự HAHA theo thứ tự từ điển.
 
-**Input**
-
+**Đầu vào:**
 *   Dòng đầu ghi số bộ test T (không quá 10)
 *   Mỗi bộ test ghi độ dài N (2 <= N < 16)
 
-**Output**
-
+**Đầu ra:**
 *   Với mỗi bộ test, ghi ra tất cả các xâu HAHA tìm được theo thứ tự từ điển, mỗi xâu viết trên một dòng.
 
-**Ví dụ**
-
-**input**
+**Ví dụ:**
+**input:**
 ```
 2
 2
 4
 ```
 
-**output**
+**output:**
 ```
 HA
 HAAA
@@ -644,26 +628,23 @@ HAHA
 
 Cho xâu nhị phân X\[\], nhiệm vụ của bạn là hãy đưa ra xâu nhị phân trước của X\[\]. Ví dụ X\[\] =”111111” thì xâu nhị phân trước của X\[\] là “111110”. Với xâu X\[\] =“000001” thì xâu nhị trước của X\[\] là “000000”. Chú ý: nếu xâu dữ liệu trong input là xâu đầu tiên thì trước nó sẽ là xâu cuối cùng.
 
-**Input:**
-
+**Đầu vào:**
 *   Dòng đầu tiên đưa vào số lượng test T.
 *   Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu nhi phân X.
 *   T, X\[\] thỏa mãn ràng buộc: 1≤T≤100; 1≤length(X)≤10<sup>3</sup>.
 
-**Output:**
-
+**Đầu ra:**
 *   Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ví dụ:**
-
-**input**
+**input:**
 ```
 2
 010101
 111111
 ```
 
-**output**
+**output:**
 ```
 010100
 111110
@@ -671,18 +652,19 @@ Cho xâu nhị phân X\[\], nhiệm vụ của bạn là hãy đưa ra xâu nh�
 
 ### DSA01021 - TỔ HỢP TIẾP THEO
 
-Cho số nguyên dương (1<N<40) và số nguyên dương K<N. Với 1 tổ hợp chập K phần tử của N, hãy cho biết tổ hợp tiếp theo sẽ có bao nhiêu phần tử mới. Nếu tổ hợp đã cho là cuối cùng thì kết quả là K.  
+Cho số nguyên dương (1< N< 40) và số nguyên dương K< N. Với 1 tổ hợp chập K phần tử của N, hãy cho biết tổ hợp tiếp theo sẽ có bao nhiêu phần tử mới. Nếu tổ hợp đã cho là cuối cùng thì kết quả là K.  
 
-**Dữ liệu vào:** Dòng đầu ghi số bộ test, không quá 20. Mỗi bộ test viết trên hai dòng
+**Đầu vào:**
+Dòng đầu ghi số bộ test, không quá 20. Mỗi bộ test viết trên hai dòng
 
-*   Dòng 1: hai số nguyên dương N và K (K<N)
+*   Dòng 1: hai số nguyên dương N và K (K< N)
 *   Dòng 2 ghi K số của tổ hợp ban đầu. Theo đúng thứ tự tăng dần, không có số nào trùng nhau.
 
-**Kết quả:** Với mỗi bộ dữ liệu in ra số lượng phần tử mới.
+**Đầu ra:**
+Với mỗi bộ dữ liệu in ra số lượng phần tử mới.
 
  **Ví dụ:**
-
-**input**
+**input:**
 ```
 3
 5 3
@@ -693,7 +675,7 @@ Cho số nguyên dương (1<N<40) và số nguyên dương K<N. Với 1 tổ h�
 3 4 5 6
 ```
 
-**output**
+**output:**
 ```
 1
 2
@@ -706,8 +688,7 @@ Cho một hoán vị của N số nguyên dương đầu tiên.
 
 Hãy xác định xem đó là hoán vị thứ bao nhiêu nếu liệt kê theo thứ tự tăng dần (tính từ 1).
 
-**Input**
-
+**Đầu vào:**
 Dòng đầu ghi số T là số bộ test (T < 10)
 
 Mỗi bộ test gồm 2 dòng
@@ -715,13 +696,11 @@ Mỗi bộ test gồm 2 dòng
 *   Dòng đầu ghi số nguyên dương N (3 < N < 10)
 *   Dòng tiếp theo ghi một hoán vị của các số nguyên dương từ 1 đến N.  
 
-**Output**
-
+**Đầu ra:**
 Với mỗi bộ test, ghi ra trên một dòng số thứ tự của hoán vị (tính từ 1, theo thứ tự liệt kê tăng dần).
 
-**Ví dụ**
-
-**input**
+**Ví dụ:**
+**input:**
 ```
 2
 4
@@ -730,7 +709,7 @@ Với mỗi bộ test, ghi ra trên một dòng số thứ tự của hoán vị
 1 2 3 4
 ```
 
-**output**
+**output:**
 ```
 6
 1
@@ -742,8 +721,7 @@ Cho một tổ hợp chập K của N số nguyên dương đầu tiên (2 < K <
 
 Hãy xác định xem đó là tổ hợp thứ bao nhiêu nếu liệt kê tất cả các tổ hợp theo thứ tự tăng dần (tính từ 1).
 
-**Input**
-
+**Đầu vào:**
 Dòng đầu ghi số T là số bộ test (T < 10)
 
 Mỗi bộ test gồm 2 dòng
@@ -751,13 +729,11 @@ Mỗi bộ test gồm 2 dòng
 *   Dòng đầu ghi 2 số nguyên dương N và K (2 < K < N < 15)
 *   Dòng tiếp theo ghi một tổ hợp chập K của các số nguyên dương từ 1 đến N.  
 
-**Output**
-
+**Đầu ra:**
 Với mỗi bộ test, ghi ra trên một dòng số thứ tự của tổ hợp (tính từ 1, theo thứ tự liệt kê tăng dần).
 
-**Ví dụ**
-
-**input**
+**Ví dụ:**
+**input:**
 ```
 2
 6 4
@@ -766,7 +742,7 @@ Với mỗi bộ test, ghi ra trên một dòng số thứ tự của tổ hợp
 2 3 4 6
 ```
 
-**output**
+**output:**
 ```
 9
 12
@@ -778,24 +754,21 @@ Vương quốc PTIT sử dụng bảng chữ cái gồm N chữ cái Latinh vi�
 
 Hãy liệt kê tất cả các cái tên có thể có của gia đình Hoàng gia PTIT
 
-**Input**
-
+**Đầu vào:**
 *   Dòng đầu ghi số bộ test T (không quá 10)
 *   Mỗi bộ test ghi 2 số N và K (3 < K < N < 16)
 
-**Output**
-
+**Đầu ra:**
 *   Với mỗi bộ test, ghi ra tất cả các cái tên có thể được tạo ra, mỗi kết quả viết trên một dòng.
 
-**Ví dụ**
-
-**input**
+**Ví dụ:**
+**input:**
 ```
 1
 4 2
 ```
 
-**output**
+**output:**
 ```
 AB
 AC
@@ -816,22 +789,19 @@ Một xâu ký tự số chỉ bao gồm các chữ số 6 và 8 sẽ được g
 
 Viết chương trình liệt kê các xâu ký tự phát lộc độ dài N theo thứ tự tăng dần.
 
-**Input**
-
+**Đầu vào:**
 Chỉ có 1 dòng ghi số N (5 < N < 16).
 
-**Output**
-
+**Đầu ra:**
 Ghi ra các xâu ký tự phát lộc độ dài N, mỗi xâu trên một dòng.
 
-**Ví dụ**
-
-**input**
+**Ví dụ:**
+**input:**
 ```
 6
 ```
 
-**output**
+**output:**
 ```
 866686
 866866
@@ -843,25 +813,22 @@ Ghi ra các xâu ký tự phát lộc độ dài N, mỗi xâu trên một dòng
 
 Cho dãy số A\[\] có N phần tử là các số nguyên dương khác nhau từng đôi một. Hãy liệt kê tất cả các hoán vị của dãy số A\[\] theo thứ tự tăng dần, tức là hoán vị đầu tiên có giá trị tăng dần từ trái qua phải, hoán vị cuối cùng giảm dần từ trái qua phải.
 
-**Input**
-
+**Đầu vào:**
 Dòng đầu ghi số N (1 < N < 9)
 
 Dòng thứ 2 ghi N số của dãy A\[\] (0 < A\[i\] < 10000)
 
-**Output**
-
+**Đầu ra:**
 Ghi mỗi hoán vị của dãy số trên một dòng
 
-**Ví dụ**
-
-**input**
+**Ví dụ:**
+**input:**
 ```
 3
 88 77 99
 ```
 
-**output**
+**output:**
 ```
 77 88 99
 77 99 88
@@ -875,27 +842,24 @@ Ghi mỗi hoán vị của dãy số trên một dòng
 
 Cho dãy số A\[\] có N phần tử. Hãy liệt kê tất cả các tổ hợp chập K của tập các phần tử khác nhau trong A\[\]. Các tổ hợp cần liệt kê theo thứ tự từ điển (tức là trong mỗi tổ hợp thì giá trị từ nhỏ đến lớn, và tổ hợp sau lớn hơn tổ hợp trước).
 
-**Input**
-
+**Đầu vào:**
 Dòng đầu ghi hai số N và K.
 
 Dòng thứ 2 ghi N số của mảng A\[\]. Các giá trị không quá 1000.
 
 Dữ liệu đảm bảo số phần tử khác nhau của A\[\] không quá 20 và K không quá 10.
 
-**Output**
-
+**Đầu ra:**
 Ghi ra lần lượt các tổ hợp tìm được, mỗi tổ hợp trên một dòng.
 
-**Ví dụ**
-
-**input**
+**Ví dụ:**
+**input:**
 ```
 8 3
 2 4 4 3 5 1 3 4
 ```
 
-**output**
+**output:**
 ```
 1 2 3
 1 2 4
@@ -913,13 +877,13 @@ Ghi ra lần lượt các tổ hợp tìm được, mỗi tổ hợp trên một
 
 Cho ma trận vuông Ci,j cấp N (1<= i, j <= N<10) gồm N<sup>2</sup> số tự nhiên và số tự nhiên K (các số trong ma trận không nhất thiết phải khác nhau và đều không quá 100, K không quá 10<sup>4</sup>). Hãy viết chương trình lấy mỗi hàng, mỗi cột duy nhất một phần tử sao cho tổng các phần tử này đúng bằng K.
 
-**Input:** 
+**Đầu vào:**
 Dòng 1 ghi hai số N và K. N dòng tiếp theo ghi ma trận C. 
 
-**Output:** 
+**Đầu ra:**
 Dòng đầu ghi số cách tìm được. Mỗi dòng tiếp theo ghi một cách theo vị trí của số đó trong lần lượt từng hàng của ma trận. Xem ví dụ để hiểu rõ hơn. 
 
-**input**
+**input:**
 ```
 3 10
 2 4 3
@@ -927,7 +891,7 @@ Dòng đầu ghi số cách tìm được. Mỗi dòng tiếp theo ghi một cá
 4 2 4
 ```
 
-**output**
+**output:**
 ```
 2
 1 3 2
@@ -942,18 +906,15 @@ Cho một bàn cờ 8 x 8, mỗi ô có một giá trị A[i][j] nhất định 
 
 Nhiệm vụ của bạn là đặt 8 quân hậu lên bàn cờ, sao cho không có 2 quân nào ăn nhau, và số điểm đạt được là lớn nhất.
 
-**Input**
-
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 Mỗi test gồm 8 dòng, mỗi dòng 8 số nguyên mô tả bàn cờ.
 
-**Output**
-
+**Đầu ra:**
 Với mỗi test, ghi ra thứ tự bộ test và giá trị điểm lớn nhất đạt được trên một dòng.
 
-**Ví dụ**
-
-**input**
+**Ví dụ:**
+**input:**
 ```
 1
 1 2 3 4 5 6 7 8
@@ -977,21 +938,18 @@ Kỳ thi ICPC có K đội của PTIT tham gia và đội tuyển đang rất đ
 
 Hãy liệt kê tất cả danh sách các tổ hợp K cái tên khác nhau có thể được tạo ra theo thứ tự từ điển.
 
-**Input**
-
+**Đầu vào:**
 Dòng đầu ghi 2 số N và K.
 
 Tiếp theo là 1 dòng ghi N cái tên, mỗi cái tên có độ dài không quá 15 và cách nhau một khoảng trống. Tất cả đều là ký tự in hoa.
 
-**Output**
-
+**Đầu ra:**
 Ghi ra tất cả các tổ hợp tên có thể được lựa chọn theo thứ tự từ điển.
 
 Tức là các tên trong mỗi tổ hợp liệt kê theo thứ tự từ điển và các tổ hợp cũng được liệt kê theo thứ tự từ điển.
 
-**Ví dụ**
-
-**input**
+**Ví dụ:**
+**input:**
 ```
 6 2
 DONG TAY NAM BAC TAY BAC
@@ -1021,24 +979,22 @@ Cho dãy số A\[\] gồm n số nguyên dương. Tam giác đặc biệt của 
 
 \[48\]
 
-**Input:**
-
+**Đầu vào:**
 *   Dòng đầu tiên đưa vào số lượng bộ test T.
 *   Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào N là số lượng phần tử của dãy số A\[\]; dòng tiếp theo đưa vào N số của mảng A\[\].
 *   T, N, A\[i\] thỏa mãn ràng buộc: 1≤T≤100; 1≤N, A\[i\] ≤10;
 
-**Output:**
-
+**Đầu ra:**
 *   Đưa ra tam giác tổng của mỗi test theo từng dòng. Mỗi dòng của tam giác tổng được bao bởi ký tự \[, \].
 
-**input**
+**input:**
 ```
 1
 5
 1 2 3 4 5
 ```
 
-**output**
+**output:**
 ```
 [1 2 3 4 5]
 [3 5 7 9]
@@ -1061,24 +1017,22 @@ Cho dãy số A\[\] gồm n số nguyên dương. Tam giác đặc biệt của 
 
 \[1, 2, 3, 4, 5 \]
 
-**Input:**
-
+**Đầu vào:**
 *   Dòng đầu tiên đưa vào số lượng bộ test T.
 *   Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào N là số lượng phần tử của dãy số A\[\]; dòng tiếp theo đưa vào N số của mảng A\[\].
 *   T, N, A\[i\] thỏa mãn ràng buộc: 1≤T≤100; 1≤N, A\[i\] ≤10;
 
-**Output:**
-
+**Đầu ra:**
 *   Đưa ra kết quả mỗi test theo từng dòng. Mỗi dòng của tam giác tổng được bao bởi ký tự \[, \].
 
-**input**
+**input:**
 ```
 1
 5
 1 2 3 4 5
 ```
 
-**output**
+**output:**
 ```
 [48] [20 28] [8 12 16] [3 5 7 9] [1 2 3 4 5]
 ```
@@ -1092,17 +1046,15 @@ Cho một mê cung bao gồm các khối được biểu diễn như một ma tr
 
 Hãy đưa ra một hành trình của con chuột trên mê cung. Đưa ra -1 nếu chuột không thể đi đến đích.
 
-**Input:**
-
+**Đầu vào:**
 *   Dòng đầu tiên đưa vào số lượng bộ test T.
 *   Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào số N là kích cỡ của mê cung; dòng tiếp theo đưa vào ma trận nhị phân A\[N\]\[N\].
 *   T, N, A\[i\]\[j\] thỏa mãn ràng buộc: 1≤T ≤10; 2≤N≤10; 0≤A\[i\]\[j\] ≤1.
 
-**Output:**
-
+**Đầu ra:**
 *   Đưa ra tất cả đường đi của con chuột trong mê cung theo thứ tự từ điển. Đưa ra -1 nếu chuột không đi được đến đích.
 
-**input**
+**input:**
 ```
 2
 4
@@ -1118,7 +1070,7 @@ Hãy đưa ra một hành trình của con chuột trên mê cung. Đưa ra -1 n
 0 0 0 1 1
 ```
 
-**output**
+**output:**
 ```
 DRDDRR
 DDRDRRDR DDRDRRRD DRDDRRDR DRDDRRRD DRRRRDDD
@@ -1135,15 +1087,15 @@ Cho một mê cung bao gồm các khối được biểu diễn như một ma tr
 
 Hãy đưa ra tất cả các hành trình của con chuột trên mê cung. Đưa ra -1 nếu chuột không thể đi đến đích.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào số N là kích cỡ của mê cung; dòng tiếp theo đưa vào ma trận nhị phân A[N][N].
 - T, N, A[i][j] thỏa mãn ràng buộc: 1≤T ≤10; 2≤N≤8; 0≤A[i][j] ≤1.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra các xâu ký tự được sắp xếp, trong đó mỗi xâu là một đường đi của con chuột trong mê cung. In ra đáp án theo thứ tự từ điển. Đưa ra -1 nếu chuột không đi được đến đích.
 
-**input**
+**input:**
 ```
 3
 4
@@ -1164,7 +1116,7 @@ Hãy đưa ra tất cả các hành trình của con chuột trên mê cung. Đ�
 0 0 0 0 1
 ```
 
-**output**
+**output:**
 ```
 DRDDRR
 DDRDRR DRDDRR
@@ -1175,24 +1127,22 @@ DDRRURRDDD DDRURRRDDD DRDRURRDDD DRRRRDDD
 
 Cho xâu ký tự S bao gồm các ký tự in hoa khác nhau. Hãy đưa ra tất cả các hoán vị của xâu ký tự S. Ví dụ S=”ABC” ta có kết quả {ABC ACB BAC BCA CAB CBA}. 
 
-**Input:**
-
+**Đầu vào:**
 *   Dòng đầu tiên đưa vào số lượng bộ test T.
 *   Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test là một xâu ký tự S được viết trên 1 dòng.
 *   T, S thỏa mãn ràng buộc: 1≤T≤10; 1≤length(S) ≤10;
 
-**Output:**
-
+**Đầu ra:**
 *   Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2  
 AB
 ABC
 ```
 
-**output**
+**output:**
 ```
 AB BA
 ABC ACB BAC BCA CAB CBA
@@ -1202,17 +1152,15 @@ ABC ACB BAC BCA CAB CBA
 
 Cho dãy số A\[\] = (a1, a2, .., an) và số tự nhiên K. Hãy đưa ra tất cả các dãy con của dãy số A\[\] sao cho tổng các phần tử của dãy con đó đúng bằng K. Các phần tử của dãy số A\[\] được giả thuyết là nguyên dương và không có các phần tử giống nhau. Ví dụ với dãy con A\[\] = {5, 10, 15, 20, 25}, K = 50 ta có 3 dãy con {5, 10, 15, 20}, {5, 20, 25}, {10, 15, 25}.
 
-**Input:**
-
+**Đầu vào:**
 *   Dòng đầu tiên đưa vào số lượng bộ test T.
 *   Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào số N là số lượng phần tử của dãy số A\[\] và số K; dòng tiếp theo đưa vào N phần tử của dãy số A\[\].
 *   T, N, A\[i\] thỏa mãn ràng buộc: 1≤T ≤100; 1≤N≤10; 1≤ K, A\[i\] ≤100.
 
-**Output:**
-
+**Đầu ra:**
 *   Đưa ra tất cả các dãy con của dãy số A\[\] thỏa mãn yêu cầu bài toán theo thứ tự từ điển, trong đó mỗi dãy con được bao bởi các ký tự \[, \]. Nếu không có dãy con nào thỏa mãn yêu cầu bài toán, hãy đưa ra -1.
 
-**input**
+**input:**
 ```
 2  
 5 50
@@ -1221,7 +1169,7 @@ Cho dãy số A\[\] = (a1, a2, .., an) và số tự nhiên K. Hãy đưa ra t�
 15  22  14  26  32  9  16  8
 ```
 
-**output**
+**output:**
 ```
 [5 10 15 20] [5 20 25] [10 15 25]  
 [8 9 14 22] [8 14 15 16] [15 16 22]
@@ -1231,17 +1179,15 @@ Cho dãy số A\[\] = (a1, a2, .., an) và số tự nhiên K. Hãy đưa ra t�
 
 Cho số tự nhiên K và xâu ký tự các chữ số S.  Nhiệm vụ của bạn là đưa ra số lớn nhất bằng cách thực hiện nhiều nhất K lần đổi chỗ các ký tự trong S. Ví dụ K =3 và S = “1234567” ta được “7654321”.
 
-**Input:**
-
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là số K; dòng tiếp theo là xâu ký tự S.
 - T, K, S thỏa mãn ràng buộc: 1≤T ≤100; 1≤K≤10; 1≤.lenght(S)≤7.
 
-**Output:**
-
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 4
@@ -1252,7 +1198,7 @@ Cho số tự nhiên K và xâu ký tự các chữ số S.  Nhiệm vụ của 
 1034
 ```
 
-**output**
+**output:**
 ```
 3
 4
@@ -1267,15 +1213,15 @@ Cho số tự nhiên K và xâu ký tự các chữ số S.  Nhiệm vụ của 
 
 Cho mảng các số nguyên A[] gồm N phần tử. Hãy chia mảng số nguyên A[] thành K tập con khác rỗng sao cho tổng các phần tử của mỗi tập con đều bằng nhau. Mỗi phần tử thuộc tập con xuất hiện duy nhất một lần trong tất cả các tập con. Ví dụ với A[] = {2, 1, 4, 5, 6}, K =3 ta có kết quả {2, 4}, {1, 5}, {6}.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số N và K; dòng tiếp theo đưa vào N số của mảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, K, A[i] thỏa mãn ràng buộc: 1≤T ≤100; 1≤N, K≤20, 0≤A[i]≤100.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra 1 nếu có thể chia tập con thành K tập thỏa mãn yêu cầu bài toán, ngược lại đưa ra 0.
 
-**input**
+**input:**
 ```
 2
 5 3
@@ -1284,7 +1230,7 @@ Cho mảng các số nguyên A[] gồm N phần tử. Hãy chia mảng số nguy
 2 1 5 5 6
 ```
 
-**output**
+**output:**
 ```
 1
 0
@@ -1296,22 +1242,22 @@ Cho mảng A[] gồm N số nguyên dương phân biệt và số X. Nhiệm v�
 
 [2, 2, 2, 2], [2, 2, 4], [2, 6], [4, 4], [8].
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số N và X; dòng tiếp theo đưa vào N số của mmảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, X, A[i] thỏa mãn ràng buộc: 1≤T ≤10; 1≤X, A[i]≤100. N ≤ 20.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng. Mỗi đường tổ hợp được bao bởi cặp ký tự [, ]. Đưa ra -1 nếu không có tổ hợp nào thỏa mãn yêu cầu bài toán.
 
-**input**
+**input:**
 ```
 1
 4 8
 2 4 6 8
 ```
 
-**output**
+**output:**
 ```
 [2 2 2 2][2 2 4][2 6][4 4][8]
 ```
@@ -1320,23 +1266,21 @@ Cho mảng A[] gồm N số nguyên dương phân biệt và số X. Nhiệm v�
 
 Một máy ATM hiện có n (n ≤ 30) tờ tiền có giá trị t[1], t[2], …, t[n]. Hãy tìm cách trả ít tờ nhất với số tiền đúng bằng S (các tờ tiền có giá trị bất kỳ và có thể bằng nhau, mỗi tờ tiền chỉ được dùng một lần).
 
-**Input:**
-
+**Đầu vào:**
 Dòng đầu tiên ghi số bộ test T (T<10). Mỗi bộ test gồm 2 số nguyên n và S (S ≤ 10<sup>9</sup>). Dòng thứ hai chứa n số nguyên t[1], t[2], …, t[n] (t[i] ≤ 10<sup>9</sup>)
 
-**Output:**
-
+**Đầu ra:**
 Với mỗi bộ test ghi ra số tờ tiền ít nhất phải trả.
 
 Nếu không thể tìm được kết quả, in ra -1.
-**input**
+**input:**
 ```
 1
 3 5
 1 4 5
 ```
 
-**output**
+**output:**
 ```
 1
 ```
@@ -1345,18 +1289,16 @@ Nếu không thể tìm được kết quả, in ra -1.
 
 Cho ma trận A\[M\]\[N\]. Nhiệm vụ của bạn là đếm tất cả các đường đi từ phần tử A\[0\]\[0\] đến phần tử A\[M-1\]\[N-1\]. Bạn chỉ được phép dịch chuyển xuống dưới hoặc sang phải phần tử liền kề với vị trí hiện tại.
 
-**Input:**
-
+**Đầu vào:**
 *   Dòng đầu tiên đưa vào số lượng bộ test T.
 *   Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số M, N tương ứng với số hàng và số cột của ma trận; dòng tiếp theo đưa vào các phần tử của ma trận A\[\]\[\]; các số được viết cách nhau một vài khoảng trống.
 *   T, M, N, A\[i\]\[j\] thỏa mãn ràng buộc: 1≤T ≤10; 1≤M, N, A\[i\]\[j\]≤100.
 
-**Output:**
-
+**Đầu ra:**
 *   Đưa ra số cách di chuyển của mỗi test theo từng dòng.
 *   Giải thích test 1: Có 3 cách di chuyển là \[1 4 5 6\], \[1 2 5 6\] và \[1 2 3 6\].
 
-**input**
+**input:**
 ```
 2  
 2 3
@@ -1367,7 +1309,7 @@ Cho ma trận A\[M\]\[N\]. Nhiệm vụ của bạn là đếm tất cả các 
 3 4
 ```
 
-**output**
+**output:**
 ```
 3
 2
@@ -1377,22 +1319,22 @@ Cho ma trận A\[M\]\[N\]. Nhiệm vụ của bạn là đếm tất cả các 
 
 Cho ba số N, P, S. Trong đó, P là một số nguyên tố. Nhiệm vụ của bạn là đưa ra tất cả N số nguyên tố tính từ P có tổng bằng S. Ví dụ với S = 28, P=7, N =2 ta có kết quả 11 + 17 = 28. Với N = 3, P = 2, S = 23 ta có kết quả : {3, 7, 13}, {5, 7, 11}
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là bộ ba số S, P, N được viết trên một dòng.
 - S, P, N thỏa mãn ràng buộc: 1≤T ≤100; 1 ≤ N ≤ 10; 2≤S, P≤200.
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, dòng đầu tiên in ra số lượng đáp án tìm được. Mỗi dòng tiếp theo in ra kết quả tìm được theo thứ tự từ điển.
 
-**input**
+**input:**
 ```
 2
 2 7 28
 3 2 23
 ```
 
-**output**
+**output:**
 ```
 1
 11 17
@@ -1410,15 +1352,15 @@ Cho tập từ ghi trong trừ điển dic[] và một bảng hai chiều A[M][N
 | U | E | K |
 | Q | S | E |
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào ba số K, M, N tương ứng với số từ của từ điển dic[], số hàng và số cột của ma trận ký tự A[M][N]; dòng tiếp theo đưa vào K từ của từ điển dic[]; dòng cuối cùng đưa vào các phần tử A[i][j].
 - T, K, M, N thỏa mãn ràng buộc: 1≤T ≤10; 1≤K≤100; 1≤ M, N ≤3.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra theo thứ tự tăng dần các từ có mặt trong từ điển dic[] được tạo ra từ ma trận A[][]. Đưa ra -1 nếu không thể tạo ra từ nào thuộc dic[] từ A[][].
 
-**input**
+**input:**
 ```
 1
 4 3 3
@@ -1428,7 +1370,7 @@ U E K
 Q S E
 ```
 
-**output**
+**output:**
 ```
 GEEKS QUIZ
 ```
@@ -1439,22 +1381,22 @@ Cho biểu thức P chỉ chứa các ký tự ‘(’, ‘)’ và các ký t�
 
 Nếu có nhiều hơn một biểu thức đúng với cùng số phép loại bỏ ít nhất hãy đưa ra tất cả các biểu thức đúng theo thứ tự từ điển.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một biểu thức P được viết trên một dòng.
 - T, P thỏa mãn ràng buộc: 1≤T ≤100; 1≤length(P)≤100.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng. Nếu không có đáp án, in ra -1.
 
-**input**
+**input:**
 ```
 2
 ()())()
 (u)())()
 ```
 
-**output**
+**output:**
 ```
 (())() ()()()
 (u())() (u)()() 
@@ -1464,19 +1406,21 @@ Nếu có nhiều hơn một biểu thức đúng với cùng số phép loại 
 
 Cho một bàn cờ vua có kích thước n * n, ta biết ràng quân hậu có thể di chuyển theo chiều ngang, dọc, chéo. Vấn đề đặt ra rằng, có n quân hậu, bạn cần đếm số cách đặt n quân hậu này lên bàn cờ sao cho với 2 quân hậu bất kì, chúng không “ăn” nhau.
 
-**Input:** Dòng đầu ghi số bộ test T (T<5). Mỗi bộ test ghi một số nguyên dương n duy nhất (không quá 10)
+**Đầu vào:**
+Dòng đầu ghi số bộ test T (T<5). Mỗi bộ test ghi một số nguyên dương n duy nhất (không quá 10)
 
-**Output:**  Ghi kết quả mỗi bộ test trên một dòng. Số cách đặt quân hậu.
+**Đầu ra:**
+Ghi kết quả mỗi bộ test trên một dòng. Số cách đặt quân hậu.
 
 Ví dụ:
 
-**input**
+**input:**
 ```
 1
 4
 ```
 
-**output**
+**output:**
 ```
 2
 ```
@@ -1487,14 +1431,14 @@ Cho một bàn cờ 8 x 8, mỗi ô có một giá trị A[i][j] nhất định 
 
 Nhiệm vụ của bạn là đặt 8 quân hậu lên bàn cờ, sao cho không có 2 quân nào ăn nhau, và số điểm đạt được là lớn nhất.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm 8 dòng, mỗi dòng 8 số nguyên mô tả bàn cờ.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 1
 1 2 3 4 5 6 7 8
@@ -1507,7 +1451,7 @@ Nhiệm vụ của bạn là đặt 8 quân hậu lên bàn cờ, sao cho không
 57 58 59 60 61 62 63 64
 ```
 
-**output**
+**output:**
 ```
 260
 ```
@@ -1520,14 +1464,14 @@ Cho 5 số nguyên dương A, B, C, D, E. Bạn có thể hoán vị các phần
 
 Trong đó: o(1) … o(4) là các phép toán +, -, *.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm 5 số nguyên dương A, B, C, D, E có giá trị không vượt quá 100.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được, mỗi xâu in ra trên một dòng.
 
-**input**
+**input:**
 ```
 3
 1 1 1 1 1
@@ -1535,7 +1479,7 @@ Trong đó: o(1) … o(4) là các phép toán +, -, *.
 2 3 5 7 11
 ```
 
-**output**
+**output:**
 ```
 NO
 YES
@@ -1546,15 +1490,15 @@ YES
 
 Cho đồ thị vô hướng có N đỉnh và M cạnh. Bạn hãy tìm đường đi dài nhất trên đồ thị, sao cho mỗi cạnh chỉ được đi qua nhiều nhất 1 lần.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test bắt đầu bằng số nguyên N và M (1 ≤ N, M ≤ 20). 
 - Các đỉnh đánh dấu từ 0, 1, …, N-1. M dòng tiếp theo, mỗi dòng gồm 2 số u, v cho biết có cạnh nối giữa uàv.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được, mỗi xâu in ra trên một dòng.
 
-**input**
+**input:**
 ```
 2
 3 2
@@ -1579,7 +1523,7 @@ Cho đồ thị vô hướng có N đỉnh và M cạnh. Bạn hãy tìm đườ
 12 14
 ```
 
-**output**
+**output:**
 ```
 2
 12
@@ -1589,21 +1533,21 @@ Cho đồ thị vô hướng có N đỉnh và M cạnh. Bạn hãy tìm đườ
 
 Cho số nguyên dương N. Nhiệm vụ của bạn là tìm số K nhỏ nhất, sao cho K có đúng N ước. Input đảm bảo rằng đáp án không vượt quá 10<sup>18</sup>.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤  20).
 - Mỗi test gồm 1 số nguyên N ( 1 ≤  N ≤  1000).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 2
 4
 6
 ```
 
-**output**
+**output:**
 ```
 6
 12
@@ -1614,26 +1558,23 @@ Cho số nguyên dương N. Nhiệm vụ của bạn là tìm số K nhỏ nhấ
 Cho một xâu s. Xâu F(s) được xác định bằng cách ghép xâu xâu s ban đầu với xâu s sau khi đã được quay vòng sang bên phải 1 kí tự (kí tự cuối cùng của s được chuyển lên đầu).
 
 Thực hiện liên tiếp các bước cộng xâu như trên với xâu mới thu được, ta có được xâu X.
-
 ![DSA02021](image/DSA02021.png)
 
 Nhiệm vụ của bạn là hãy xác định kí tự thứ N trong xâu X là kí tự nào?
 
-
-
-**Input:** 
+**Đầu vào:**
 Dòng đầu ghi số bộ test T (T<10). Mỗi bộ test gồm một xâu s có độ dài không vượt quá 30 kí tự và số nguyên N (1 ≤ N ≤ 10<sup>18</sup>).
 
-**Output:** 
+**Đầu ra:**
 Với mỗi bộ test ghi ra trên một dòng kí tự tìm được.
 
-**input**
+**input:**
 ```
 1
 COW 8
 ```
 
-**output**
+**output:**
 ```
 C
 ```
@@ -1641,7 +1582,6 @@ C
 Giải thích test: COW -> COWWCO -> COWWCOOCOWWC. Kí tự thứ 8 là ‘C’.
 
 ### DSA02022 - NGÀY ĐẶC BIỆT
-
 
 Hôm nay là ngày 22/02/2022. Một ngày đặc biệt. Chỉ có hai chữ số là 0 và 2. Đồng thời viết xuôi viết ngược tám chữ số ta đều được cùng một kết quả.
 
@@ -1652,9 +1592,7 @@ Một số chú ý:
 - Luôn có đủ 8 chữ số của ngảy tháng năm và hai dấu gạch chéo.
 - Ngày và tháng có thể có chữ số 0 ở đầu nhưng với năm thì không được phép. Tức là ta chỉ tính các ngày bắt đầu từ năm 2000 trở về sau.
 
-
 Bài toán không có dữ liệu vào. Bạn chỉ cần liệt kê kết quả gồm tất cả các ngày tháng hợp lệ. Coi dãy ký tự ngày tháng là một xâu ký tự. Hãy liệt kê theo đúng thứ tự từ điển tăng dần.
-
 
 ### DSA02023 - ĐẶT TÊN
 
@@ -1662,25 +1600,23 @@ Kỳ thi ICPC có K đội của PTIT tham gia và đội tuyển đang rất đ
 
 Hãy liệt kê tất cả danh sách các tổ hợp K cái tên khác nhau có thể được tạo ra theo thứ tự từ điển.
 
-**Input**
-
+**Đầu vào:**
 Dòng đầu ghi 2 số N và K.
 
 Tiếp theo là 1 dòng ghi N cái tên, mỗi cái tên có độ dài không quá 15 và cách nhau một khoảng trống. Tất cả đều là ký tự in hoa.
 
-**Output**
-
+**Đầu ra:**
 Ghi ra tất cả các tổ hợp tên có thể được lựa chọn theo thứ tự từ điển.
 
 Tức là các tên trong mỗi tổ hợp liệt kê theo thứ tự từ điển và các tổ hợp cũng được liệt kê theo thứ tự từ điển.
 
-**input**
+**input:**
 ```
 6 2
 DONG TAY NAM BAC TAY BAC
 ```
 
-**output**
+**output:**
 ```
 BAC DONG
 BAC NAM
@@ -1698,21 +1634,20 @@ Dãy con tạo được bằng cách lấy ra các phần tử trong dãy a[] nh
 
 Coi mỗi dãy con như một xâu ký tự với các phần tử cách nhau một khoảng trống, hãy liệt kê theo thứ tự từ điển.
 
-**Input**
+**Đầu vào:**
 - Dòng đầu ghi số n (không quá 20)
 - Dòng thứ 2 ghi n số của dãy a[]. Các số khác nhau từng đôi một và có giá trị không quá 100.
 
-**Output**
-
+**Đầu ra:**
 Ghi ra lần lượt các dãy con tăng dần theo thứ tự từ điển.
 
-**input**
+**input:**
 ```
 4
 6 3 7 11
 ```
 
-**output**
+**output:**
 ```
 3 11
 3 7
@@ -1751,13 +1686,13 @@ ABCDE
 
 => Số lần lặp là 2.
 
-**Input** 
+**Đầu vào:**
 Dòng đầu tiên ghi số N (2 ≤ N ≤ 10) là số xâu ký tự. N dòng tiếp theo, mỗi dòng ghi một xâu. 
 
-**Output** 
+**Đầu ra:**
 In ra trên một dòng số lần lặp nhỏ nhất có thể. 
 
-**input**
+**input:**
 
 test 1
 ```
@@ -1787,7 +1722,7 @@ ABYZ
 Z
 ```
 
-**output**
+**output:**
 
 test 1
 ```
@@ -1808,23 +1743,23 @@ Cho một biểu thức trong phạm vi hai chữ số với các phép toán c�
 
 Người ta có thể ẩn đi một số chữ số hoặc phép toán bằng cách điền dấu chấm hỏi (?). Nhiệm vụ của bạn là khôi phục các dấu chấm hỏi và in ra phép toán chính xác ban đầu. Nếu không thể có kết quả đúng thì ghi ra WRONG PROBLEM!
 
-**Input**
+**Đầu vào:**
 - Dòng đầu ghi số bộ test T (1 ≤ T ≤ 100).
 - T dòng tiếp theo, mỗi dòng là một biểu thức có thể có các dấu ?.
 
 *Nếu có thể có nhiều kết quả đúng thì in ra kết quả đầu tiên theo thứ tự từ điển, tức là số nhỏ nhất có thể tính từ trái sang phải.*
 
-**Output**
+**Đầu ra:**
 - Với mỗi bộ test, ghi ra biểu thức đúng tìm được. Hoặc WRONG PROBLEM!
 
-**input**
+**input:**
 ```
 2
 ?0 ? 12 = 28
 40 / ?3 = ??
 ```
 
-**output**
+**output:**
 ```
 40 - 12 = 28
 WRONG PROBLEM!
@@ -1836,13 +1771,13 @@ Cho n thành phố đánh số từ 1 đến n và các tuyến đường giao t
 
 Một người du lịch xuất phát từ thành phố 1, muốn đi thăm tất cả các thành phố còn lại mỗi thành phố đúng 1 lần và cuối cùng quay lại thành phố 1. Hãy chỉ ra chi phí ít nhất mà người đó phải bỏ ra.
 
-**Input** 
+**Đầu vào:**
 Dòng đầu tiên là số nguyên n – số thành phố (n ≤ 15); n dòng sau, mỗi dòng chứa n số nguyên thể hiện cho mảng 2 chiều C.
 
-**Output** 
+**Đầu ra:**
 Chi phí mà người đó phải bỏ ra.
 
-**input**
+**input:**
 ```
 4
 0 20 35 10
@@ -1851,7 +1786,7 @@ Chi phí mà người đó phải bỏ ra.
 10 50 12 0
 ```
 
-**output**
+**output:**
 ```
 117
 ```
@@ -1860,14 +1795,14 @@ Chi phí mà người đó phải bỏ ra.
 
 Cho dãy số A có N phần tử và số K. Hãy đếm số cách chia dãy A thành K nhóm các phần tử liên tiếp sao cho tổng giá trị của mỗi nhóm đều bằng nhau.
 
-**Input**
+**Đầu vào:**
 - Dòng đầu ghi hai số N và K (0 < N ≤ 12; 0 < K < N ).
 - Dòng thứ 2 ghi N số của dãy A (-10000 ≤ A[i] ≤ 10000)
 
-**Output**
+**Đầu ra:**
 - In ra số cách thỏa mãn
 
-**input**
+**input:**
 
 test 1
 ```
@@ -1880,7 +1815,7 @@ test 2
 1 2 3
 ```
 
-**output**
+**output:**
 
 test 1
 ```
@@ -1901,20 +1836,18 @@ Mục tiêu của bạn là di chuyển toàn bộ các đĩa theo đúng thứ 
 - Mỗi lần di chuyển sẽ lấy đĩa trên từ một trong các cột và đặt nó lên trên một cột khác.
 - Không được đặt đĩa lên trên đĩa nhỏ hơn..
 
-**Input**
-
+**Đầu vào:**
 Số tự nhiên  0 < N < 10
 
-**Output**
-
+**Đầu ra:**
 In ra lần lượt từng bước theo mẫu trong ví dụ. Chú ý giữa các chữ cái và dấu -> có khoảng trống.
 
-**input**
+**input:**
 ```
 3
 ```
 
-**output**
+**output:**
 ```
 A -> C
 A -> B
@@ -1933,20 +1866,18 @@ Hãy tìm cách  liệt kê tất cả các xâu ký tự khác nhau được t�
 
 Xem ví dụ để hiểu thêm yêu cầu đề bài.
 
-**Input**
-
+**Đầu vào:**
 Chỉ có một dòng ghi chữ cái c và số nguyên K thỏa mãn ràng buộc đề bài.
 
-**Output**
-
+**Đầu ra:**
 Ghi ra lần lượt các xâu ký tự kết quả theo thứ tự từ điển, mỗi xâu trên một dòng.
 
-**input**
+**input:**
 ```
 D 2
 ```
 
-**output**
+**output:**
 ```
 AA
 AB
@@ -1968,20 +1899,18 @@ Người ta muốn ghép các chữ cái bắt đầu từ chữ cái ‘A’ ch
 
 Hãy liệt kê các xâu thỏa mãn theo thứ tự từ điển.
 
-**Input**
-
+**Đầu vào:**
 Chỉ có một dòng ghi chữ cái c (đảm bảo từ ‘D’ đến ‘H’).
 
-**Output**
-
+**Đầu ra:**
 Liệt kê các xâu thỏa mãn, mỗi xâu trên một dòng.
 
-**input**
+**input:**
 ```
 D
 ```
 
-**output**
+**output:**
 ```
 ABCD
 ABDC
@@ -2003,16 +1932,16 @@ Cho mảng A[] gồm N số nguyên dương phân biệt và số X. Nhiệm v�
 
 {2, 2, 2, 2}, {2, 2, 4}, {2, 6}, {4, 4}, {8}.
 
-**Input**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số N và X; dòng tiếp theo đưa vào N số của mmảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, X, A[i] thỏa mãn ràng buộc: 1≤T ≤10; 1≤X, A[i]≤100. N ≤ 20.
 
-**Output**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng. 
 - Đầu tiên là số lượng tổ hợp thỏa mãn. Mỗi tổ hợp được bao bởi cặp ký tự { } và cách nhau một dấu cách. Đưa ra -1 nếu không có tổ hợp nào thỏa mãn yêu cầu bài toán.
 
-**input**
+**input:**
 ```
 2
 4  8
@@ -2021,7 +1950,7 @@ Cho mảng A[] gồm N số nguyên dương phân biệt và số X. Nhiệm v�
 10 11
 ```
 
-**output**
+**output:**
 ```
 5 {2 2 2 2} {2 2 4} {2 6} {4 4} {8}
 -1
@@ -2037,27 +1966,24 @@ Cho số nguyên dương N (2 < N <10). Một số nguyên dương K có N chữ
 
 Hãy liệt kê tất cả các số thỏa mãn theo thứ tự tăng dần.
 
-**Input**
-
+**Đầu vào:**
 *   Dòng đầu ghi số bộ test (không quá 10)
 *   Mỗi bộ test là 1 số nguyên dương N (2 < N < 10)
 
-**Output**
-
+**Đầu ra:**
 Liệt kê tất cả các số thỏa mãn, mỗi số trên một dòng.
 
 Sau mỗi test in ra một khoảng trống.
 
-**Ví dụ**
-
-**input**
+**Ví dụ:**
+**input:**
 ```
 2
 3
 4
 ```
 
-**output**
+**output:**
 ```
 2413
 3142
@@ -2071,20 +1997,20 @@ Ví dụ với N = 4 thì cách xếp 3142 là hợp lệ nhưng cách xếp 132
 
 Hãy giúp Nam liệt kê tất cả các cách xếp thỏa mãn theo thứ tự từ điển.  
 
-**Input**
+**Đầu vào:**
 - Dòng đầu ghi số bộ test T (không quá 10)
 - Mỗi bộ test ghi số N (3 < N < 10)
 
-**Output**
+**Đầu ra:**
 - Với mỗi bộ test, ghi ra tất cả các cách xếp thứ tự thỏa mãn, mỗi cách trên một dòng.
 
-**input**
+**input:**
 ```
 1
 4
 ```
 
-**output**
+**output:**
 ```
 2413
 3142
@@ -2098,14 +2024,14 @@ Cho hai số nguyên dương n và k, với 1 <= n, k <= 8.
 
 Với n xâu ký tự số có độ dài k, có thể có chữ số 0 ở đầu. Hãy tìm cách duyệt tất cả hoán vị các chữ số của từng số trong danh sách sao cho độ chênh lệch của dãy số tạo được là bé nhất có thể.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu ghi hai số n và k.
 - Tiếp theo là n dòng, mỗi dòng ghi một xâu ký tự đúng k chữ số.
 
-**Output:**
+**Đầu ra:**
 - Ghi ra độ chênh lệch bé nhất có thể.
 
-**input**
+**input:**
 ```
 6 4
 5237
@@ -2116,7 +2042,7 @@ Với n xâu ký tự số có độ dài k, có thể có chữ số 0 ở đ�
 2537
 ```
 
-**output**
+**output:**
 ```
 2700
 ```
@@ -2129,23 +2055,22 @@ Hãy sắp xếp dãy theo thứ tự giảm dần, sau đó liệt kê tất c�
 
 Các dãy con được liệt kê theo thứ tự từ điển tăng dần.
 
-**Input:**
-
+**Đầu vào:**
 Dòng đầu ghi số bộ test, mỗi test có 2 dòng:
 - Dòng đầu ghi số N (2 < N <15)
 - Dòng thứ 2 ghi N số của dãy A[], các số đều nguyên dương, nhỏ hơn 100 và khác nhau từng đôi một.
 
-**Output:** 
+**Đầu ra:**
 Với mỗi test, liệt kê tất cả các dãy con có tổng các phần tử là số lẻ theo thứ tự từ điển tăng dần, mỗi dãy con trên một dòng.  
 
-**input**
+**input:**
 ```
 1
 4
 2 3 4 5
 ```
 
-**output**
+**output:**
 ```
 3
 3 2
@@ -2163,23 +2088,22 @@ Cho dãy số A[] có N phần tử là các số nguyên dương khác nhau t�
 
 Các dãy con được liệt kê theo thứ tự từ điển tăng dần.
 
-**Input:**
-
+**Đầu vào:**
 Dòng đầu ghi số bộ test, mỗi test có 2 dòng:
 - Dòng đầu ghi số N (2 < N <15)
 - Dòng thứ 2 ghi N số của dãy A[], các số đều nguyên dương, nhỏ hơn 100 và khác nhau từng đôi một.
 
-**Output:** 
+**Đầu ra:**
 Với mỗi test, liệt kê tất cả các dãy con có tổng các phần tử là số lẻ theo thứ tự từ điển tăng dần, mỗi dãy con trên một dòng.  
 
-**input**
+**input:**
 ```
 1
 4
 3 2 5 4
 ```
 
-**output**
+**output:**
 ```
 2
 3
@@ -2198,23 +2122,22 @@ Hãy liệt kê tất cả các dãy con khác nhau có K phần tử của A[],
 
 Các dãy con được liệt kê lần lượt theo thứ tự từ điển.
 
-**Input:**
-
+**Đầu vào:**
 Dòng đầu ghi số bộ test, mỗi test có 2 dòng:
 - Dòng đầu ghi số N (2 < N <15)
 - Dòng thứ 2 ghi N số của dãy A[], các số đều nguyên dương, nhỏ hơn 100 và khác nhau từng đôi một.
 
-**Output:** 
+**Đầu ra:**
 Với mỗi test, liệt kê tất cả các dãy con thỏa mãn, mỗi dãy con trên một dòng. 
 
-**input**
+**input:**
 ```
 1
 4 3
 3 2 5 4
 ```
 
-**output**
+**output:**
 ```
 2 3 4
 2 3 5
@@ -2226,22 +2149,22 @@ Với mỗi test, liệt kê tất cả các dãy con thỏa mãn, mỗi dãy co
 
 Cho số nguyên dương N. Nhiệm vụ của bạn là hãy liệt kê tất cả các cách phân tích số tự nhiên N thành tổng các số tự nhiên nhỏ hơn hoặc bằng N. Phép hoán vị của một cách được xem là giống nhau. Ví dụ với N = 5 ta có kết quả là: (5), (4, 1), (3, 2), (3, 1, 1), (2, 2, 1), (2, 1, 1, 1), (1, 1, 1, 1, 1) .
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng.
 - T, n thỏa mãn ràng buộc: 1≤T, N≤10.
 
-**Output:** 
+**Đầu ra:**
 - Dòng đầu tiên là số lượng cách phân tích thỏa mãn. Dòng tiếp theo liệt kê đáp án theo mẫu ví dụ đã cho.
 
-**input**
+**input:**
 ```
 2
 4
 5
 ```
 
-**output**
+**output:**
 ```
 5
 (4) (3 1) (2 2) (2 1 1) (1 1 1 1)
@@ -2256,22 +2179,22 @@ Cho số nguyên dương N. Hãy đếm số bước ít nhất để đưa N v�
 - Nếu N chia hết cho 3 bạn có thể giảm N = N/3.
 - Giảm N đi 1.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số N được viết trên một dòng.
 - T, N thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤100000.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 10
 6
 ```
 
-**output**
+**output:**
 ```
 3
 2
@@ -2281,22 +2204,22 @@ Cho số nguyên dương N. Hãy đếm số bước ít nhất để đưa N v�
 
 Cho một xâu ký tự S không có ký tự lặp lại. Hãy đưa ra tất cả các tập con của xâu ký tự S theo thứ tự từ điển.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu ký tự.
 - T, S thỏa mãn ràng buộc: 1≤T≤100; 1≤length(S)≤16.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 3
 abc
 ```
 
-**output**
+**output:**
 ```
 a ab abc ac b bc c
 ```
@@ -2305,15 +2228,15 @@ a ab abc ac b bc c
 
 Cho tập các số A[] = (a1, a2, .., an). Hãy kiểm tra xem ta có thể chia tập A[] thành hai tập con sao cho tổng các phần tử của hai tập con bằng nhau hay không. Đưa ra YES nếu có thể thực hiện được, ngược lại đưa ra NO.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào số N là số lượng phần tử của dãy số A[]; dòng tiếp theo đưa vào N phần tử của dãy số A[].
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T ≤100; 1≤N≤100; 1≤ A[i] ≤100.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4
@@ -2322,7 +2245,7 @@ Cho tập các số A[] = (a1, a2, .., an). Hãy kiểm tra xem ta có thể chi
 1 3 5 
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -2336,21 +2259,21 @@ Hãy tìm cách trả ít tờ tiền nhất với số tiền đúng bằng S
 
 Chú ý: Các tờ tiền có giá trị bất kỳ và có thể bằng nhau, mỗi tờ tiền chỉ được dùng một lần.
 
-**Input:**
+**Đầu vào:**
 - Mỗi bộ test gồm 2 số nguyên n và S (n ≤ 30; S ≤ 10<sup>9</sup>).
 - Dòng thứ hai chứa n số nguyên t[1], t[2], …, t[n] (t[i] ≤ 10<sup>9</sup>)
 
-**Output:**
+**Đầu ra:**
 - Ghi ra trên một dòng số tờ tiền ít nhất phải trả.
 - Nếu không thể tìm được kết quả, in ra -1.
 
-**input**
+**input:**
 ```
 3 5
 1 4 5 
 ```
 
-**output**
+**output:**
 ```
 1
 ```
@@ -2361,20 +2284,20 @@ Chú ý: Các tờ tiền có giá trị bất kỳ và có thể bằng nhau, m
 
 Tại ngân hàng có các mệnh giá bằng 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000. Tổng số tiền cần đổi có giá trị bằng N.  Hãy xác định xem có ít nhất bao nhiêu tờ tiền sau khi đổi tiền?
 
-**input**
+**input:**
 
 Dòng đầu tiên là số lượng bộ test T (T ≤ 50).  Mỗi test gồm 1 số nguyên N ( 1 ≤ N ≤ 100 000).
 
-**output** Với mỗi test, in ra đáp án trên một dòng.
+**output:** Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 2
 70
 121
 ```
 
-**output**
+**output:**
 ```
 2
 3
@@ -2384,10 +2307,10 @@ Dòng đầu tiên là số lượng bộ test T (T ≤ 50).  Mỗi test gồm 1
 
 Trong một buổi học toán, giáo viên viết 2 số nguyên, A và B, và yêu cầu Tèo thực hiện phép cộng. Tèo không bao giờ tính toán sai, nhưng thỉnh thoảng cậu ta chép các con số một cách không chính xác. Lỗi duy nhất của là ghi nhầm '5' thành '6' hoặc ngược lại.  Cho hai số, A và B, tính tổng nhỏ nhất và lớn nhất mà Tèo có thể nhận được.
 
-**Input:**
+**Đầu vào:**
 Có một dòng chứa hai số nguyên dương A và B ( 1 ≤ A, B ≤ 1 000 000).
 
-**Output:**
+**Đầu ra:**
 In ra 2 số nguyên cách nhau một dấu cách, tổng nhỏ nhất và lớn nhất có thể nhận được.
 
 | | Test 1 | Test 2 | Test 3 |
@@ -2399,15 +2322,15 @@ In ra 2 số nguyên cách nhau một dấu cách, tổng nhỏ nhất và lớn
 
 Cho mảng A[] gồm N phần tử. Nhiệm vụ của bạn là tìm **max = for(i: 0 to n - 1) A<sub>i</sub> * i** bằng cách sắp đặt lại các phần tử trong mảng. Chú ý, kết quả của bài toán có thể rất lớn vì vậy bạn hãy đưa ra kết quả lấy modulo với 10<sup>9</sup>+7.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất đưa vào số phần tử của mảng N; dòng tiếp theo đưa vào N số A[i] tương ứng với các phần tử của mảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N, A[i] ≤10<sup>7</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5
@@ -2416,7 +2339,7 @@ Cho mảng A[] gồm N phần tử. Nhiệm vụ của bạn là tìm **max = fo
 1 2 3
 ```
 
-**output**
+**output:**
 ```
 40
 8
@@ -2426,15 +2349,15 @@ Cho mảng A[] gồm N phần tử. Nhiệm vụ của bạn là tìm **max = fo
 
 Cho mảng A[] gồm các số từ 0 đến 9. Nhiệm vụ của bạn là tìm tổng nhỏ nhất của hai số được tạo bởi các số trong mảng A[]. Chú ý, tất cả các số trong mảng A[] đều được sử dụng để tạo nên hai số.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất đưa vào số phần tử của mảng N; dòng tiếp theo đưa vào N số A[i] tương ứng với các phần tử của mảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤20; 0≤A[i]≤9.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 6
@@ -2443,7 +2366,7 @@ Cho mảng A[] gồm các số từ 0 đến 9. Nhiệm vụ của bạn là tì
 5 3 0 7 4
 ```
 
-**output**
+**output:**
 ```
 604
 82
@@ -2453,15 +2376,15 @@ Cho mảng A[] gồm các số từ 0 đến 9. Nhiệm vụ của bạn là tì
 
 Cho mảng A[] gồm N số nguyên không âm và số K. Nhiệm vụ của bạn là hãy chia mảng A[] thành hai mảng con có kích cỡ K và N-K sao cho hiệu giữa tổng hai mảng con là lớn nhất. Ví dụ với mảng A[] = {8, 4, 5, 2, 10}, K=2 ta có kết quả là 17 vì mảng A[] được chia thành hai mảng {4, 2} và { 8, 5,10} có hiệu của hai mảng con là 23-6=17 là lớn nhất.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất đưa vào số phần tử của mảng N và số K; dòng tiếp theo đưa vào N số A[i] tương ứng với các phần tử của mảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, K, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤ K<N ≤50; 0≤A[i]≤1000.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5 2
@@ -2470,7 +2393,7 @@ Cho mảng A[] gồm N số nguyên không âm và số K. Nhiệm vụ của b�
 1 1 1 1 1 1 1 1
 ```
 
-**output**
+**output:**
 ```
 17
 2
@@ -2485,15 +2408,15 @@ Cho mảng A[] gồm N số và thực hiện các thao tác theo nguyên tắc 
 
 Ví dụ với mảng A[] = {1, 6, **3, 4, 5**, 2, 7} ta có câu trả lời là Yes vì: ta chọn mảng con {3, 4, 5} và đảo ngược để nhận được mảng A[]={1, 6, **5, 4, 3**, 2, 7}, chọn tiếp mảng con {6, 5, 4, 3, 2} và đảo ngược ta nhận được mảng A[]={1, 2, 3, 4, 5, 6, 7}. Hãy cho biết ta có thể sắp xếp được mảng A[] bằng cách thực hiện các thao tác kể trên hay không?
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất đưa vào số phần tử của mảng N; dòng tiếp theo đưa vào N số A[i] tương ứng với các phần tử của mảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤ N ≤50; 0≤A[i]≤1000.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 7
@@ -2502,7 +2425,7 @@ Ví dụ với mảng A[] = {1, 6, **3, 4, 5**, 2, 7} ta có câu trả lời l�
 1 6 3 4 5 7 2
 ```
 
-**output**
+**output:**
 ```
 Yes
 No
@@ -2512,15 +2435,15 @@ No
 
 Cho mảng A[], B[] đều có N phần tử. Nhiệm vụ của bạn là tìm giá trị nhỏ nhất của  biểu thức P = A[0] * B[0] + A[1] * B[1] + ..+A[N-1] * B[N-1] bằng cách tráo đổi vị trí các phần tử của cả mảng A[] và B[].
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng thứ nhất đưa vào số phần tử của mảng N; dòng tiếp theo đưa vào N số A[i]; dòng cuối cùng đưa vào N số B[i] các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i], B[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤ N ≤10<sup>7</sup>; 0≤A[i], B[i] ≤10<sup>18</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 7
@@ -2531,7 +2454,7 @@ Cho mảng A[], B[] đều có N phần tử. Nhiệm vụ của bạn là tìm 
 0 1 9 0 1 2 3
 ```
 
-**output**
+**output:**
 ```
 45
 27
@@ -2541,15 +2464,15 @@ Cho mảng A[], B[] đều có N phần tử. Nhiệm vụ của bạn là tìm 
 
 Cho hệ gồm N hành động. Mỗi hành động được biểu diễn như một bộ đôi <S<sub>i</sup>, F<sub>i</sub>> tương ứng với thời gian bắt đầu và thời gian kết thúc của mỗi hành động. Hãy tìm phương án thực hiện nhiều nhất các hành động được thực hiện bởi một máy hoặc một người sao cho hệ không xảy ra mâu thuẫn.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng thứ nhất đưa vào số lượng hành động N; dòng tiếp theo đưa vào N số S<sub>i</sub> tương ứng với thời gian bắt đầu mỗi hành động; dòng cuối cùng đưa vào N số F<sub>i</sub> tương ứng với thời gian kết thúc mỗi hành động; các số được viết cách nhau một vài khoảng trống.
 - T, N, S<sub>i</sub>, F<sub>i</sub> thỏa mãn ràng buộc: 1≤T≤100;  1≤N, F<sub>i</sub>, S<sub>i</sub>≤1000.
 
-**Output:**
+**Đầu ra:**
 - Đưa số lượng lớn nhất các hành động có thể được thực thi bởi một máy hoặc một người.
 
-**input**
+**input:**
 ```
 1
 6
@@ -2557,7 +2480,7 @@ Cho hệ gồm N hành động. Mỗi hành động được biểu diễn như 
 2  4  6  7  9  9
 ```
 
-**output**
+**output:**
 ```
 4
 ```
@@ -2566,15 +2489,15 @@ Cho hệ gồm N hành động. Mỗi hành động được biểu diễn như 
 
 Cho N công việc. Mỗi công việc được biểu diễn như một bộ 3 số nguyên dương <JobId, Deadline, Profit>, trong đó JobId là mã của việc, Deadline là thời gian kết thúc của việc, Profit là lợi nhuận đem lại nếu hoàn thành việc đó đúng hoặc trước thời gian. Thời gian tối thiểu để hoàn thành mỗi công việc là 1 đơn vị thời gian. Hãy cho biết lợi nhuận lớn nhất có thể thực hiện các việc với giả thiết mỗi việc được thực hiện đơn lẻ.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là số lượng Job N; phần thứ hai đưa vào 3×N số tương ứng với N job.
 - T, N, JobId, Deadline, Profit thỏa mãn ràng buộc:1≤T≤100;  1≤N≤1000; 1≤ JobId ≤1000; 1≤ Deadline ≤1000; 1≤ Profit ≤1000.
 
-**Output:**
+**Đầu ra:**
 - Đưa số lượng công việc tương ứng và lợi nhuận lớn nhất có thể đạt được.
 
-**input**
+**input:**
 ```
 2
 4
@@ -2590,7 +2513,7 @@ Cho N công việc. Mỗi công việc được biểu diễn như một bộ 3 
 5 1 15
 ```
 
-**output**
+**output:**
 ```
 2 60
 2 127
@@ -2600,15 +2523,15 @@ Cho N công việc. Mỗi công việc được biểu diễn như một bộ 3 
 
 Cho N sợi dây với độ dài khác nhau được lưu trong mảng A[]. Nhiệm vụ của bạn là nối N sợi dây thành một sợi sao cho tổng chi phí nối dây là nhỏ nhất. Biết chi phí nối sợi dây thứ i và sợi dây thứ j là tổng độ dài hai sợi dây A[i] và A[j].
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào số lượng sợi dây N; dòng tiếp theo đưa vào N số A[i] là độ dài của các sợi dây; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N≤10<sup>6</sup>; 0≤A[i]≤10<sup>6</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4
@@ -2617,7 +2540,7 @@ Cho N sợi dây với độ dài khác nhau được lưu trong mảng A[]. Nhi
 4 2 7 6 9
 ```
 
-**output**
+**output:**
 ```
 29
 62
@@ -2627,21 +2550,21 @@ Cho N sợi dây với độ dài khác nhau được lưu trong mảng A[]. Nhi
 
 Cho N sợi dây với độ dài khác nhau được lưu trong mảng A[]. Nhiệm vụ của bạn là nối N sợi dây thành một sợi sao cho tổng chi phí nối dây là nhỏ nhất. Biết chi phí nối sợi dây thứ i và sợi dây thứ j là tổng độ dài hai sợi dây A[i] và A[j].
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu ghi số bộ test T (T<10). Mỗi bộ test gồm 2 dòng. Dòng đầu tiên là số nguyên N (N ≤ 2*10<sup>6</sup>).
 - Dòng tiếp theo gồm N số nguyên dương c[i] (1 ≤ A[i] ≤ 10<sup>9</sup>).
 
-**Output:**
+**Đầu ra:**
 - In ra đáp án của bộ test trên từng dòng, theo modulo 10<sup>9</sup>+7.
 
-**input**
+**input:**
 ```
 1
 7
 2 4 1 2 10 2 3
 ```
 
-**output**
+**output:**
 ```
 59
 ```
@@ -2650,15 +2573,15 @@ Cho N sợi dây với độ dài khác nhau được lưu trong mảng A[]. Nhi
 
 Cho xâu ký tự S bao gồm các ký tự in thường. Nhiệm vụ của bạn là kiểm tra xem ta có thể sắp đặt lại các ký tự trong S để hai ký tự giống nhau đều không kề nhau hay không? Đưa ra 1 nếu có thể sắp đặt lại các ký tự trong S thỏa mãn yêu cầu bài toán, ngược lại đưa ra -1.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu ký tự S được viết trên một dòng.
 - T, S thỏa mãn ràng buộc: 1≤T≤100;  1≤length(S)≤10000.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 geeksforgeeks
@@ -2666,7 +2589,7 @@ bbbabaaacd
 bbbbb
 ```
 
-**output**
+**output:**
 ```
 1
 1
@@ -2677,15 +2600,15 @@ bbbbb
 
 Cho xâu ký tự S bao gồm các ký tự và số D. Nhiệm vụ của bạn là kiểm tra xem ta có thể sắp đặt lại các ký tự trong S để tất cả các ký tự giống nhau đều có khoảng cách là D hay không? Đưa ra 1 nếu có thể sắp đặt lại các ký tự trong S thỏa mãn yêu cầu bài toán, ngược lại đưa ra -1.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là số D; dòng tiếp theo là xâu S.
 - T, S, D thỏa mãn ràng buộc: 1≤T≤100;  1≤length(S)≤10000; 1≤D≤100.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 2
@@ -2694,7 +2617,7 @@ ABB
 AAA
 ```
 
-**output**
+**output:**
 ```
 1
 -1
@@ -2704,23 +2627,22 @@ AAA
 
 Một số X được gọi là số khối lập phương nếu X là lũy thừa bậc 3 của số Y (X= Y<sup>3</sup>). Cho số nguyên dương N, nhiệm vụ của bạn là tìm số khối lập phương lớn nhất bằng cách loại bỏ đi các chữ số của N. Ví dụ số 4125 ta có kết quả là 125 = 5<sup>3</sup>.
 
-
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số tự nhiên N được viết trên một dòng.
 - T, N thỏa mãn ràng buộc: 1≤T≤100;  1≤N≤10<sup>18</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng. Nếu không tìm được đáp án in ra -1.
 
-**input**
+**input:**
 ```
 2
 4125
 976
 ```
 
-**output**
+**output:**
 ```
 125
 -1
@@ -2736,23 +2658,22 @@ Giả sử bạn là một người nghèo trong địa phương của bạn. Đ
 
 Giả sử bạn đang ở ngày thứ 2 trong tuần và cần tồn tại trong S ngày tới. Hãy cho biết số lượng ngày ít nhất bạn cần phải mua lương thực từ của hàng để tồn tại hoặc bạn sẽ bị chết đói trong S ngày tới.
 
-
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là bộ 3 số N, S, M được viết trên một dòng.
 - T, N, S, M thỏa mãn ràng buộc: 1≤T≤100;  1≤N, S, M ≤30.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra số ngày ít nhất bạn có thể mua lương thực để tồn tại hoặc đưa ra -1 nếu bạn bị chết đói.
 
-**input**
+**input:**
 ```
 2
 16 10 2
 20 10 30
 ```
 
-**output**
+**output:**
 ```
 2
 -1
@@ -2762,22 +2683,22 @@ Giả sử bạn đang ở ngày thứ 2 trong tuần và cần tồn tại tron
 
 Cho hai số nguyên dương S và D, trong đó S là tổng các chữ số và D là số các chữ số của một số. Nhiệm vụ của bạn là tìm số nhỏ nhất thỏa mãn S và D? Ví dụ với S = 9, D = 2 ta có số nhỏ nhất thỏa mãn S và D là 18.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là bộ 2 số S và D được viết trên một dòng.
 - T, S, D thỏa mãn ràng buộc: 1≤T≤100;  1≤ S,D≤1000.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng. Nếu không có đáp án, in ra -1.
 
-**input**
+**input:**
 ```
 2
 9 2
 20 3
 ```
 
-**output**
+**output:**
 ```
 18
 299
@@ -2787,15 +2708,15 @@ Cho hai số nguyên dương S và D, trong đó S là tổng các chữ số v�
 
 Cho xâu ký tự S. Ta gọi giá trị của xâu S là tổng bình phương số lần xuất hiện mỗi ký tự trong S. Hãy tìm giá trị nhỏ nhất của xâu S sau khi thực hiện K lần loại bỏ ký tự.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là số K; phần thứ hai là một xâu ký tự S được viết trên một dòng.
 - DT, S, K thỏa mãn ràng buộc: 1≤T≤100;  1≤length(S)≤10000; 1≤K≤1000.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 2
@@ -2804,7 +2725,7 @@ ABCCBC
 AAAB
 ```
 
-**output**
+**output:**
 ```
 6
 2
@@ -2814,20 +2735,20 @@ AAAB
 
 Hoàng yêu thích các số may mắn. Ta biết rằng một số là số may mắn nếu biểu diễn thập phân của nó chỉ chứa các chữ số may mắn là 4 và 7. Ví dụ, các số 47, 744, 4 là số may mắn và 5, 17, 467 không phải. Hoàng muốn tìm số may mắn bé nhất có tổng các chữ số bằng n. Hãy giúp anh ấy
 
-**Input:**
+**Đầu vào:**
 Dòng đầu ghi số bộ test, mỗi bộ test có một dòng chứa số nguyên n (1 ≤ n ≤ 106) — tổng các chữ số của số may mắn cần tìm.
 
-**Output:**
+**Đầu ra:**
 In ra trên 1 dòng số may mắn bé nhất, mà tổng các chữ số bằng n. Nếu không tồn tại số thỏa mãn, in ra -1.
 
-**input**
+**input:**
 ```
 2
 11
 10
 ```
 
-**output**
+**output:**
 ```
 47
 -1
@@ -2837,22 +2758,22 @@ In ra trên 1 dòng số may mắn bé nhất, mà tổng các chữ số bằng
 
 Một phân số đơn vị nếu tử số của phân số đó là 1. Mọi phân số nguyên dương đều có thể biểu diễn thành tổng các phân số đơn vị. Ví dụ 2/3 = 1/2  + 1/6. Cho phân số nguyên dương P/Q bất kỳ (P < Q), hãy biểu diễn phân số nguyên dương thành tổng phân số đơn vị với số hạng tử là ít nhất.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là bộ đôi tử số P và mẫu số Q của phân số nguyên dương được viết trên một dòng.
 - T, P, Q thỏa mãn ràng buộc: 1≤T≤100;  1≤P, Q≤100.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra đáp án tìm được trên 1 dòng, theo dạng “1/a + 1/b + …”
 
-**input**
+**input:**
 ```
 2
 2 3
 1 3
 ```
 
-**output**
+**output:**
 ```
 1/2 + 1/6 
 1/3
@@ -2862,22 +2783,22 @@ Một phân số đơn vị nếu tử số của phân số đó là 1. Mọi p
 
 Cho một mảng S gồm 2×N ký tự, trong đó có N ký tự ‘[’ và N ký tự ‘]’. Xâu S được gọi là viết đúng nếu S có dạng S2[S1] trong đó S, S2 là các xâu viết đúng. Nhiệm vụ của bạn là tìm số các phép đổi chỗ ít nhất các ký tự kề nhau của xâu S viết sai để  S trở thành viết đúng. Ví dụ với xâu S =”[]][][” ta có số phép đổi chỗ kề nhau ít nhất là 2.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu S viết sai theo nguyên tắc kể trên.
 - T, S thòa mãn ràng buộc: 1≤T≤100; 1≤length(S)≤100000.
 
-**Output:**
+**Đầu ra:**
 - Đưa kết quả trên một dòng.
 
-**input**
+**input:**
 ```
 2
 []][][
 [][][]
 ```
 
-**output**
+**output:**
 ```
 2
 0
@@ -2889,20 +2810,20 @@ Cho dãy số nguyên A[] gồm có N phần tử. Nhiệm vụ của bạn là 
 
 Phép chia trong bài toán này là phép chia nguyên (tức là chỉ lấy phần nguyên của kết quả: ví dụ 5/3 = 1).   
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng phần tử N (1 ≤ N ≤ 1000).
 - Dòng tiếp theo gồm N số nguyên A[i] (1 ≤ A[i] ≤ 2000).
 
-**Output:**
+**Đầu ra:**
 - In ra một số nguyên là tổng các phần tử của dãy số B[] tìm được.
 
-**input**
+**input:**
 ```
 5
 18 27 16 22 6
 ```
 
-**output**
+**output:**
 ```
 25
 ```
@@ -2913,20 +2834,20 @@ Phép chia trong bài toán này là phép chia nguyên (tức là chỉ lấy p
 
 Cho dãy số A gồm N phần tử là các số nguyên. Hãy tính tích lớn nhất của **2 hoặc 3** phần tử trong dãy.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên ghi số N (3 ≤ N ≤ 10000)
 - Dòng thứ 2 ghi N số của dãy A (|A<sub>i</sub>| ≤ 1000)
 
-**Output:**
+**Đầu ra:**
 - Ghi ra kết quả trên một dòng
 
-**input**
+**input:**
 ```
 6
 5 10 -2 3 5 2
 ```
 
-**output**
+**output:**
 ```
 250
 ```
@@ -2935,20 +2856,20 @@ Cho dãy số A gồm N phần tử là các số nguyên. Hãy tính tích lớ
 
 Cho một dãy N viên bi gồm 3 màu xanh, trắng, đỏ xếp lẫn lộn. Bằng cách đổi chỗ từng cặp viên bi cho nhau có thể xếp lại dãy bi trên sao cho các viên bi xanh đứng trước, sau đó đến các viên bi trắng và cuối cùng là các viên bi đỏ. Tìm số lượng ít nhất các phép đổi chỗ cần thực hiện
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu  tiên ghi N (N≤100)
 - Dòng thứ hai ghi xâu ký tự mô tả dãy bi (T-trắng, X-xanh, D-đỏ).
 
-**Output:**
+**Đầu ra:**
 - Một dòng duy nhất ghi số phép đổi chỗ tối thiểu cần thực hiện
 
-**input**
+**input:**
 ```
 9
 TTXDDDTDX
 ```
 
-**output**
+**output:**
 ```
 4
 ```
@@ -2959,15 +2880,15 @@ Bạn được giao cho N công việc, công việc thứ i có thời gian b�
 
 Bạn hãy lựa chọn các công việc một cách tối ưu sao cho số công việc làm được là nhiều nhất.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test gồm 1 số nguyên N ( 1 ≤ N ≤ 100 000).
 - N dòng tiếp theo, mỗi dòng gồm 2 số A[i] và B[i] (0 ≤ A[i] < B[i] ≤ 10<sup>6</sup>).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 1
 6
@@ -2979,7 +2900,7 @@ Bạn hãy lựa chọn các công việc một cách tối ưu sao cho số cô
 8 9
 ```
 
-**output**
+**output:**
 ```
 4
 ```
@@ -2992,15 +2913,15 @@ Trên trục Ox tính từ vị trí 0, người ta muốn xếp nhiều nhất 
 
 Hãy tính số đoạn thẳng nhiều nhất có thể được lựa chọn để đưa lên trục Ox và không có đoạn nào chồng lấn lên nhau.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên ghi số bộ test, không quá 10.
 - Với mỗi bộ test: dòng đầu ghi số N là số đoạn thẳng (không quá 10<sup>5</sup>)
 - Tiếp theo là N dòng, mỗi dòng có 2 số nguyên mô tả đoạn thẳng. Các giá trị tọa độ đều là các số nguyên không âm và không quá 10<sup>6</sup>.
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, viết trên 1 dòng số lượng đoạn thẳng nhiều nhất có thể được lựa chọn thỏa mãn điều kiện đề bài.
 
-**input**
+**input:**
 ```
 1
 10
@@ -3016,7 +2937,7 @@ Hãy tính số đoạn thẳng nhiều nhất có thể được lựa chọn �
 32 40
 ```
 
-**output**
+**output:**
 ```
 5
 ```
@@ -3025,18 +2946,15 @@ Hãy tính số đoạn thẳng nhiều nhất có thể được lựa chọn �
 
 Cho hai số nguyên dương N và S. Hãy lựa chọn các chữ số phù hợp để tạo ra số nhỏ nhất và số lớn nhất có N chữ số sao cho tổng chữ số đúng bằng S.
 
-**Input:**
-
+**Đầu vào:**
 Chỉ có một dòng ghi hai số N và S. (0 < N <= 100; 0 <= S <= 900)
 
-**Output:**
-
+**Đầu ra:**
 Ghi ra hai số nhỏ nhất và lớn nhất tìm được, cách nhau một khoảng trống.
 
 Nếu không thể tìm được thì ghi ra “-1 -1”
 
-
-**input**
+**input:**
 ```
 3 20
 ________________________________________________________________
@@ -3045,7 +2963,7 @@ ________________________________________________________________
 3 0
 ```
 
-**output**
+**output:**
 ```
 299 992
 ________________________________________________________________
@@ -3064,20 +2982,20 @@ Với tất cả các cặp 1 ≤ i ≤ j ≤ N.
 
 Hãy tính giá trị lớn nhất của f(i,j) + g(i,j).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu ghi số N (1 ≤ N ≤ 50000)
 - Dòng thứ 2 ghi N số nguyên của dãy A[]
 
-**Output:**
+**Đầu ra:**
 - Ghi ra giá trị lớn nhất của f(i,j) + g(i,j)
 
-**input**
+**input:**
 ```
 5
 -3 5 -10 8 -2
 ```
 
-**output**
+**output:**
 ```
 26
 ```
@@ -3090,16 +3008,16 @@ Chiếc máy ATM đã được tối ưu hóa sao cho số lượng tờ tiền 
 
 Các bạn hãy thử tính xem Tý sẽ nhận được bao nhiêu tờ tiền? Và có bao nhiêu cách thỏa mãn?
 
-**Input:**
+**Đầu vào:**
 - Số đầu tiên là số lượng bộ test T (T ≤ 1000). Mỗi test gồm 2 dòng:
 - Dòng thứ nhất chứa số nguyên W.
 - Dòng thứ hai chứa số nguyên c.
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, hãy in ra số lượng tờ tiền nhỏ nhất mà máy ATM sinh ra và số tổ hợp các tờ tiền khác nhau thỏa mãn tổng giá trị của chúng bằng W.
 - Nếu không có đáp án, in ra số 0 trên một dòng.
 
-**input**
+**input:**
 ```
 4
 2000
@@ -3112,7 +3030,7 @@ Các bạn hãy thử tính xem Tý sẽ nhận được bao nhiêu tờ tiền?
 1
 ```
 
-**output**
+**output:**
 ```
 1 1
 2 1
@@ -3129,15 +3047,15 @@ Subtask 2: 70% số test còn lại, c ≤ 15, W ≤ 10<sup>18</sup>.
 
 Cho dãy số A[], B[] và C[] là dãy không giảm và có lần lượt N, M, K phần tử. Nhiệm vụ của bạn là hãy tìm các phần tử chung của 3 dãy số này.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm số nguyên N, M và K (1≤ N, M, K ≤ 100 000).
 - Dòng tiếp theo gồm N số nguyên A[i], rồi M số nguyên B[i] và K số nguyên C[i]. (0 ≤ A[i], B[i], C[i] ≤ 10<sup>9</sup>).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng là đáp án thu được. Nếu không tìm được đáp án, in ra “NO”.
 
-**input**
+**input:**
 ```
 3
 6 5 8
@@ -3154,7 +3072,7 @@ Cho dãy số A[], B[] và C[] là dãy không giảm và có lần lượt N, M
 7 8 9
 ```
 
-**output**
+**output:**
 ```
 20 80
 5 5
@@ -3167,20 +3085,20 @@ Cho một dãy số a[] có n phần tử gồm các số từ 1 đến n theo 1
 
 Hãy tính số bước tối thiểu cần thực hiện để hoàn thành việc sắp xếp.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên ghi 1 số n: số lượng phần tử của dãy a (1 ≤ n ≤ 100000)
 - Dòng tiếp theo gồm n số từ 1 đến n theo thứ tự ngẫu nhiên
 
-**Output:**
+**Đầu ra:**
 - Một số nguyên duy nhất là số bước tối thiểu cần thực hiện để hoàn thành việc sắp xếp.
 
-**input**
+**input:**
 ```
 5
 4 1 2 5 3
 ```
 
-**output**
+**output:**
 ```
 2
 ```
@@ -3191,24 +3109,22 @@ Hãy tính số bước tối thiểu cần thực hiện để hoàn thành vi�
 
 Cho số nguyên dương N và K. Hãy tính NK modulo 10<sup>9</sup>+7.
 
-**Input:**
-
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 
 Mỗi test gồm 1 số nguyên N và K (1 ≤ N ≤ 1000, 1 ≤ K ≤ 10<sup>9</sup>).
 
-**Output:**
-
+**Đầu ra:**
 Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 2
 2 3
 4 2
 ```
 
-**output**
+**output:**
 ```
 8
 16
@@ -3218,22 +3134,22 @@ Với mỗi test, in ra đáp án trên một dòng.
 
 Cho mảng số N. Ta gọi số đảo của N là R. Hãy tìm lũy thừa R của N. Đưa ra kết quả của bài toán dưới dạng modulo với 10<sup>9</sup> + 7.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm là số N được ghi trên một dòng.
 - T, N thỏa mãn ràng buộc: 1≤T≤100;  1≤N≤10<sup>10</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 2
 12
 ```
 
-**output**
+**output:**
 ```
 4
 864354781
@@ -3243,17 +3159,19 @@ Cho mảng số N. Ta gọi số đảo của N là R. Hãy tìm lũy thừa R c
 
 Cho số nguyên dương n. Hãy cho biết có bao nhiêu dãy số nguyên dương có tổng các phần tử trong dãy bằng n. 
 
-**Dữ liệu vào:** dòng đầu tiên chứa số nguyên T là số bộ dữ liệu, mỗi bộ dữ liệu ghi một số nguyên dương n duy nhất không qua 1018. 
+**Đầu vào:**
+dòng đầu tiên chứa số nguyên T là số bộ dữ liệu, mỗi bộ dữ liệu ghi một số nguyên dương n duy nhất không qua 1018. 
 
-**Kết quả:** Mỗi bộ dữ liệu ghi ra một số nguyên duy nhất là số dư của kết quả tìm được khi chia cho 123456789.
+**Đầu ra:**
+Mỗi bộ dữ liệu ghi ra một số nguyên duy nhất là số dư của kết quả tìm được khi chia cho 123456789.
 
-**input**
+**input:**
 ```
 1
 3
 ```
 
-**output**
+**output:**
 ```
 4
 ```
@@ -3268,24 +3186,22 @@ Ví dụ với 2 bước biến đổi, ta có [1] - [1 2 1] - [1 2 1 3 1 2 1].
 
 Các bạn hãy xác định số thứ K trong dãy số cuối cùng là bao nhiêu?
 
-**Input:**
-
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 
 Mỗi test gồm số nguyên dương N và K (1 ≤ N ≤ 50, 1 ≤ K ≤ 2N - 1).
 
-**Output:**
-
+**Đầu ra:**
 Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 2
 3 2
 4 8
 ```
 
-**output**
+**output:**
 ```
 2
 4
@@ -3295,18 +3211,20 @@ Với mỗi test, in ra đáp án trên một dòng.
 
 Một dãy xâu ký tự G chỉ bao gồm các chữ cái A và B được gọi là dãy xâu Fibonacci nếu thỏa mãn tính chất:    G(1) = A; G(2) = B; G(n) = G(n-2)+G(n-1). Với phép cộng (+) là phép nối hai xâu với nhau.  Bài toán đặt ra là tìm ký tự ở vị trí thứ i (tính từ 1) của xâu Fibonacci thứ n.
 
-**Dữ liệu vào:** Dòng 1 ghi số bộ test. Mỗi bộ test ghi trên một dòng 2 số nguyên N và i (1<N<93). Số i đảm bảo trong phạm vi của xâu G(N) và không quá 18 chữ số. 
+**Đầu vào:**
+Dòng 1 ghi số bộ test. Mỗi bộ test ghi trên một dòng 2 số nguyên N và i (1<N<93). Số i đảm bảo trong phạm vi của xâu G(N) và không quá 18 chữ số. 
 
-**Kết quả:** Ghi ra màn hình kết quả tương ứng với từng bộ test.
+**Đầu ra:**
+Ghi ra màn hình kết quả tương ứng với từng bộ test.
 
-**input**
+**input:**
 ```
 2
 6 4
 8 19
 ```
 
-**output**
+**output:**
 ```
 A
 B
@@ -3318,21 +3236,21 @@ Cho số nguyên dương N. Mỗi bước, bạn sẽ biến đổi N thành [N/
 
 Nhiệm vụ của bạn là hãy đếm các số bằng 1 trong đoạn [L, R] của dãy số cuối cùng.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm 3 số nguyên N, L, R (1 ≤ N, L, R < 2<sup>50</sup>, 0 ≤ R-L ≤ 100 000).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 2
 7 2 5
 10 3 10
 ```
 
-**output**
+**output:**
 ```
 4
 5
@@ -3346,20 +3264,20 @@ Giải thích test 2: Dãy số sau khi biến đổi là [1, 0, 1, 1, 1, 0, 1, 
 
 Cho hai số A, B ở hệ cơ số K. Hãy tính tổng hai số đó ở hệ cơ số K.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu ghi số bộ test T (T<10). Mỗi bộ test ghi 3 số K,A,B.
 - 2≤K≤10; A và B nếu biểu diễn trong hệ cơ số 10 đều nhỏ hơn 10<sup>9</sup>
 
-**Output:**
+**Đầu ra:**
 - In ra tổng của A và B trong hệ cơ số K
 
-**input**
+**input:**
 ```
 1
 2 1 10
 ```
 
-**output**
+**output:**
 ```
 11
 ```
@@ -3376,14 +3294,14 @@ Các phần tử đầu tiên của dãy số là 0, 1, 1, 2, 3, 5, 8, ...
 
 Nhiệm vụ của bạn là hãy xác định số Fibonaci thứ n. Do đáp số có thể rất lớn, in ra kết quả theo modulo 10<sup>9</sup>+7.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 1000).
 - Mỗi test bắt gồm một số nguyên N (1 ≤ N ≤ 10<sup>9</sup>).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 3
 2
@@ -3391,7 +3309,7 @@ Nhiệm vụ của bạn là hãy xác định số Fibonaci thứ n. Do đáp s
 20
 ```
 
-**output**
+**output:**
 ```
 1
 8
@@ -3402,14 +3320,14 @@ Nhiệm vụ của bạn là hãy xác định số Fibonaci thứ n. Do đáp s
 
 Cho ma trận vuông A kích thước N x N. Nhiệm vụ của bạn là hãy tính ma trận X = A<sup>K</sup> với K là số nguyên cho trước. Đáp số có thể rất lớn, hãy in ra kết quả theo modulo 10<sup>9</sup>+7.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 100).
 - Mỗi test bắt gồm một số nguyên N và K (1 ≤ N ≤ 10, 1 ≤ K ≤ 10<sup>9</sup>) là kích thước của ma trận và số mũ.
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra kết quả của ma trận X.
 
-**input**
+**input:**
 ```
 2
 2 5
@@ -3421,7 +3339,7 @@ Cho ma trận vuông A kích thước N x N. Nhiệm vụ của bạn là hãy t
 7 8 9
 ```
 
-**output**
+**output:**
 ```
 8 5
 5 3
@@ -3434,22 +3352,22 @@ Cho ma trận vuông A kích thước N x N. Nhiệm vụ của bạn là hãy t
 
 Cho mảng A[] gồm N số có cả các số âm và số dương. Nhiệm vụ của bạn là tìm mảng con liên tục có tổng lớn nhất của mảng. Ví dụ với mảng A[]={-2, -5, 6, -2,-3, 1, 5, -6} ta có kết quả là 7 tương ứng với dãy con {6, -2, -3, 1, 5}.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất đưa vào hai số N tương ứng với số phần tử của mảng; dòng tiếp theo đưa vào N số A[i]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤ N≤100; -100≤A[i] ≤100.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra tổng con liên tục lớn nhất của mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 8
 -2 -5 6 -2 -3 1 5 -6
 ```
 
-**output**
+**output:**
 ```
 7
 ```
@@ -3458,22 +3376,22 @@ Cho mảng A[] gồm N số có cả các số âm và số dương. Nhiệm v�
 
 Cho hai xâu nhị phân biểu diễn hai số. Nhiệm vụ của bạn là đưa ra tích của hai số. Ví dụ với xâu S1=”1100” và S2=”1010” ta sẽ có kết quả là 120.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 2 hai xâu nhị phân S1, S2 được viết trên một dòng.
 - T, S1, S2 thỏa mãn ràng buộc: 1≤T≤100;  1≤ length(S1), length(S2)≤30.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra tích của mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 1100 01
 01 01
 ```
 
-**output**
+**output:**
 ```
 12
 1
@@ -3483,15 +3401,15 @@ Cho hai xâu nhị phân biểu diễn hai số. Nhiệm vụ của bạn là đ
 
 Cho hai đa thức P và Q được biểu diễn như một mảng bao gồm các hệ số của đa thức. Ví dụ với P(x) = 5 + 0x<sup>1</sup> +10x<sup>2</sup> + 6x<sup>3</sup> được biểu diễn như mảng P[] ={5, 0, 10, 6}. Hãy đưa ra đa thức R = P×Q theo các hệ số của R với cách biểu diễn như trên.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng thứ nhất đưa vào hai số M, N tương ứng với lũy thừa lớn nhất của đa thức P và Q; dòng tiếp theo đưa vào M số là hệ số của đa thức P; dòng cuối cùng đưa vào M số là hệ số của đa thức Q.
 - T, M, N, P[i], Q[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤M, N≤100; 1≤P[i], Q[i]≤100.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4 3
@@ -3502,7 +3420,7 @@ Cho hai đa thức P và Q được biểu diễn như một mảng bao gồm c�
 4 0 2 5
 ```
 
-**output**
+**output:**
 ```
 2 0 10 4 12 8
 4 36 14 39 79 23 34 35
@@ -3516,15 +3434,15 @@ Một con đã chứa một con kanguru rồi, thì không thể nhảy vào tú
 
 Bầy Kanguru rất thích chơi trốn tìm, vì vậy chúng thường xuyên nhảy vào túi của nhau. Các bạn hãy tính toán xem trong trường hợp tối ưu, số con kanguru nhìn thấy trong vườn thú ít nhất bằng bao nhiêu?
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm số nguyên N (1 ≤ N ≤ 100 000).
 - Dòng tiếp theo gồm N số nguyên A[i] (1 ≤ A[i] ≤ 100 000).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 2
 8
@@ -3533,7 +3451,7 @@ Bầy Kanguru rất thích chơi trốn tìm, vì vậy chúng thường xuyên 
 9 1 6 2 6 5 8 3
 ```
 
-**output**
+**output:**
 ```
 5
 5
@@ -3545,15 +3463,15 @@ Giải thích test 1: Nhóm 2 – 5, 2 – 6, 4 – 8, 7, 9.
 
 Cho mảng A[] gồm N phần. Ta gọi cặp nghịch thế của mảng A[] là số các cặp i, j sao cho i<j và A[i]>A[j]. Đối với mảng đã được sắp xếp thì số cặp nghịch thế bằng 0. Mảng đã sắp theo thứ tự giảm dần có số đảo ngược cực đại. Nhiệm vụ của bạn là hãy đưa ra số cặp nghịch thế của mảng A[] gồm N phần tử.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào số N tương ứng với số phần tử của mảng A[]; phần thứ 2 là N số của mảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N≤10<sup>7</sup>; 1≤A[i]≤10<sup>18</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5
@@ -3562,7 +3480,7 @@ Cho mảng A[] gồm N phần. Ta gọi cặp nghịch thế của mảng A[] l�
 5 4 3 2 1
 ```
 
-**output**
+**output:**
 ```
 3
 10
@@ -3572,16 +3490,15 @@ Cho mảng A[] gồm N phần. Ta gọi cặp nghịch thế của mảng A[] l�
 
 Cho mảng đã được sắp xếp A[] gồm N phần tử không có hai phần tử giống nhau và số X. Nhiệm vụ của bạn là tìm floor(X). Trong đó, K=floor(X) là phần tử lớn nhất trong mảng A[] nhỏ hơn hoặc bằng X.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất đưa vào số N là số phần tử của mảng A[] và số X; dòng tiếp theo đưa vào N số của mảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤ N≤10<sup>7</sup>; 1≤ A[i]≤10<sup>18</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra vị trí của  floor(X) trong mảng A[] hoặc -1 nếu không tồn tại floor(X) của mỗi test theo từng dòng.
 
-
-**input**
+**input:**
 ```
 3
 7 0
@@ -3592,7 +3509,7 @@ Cho mảng đã được sắp xếp A[] gồm N phần tử không có hai ph�
 1 2 8 10 11 12 19
 ```
 
-**output**
+**output:**
 ```
 -1
 2
@@ -3603,15 +3520,15 @@ Cho mảng đã được sắp xếp A[] gồm N phần tử không có hai ph�
 
 Cho hai mảng đã được sắp xếp A[], B[] gồm M, N phần tử theo thứ tự và số K. Nhiệm vụ của bạn là tìm phần tử ở vị trí số K sau khi trộn hai mảng để nhận được một mảng được sắp xếp.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng thứ nhất đưa vào số M, N, K; dòng tiếp theo đưa vào M số của mảng A[];dòng tiếp theo đưa vào N số của mảng B[];các số được viết cách nhau một vài khoảng trống.
 - T, M,N, A[i], B[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤ N, A[i], B[i]≤10<sup>6</sup>; 1≤ K≤N+M.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra giá trị phần tử thứ K của mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 5 4 5
@@ -3619,7 +3536,7 @@ Cho hai mảng đã được sắp xếp A[], B[] gồm M, N phần tử theo th
 1 4 8 10
 ```
 
-**output**
+**output:**
 ```
 6
 ```
@@ -3628,15 +3545,15 @@ Cho hai mảng đã được sắp xếp A[], B[] gồm M, N phần tử theo th
 
 Cho hai mảng đã được sắp xếp A[] và B[] gồm N và N-1 phần tử. Các phần tử của mảng A[] chỉ khác mảng B[] một phần tử duy nhất. Hãy tìm vị trí của phần tử khác nhau giữa A[] và B[].
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng thứ nhất đưa vào số N; dòng tiếp theo đưa vào N số của mảng A[];dòng tiếp theo đưa vào N-1 số của mảng B[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i], B[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤ N≤10<sup>7</sup>; 0≤ A[i]≤10<sup>18</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 7
@@ -3647,7 +3564,7 @@ Cho hai mảng đã được sắp xếp A[] và B[] gồm N và N-1 phần tử
 3 5 7 11 13
 ```
 
-**output**
+**output:**
 ```
 5
 4
@@ -3657,15 +3574,15 @@ Cho hai mảng đã được sắp xếp A[] và B[] gồm N và N-1 phần tử
 
 Cho mảng A[] gồm N phần tử chỉ bao gồm các số 0 và 1. Các số 0 được đặt trước các số 1. Hãy đếm các số 0 với thời gian log(N).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất đưa vào số N; dòng tiếp theo đưa vào N số của mảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤ N≤1000; 0≤ A[i]≤1.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 12
@@ -3676,7 +3593,7 @@ Cho mảng A[] gồm N phần tử chỉ bao gồm các số 0 và 1. Các số 
 1 1 1 1 1 1
 ```
 
-**output**
+**output:**
 ```
 9
 5
@@ -3687,15 +3604,15 @@ Cho mảng A[] gồm N phần tử chỉ bao gồm các số 0 và 1. Các số 
 
 Cho N điểm trên mặt phẳng tọa độ Oxy. Bạn cần tìm khoảng cách ngắn nhất giữa hai điểm trong số N điểm đã cho.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi một số nguyên N (1 ≤ N ≤ 100 000).
 - N dòng tiếp theo, mỗi dòng gồm 2 số nguyên X[i], Y[i] (-10<sup>6</sup> ≤ X[i], Y[i] ≤ 10<sup>6</sup>).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra đáp án trên một dòng với độ chính xác 6 chữ số sau dấu phẩy.
 
-**input**
+**input:**
 ```
 2
 6
@@ -3711,7 +3628,7 @@ Cho N điểm trên mặt phẳng tọa độ Oxy. Bạn cần tìm khoảng cá
 4 0
 ```
 
-**output**
+**output:**
 ```
 1.414214
 1.000000
@@ -3723,15 +3640,15 @@ Cho dãy số A[] gồm có N phần tử đã được sắp xếp tăng dần 
 
 Nhiệm vụ của bạn là kiểm tra xem số K có xuất hiện trong dãy số hay không. Nếu có hãy in ra vị trí trong dãy A[], nếu không in ra “NO”.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test bắt đầu bằng số nguyên N và K (N ≤ 100 000, 0 ≤ K ≤ 10<sup>6</sup>).
 - Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 10<sup>6</sup>), các phần tử là riêng biệt.
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test in ra trên một dòng đáp án tìm được.
 
-**input**
+**input:**
 ```
 2
 5 3
@@ -3740,7 +3657,7 @@ Nhiệm vụ của bạn là kiểm tra xem số K có xuất hiện trong dãy 
 0 1 2 3 9 10
 ```
 
-**output**
+**output:**
 ```
 3
 NO
@@ -3762,18 +3679,20 @@ Cho hai số tự nhiên N và K (1<N<93; K đảm bảo trong phạm vi của x
 
 Hãy xác định ký tự thứ K trong xâu X[N] là ký tự ‘0’ hay ký tự ‘1’.
 
-**Input:** Dòng 1 ghi số bộ test. Mỗi bộ test ghi trên một dòng 2 số nguyên N và K.
+**Đầu vào:**
+Dòng 1 ghi số bộ test. Mỗi bộ test ghi trên một dòng 2 số nguyên N và K.
 
-**Output:** Ghi ra màn hình kết quả tương ứng với từng bộ test.
+**Đầu ra:**
+Ghi ra màn hình kết quả tương ứng với từng bộ test.
 
-**input**
+**input:**
 ```
 2
 3 1
 4 3
 ```
 
-**output**
+**output:**
 ```
 0
 1
@@ -3791,21 +3710,21 @@ Cứ như vậy cho đến bước thứ N (0 < N < 26)
 
 Hãy xác định ký tự thứ K trong bước biến đổi thứ N là chữ cái gì?
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm số nguyên dương N và K (1 ≤ N ≤ 25, 1 ≤ K ≤ 2N - 1).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 2
 3 2
 4 8
 ```
 
-**output**
+**output:**
 ```
 B
 D
@@ -3815,15 +3734,15 @@ D
 
 Cho mảng A[] gồm n số nguyên dương và số K. Hãy đếm số các cặp phần tử có hiệu nhỏ hơn K. Ví dụ A[] = {1, 10, 4, 2 }, K=3 ta nhận được kết quả là 2 tương ứng với các cặp (1, 2), (4, 2).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Mỗi bộ test gồm hai dòng: dòng đầu tiên ghi số n và số K; dòng tiếp theo là n số A[i] ; các số được viết cách nhau một vài khoảng trống.
 - T, n, k, A[i] thỏa mãn ràng buộc: 1 ≤ T ≤ 100; 1 ≤ n ≤ 10<sup>4</sup>; 1 ≤ k ≤ 10<sup>3</sup>; 1 ≤ A[i] ≤ 10<sup>5</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4 3
@@ -3832,7 +3751,7 @@ Cho mảng A[] gồm n số nguyên dương và số K. Hãy đếm số các c�
 2 3 4
 ```
 
-**output**
+**output:**
 ```
 2
 3
@@ -3842,17 +3761,15 @@ Cho mảng A[] gồm n số nguyên dương và số K. Hãy đếm số các c�
 
 Cho ma trận vuông A kích thước N x N. Nhiệm vụ của bạn là hãy tính ma trận X = AK với K là số nguyên cho trước. Sau đó, tính tổng các phần tử của cột cuối cùng. Đáp số có thể rất lớn, hãy in ra kết quả theo modulo 10<sup>9</sup>+7.
 
-**Input:**
-
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T ≤ 100).
 
 Mỗi test bắt gồm một số nguyên N và K (1 ≤ N ≤ 10, 1 ≤ K ≤ 10<sup>9</sup>) là kích thước của ma trận và số mũ.
 
-**Output:** 
-
+**Đầu ra:**
 Với mỗi test, in ra kết quả của ma trận X.
 
-**input**
+**input:**
 ```
 2
 2 5
@@ -3864,7 +3781,7 @@ Với mỗi test, in ra kết quả của ma trận X.
 7 8 9
 ```
 
-**output**
+**output:**
 ```
 8
 581039956
@@ -3882,21 +3799,21 @@ A[i] = A[i-1] + A[i-2] với mọi n ≥ 2.
 
 Cho số nguyên dương N không quá 109. Hãy xác định số thứ N trong dãy A[]. Nếu kết quả quá lớn, hãy in ra theo modulo 10<sup>9</sup>+7.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 1000).
 - Mỗi test bắt gồm một số nguyên N (1 ≤ N ≤ 10<sup>9</sup>).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 2
 2
 6
 ```
 
-**output**
+**output:**
 ```
 1
 8
@@ -3914,14 +3831,14 @@ Nhiệm vụ của bạn là hãy tính tổng N phần tử đầu tiên của 
 
 F(N) = T(1) + T(2) + …+ T(N)
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 100).
 - Mỗi test gồm một số nguyên dương N (N ≤ 10<sup>9</sup>).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được theo modulo 10<sup>15</sup>+7.
 
-**input**
+**input:**
 ```
 5
 1
@@ -3931,7 +3848,7 @@ F(N) = T(1) + T(2) + …+ T(N)
 5
 ```
 
-**output**
+**output:**
 ```
 1
 3
@@ -3946,17 +3863,15 @@ Cho hai số nguyên không âm a và b. Hãy tính ab.
 
 Nếu kết quả quá lớn hãy chia dư cho 10<sup>9</sup> + 7.
 
-**Input**
-
+**Đầu vào:**
 Gồm không quá 20 bộ test, mỗi test ghi trên một dòng hai số a,b; a không quá 9 chữ số, b không quá 18 chữ số.
 
 Input kết thúc khi a = b = 0
 
-**Output**
-
+**Đầu ra:**
 Với mỗi test ghi ra kết quả tính được trên một dòng.
 
-**input**
+**input:**
 ```
 2 3
 2 4
@@ -3964,7 +3879,7 @@ Với mỗi test ghi ra kết quả tính được trên một dòng.
 0 0
 ```
 
-**output**
+**output:**
 ```
 8
 16
@@ -3981,17 +3896,17 @@ Giá vé máy bay từ đất nước i đến đất nước j là C[i][j] (dĩ
 
 Bạn hãy giúp Tí tìm 1 hành trình đi qua tất cả các nước, mỗi nước đúng 1 lần sao cho chi phí là bé nhất nhé.
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T <= 20).
 
 Mỗi test bắt đầu bởi số nguyên dương N (5 <= N <= 15).
 
 N dòng tiếp theo, mỗi dòng gồm N số nguyên mô tả chi phí C[i][j] (1<= C[i][j] <= 10000).
 
-**Output:** 
+**Đầu ra:**
 Với mỗi test, in ra đáp án tìm được trên một dòng.
 
-**input**
+**input:**
 ```
 1
 6
@@ -4003,26 +3918,25 @@ Với mỗi test, in ra đáp án tìm được trên một dòng.
 5 4 3 3 1 0
 ```
 
-**output**
+**output:**
 ```
 8
 ```
 
 ### DSA_P035 - HÀNH TRÌNH DU LỊCH - 2
 
-Công ty X chuyên tổ chức các hành trình du lịch trong vùng lãnh thổ gồm N điểm du lịch trọng điểm, được đánh số từ 1 tới N. Hệ thống giao thông trong vùng gồm M tuyến đường một chiều khác nhau, tuyến đường thứ j (j = 1,2,…M) cho phép đi từ địa điểm uj tới địa điểm vj với chi phí đi lại là số nguyên dương c (uj, vj). Công ty vừa nhận được một hợp đồng yêu cầu xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch 1 và đi thăm K địa điểm du lịch s1, s2, …, sk (khác địa điểm 1) và sau đó quay về địa điểm xuất phát 1 với tổng chi phí là nhỏ nhất.
-![DSA_P035](image/DSA_P035.png)
+Công ty X chuyên tổ chức các hành trình du lịch trong vùng lãnh thổ gồm N điểm du lịch trọng điểm, được đánh số từ 1 tới N. Hệ thống giao thông trong vùng gồm M tuyến đường một chiều khác nhau, tuyến đường thứ j (j = 1,2,…M) cho phép đi từ địa điểm uj tới địa điểm vj với chi phí đi lại là số nguyên dương c (uj, vj). Công ty vừa nhận được một hợp đồng yêu cầu xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch 1 và đi thăm K địa điểm du lịch s1, s2, …, sk (khác địa điểm 1) và sau đó quay về địa điểm xuất phát 1 với tổng chi phí là nhỏ nhất.![DSA_P035](image/DSA_P035.png)
 Yêu cầu: Cho thông tin về hệ thống giao thông và k địa điểm du lịch s1, s2, …, sk. Hãy xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch 1 và đi thăm k địa điểm, sau đó quay về địa điểm du lịch 1 với tổng chi phí nhỏ nhất.
 
-**Input:** 
+**Đầu vào:**
 • Dòng thứ nhất chứa 3 số nguyên N, M, K (N <= 1000, M <= 10^5, K <= 15).
 • Dòng thứ hai chứa K số nguyên dương s1, s2, …, sk.
 • M dòng tiếp, mỗi dòng gồm 3 số nguyên u, v, c (u != v, c <= 10^9) mô tả thông tin về tuyến đường giữa địa điểm u và v có độ dài bằng c.
 
-**Output:** 
+**Đầu ra:**
 In ra một số nguyên là tổng chi phí nhỏ nhất tìm được. Nếu không tìm được một hành trình du lịch nào, in ra số -1.
 
-**input**
+**input:**
 ```
 6 8 2
 2 5
@@ -4036,7 +3950,7 @@ In ra một số nguyên là tổng chi phí nhỏ nhất tìm được. Nếu k
 5 6 7
 ```
 
-**output**
+**output:**
 ```
 19
 ```
@@ -4044,14 +3958,14 @@ In ra một số nguyên là tổng chi phí nhỏ nhất tìm được. Nếu k
 
 Cho ma trận kích thước N x N (1 <= a[i][j] <= 10^6). Hãy chọn N ô, mỗi hàng một ô, một cột một ô, sao cho tổng các phần tử được chọn là lớn nhất.
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T <= 20).
 Mỗi test bắt đầu bởi số nguyên dương N (2 <= N <= 20).
 N dòng tiếp theo, mỗi dòng gồm N số nguyên mô tả ma trận.
-**Output:** 
+**Đầu ra:**
 Với mỗi test, in ra đáp án tìm được trên một dòng.
 
-**input**
+**input:**
 ```
 2
 3
@@ -4063,7 +3977,7 @@ Với mỗi test, in ra đáp án tìm được trên một dòng.
 2 1
 ```
 
-**output**
+**output:**
 ```
 9
 4
@@ -4071,19 +3985,18 @@ Với mỗi test, in ra đáp án tìm được trên một dòng.
 
 ### DSA_P040 - CHỌN Ô - 2
 
-Cho một bảng kích thước 4 x N (gồm N cột). Mỗi ô (i, j) có điểm bằng A[i][j]. Bạn cần chọn một tập hợp các ô sao cho điểm đạt được là lớn nhất, và trong các ô được chọn, không có 2 ô nào có chung cạnh.
-![DSA_P040](image/DSA_P040.png)
+Cho một bảng kích thước 4 x N (gồm N cột). Mỗi ô (i, j) có điểm bằng A[i][j]. Bạn cần chọn một tập hợp các ô sao cho điểm đạt được là lớn nhất, và trong các ô được chọn, không có 2 ô nào có chung cạnh.![DSA_P040](image/DSA_P040.png)
 Ví dụ với bảng có N = 3 như hình vẽ trên. Cách chọn tập tối ưu là (3,1), (1, 2), (4, 2) và (3, 3).
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T <= 20).
 Mỗi test bắt đầu bởi số nguyên dương N (1 <= N <= 10000).
 4 dòng tiếp theo, mỗi dòng gồm N số A[i][j], là điểm tại ô (i,j) (-10000 <= A[i][j] <= 10000).
 
-**Output:** 
+**Đầu ra:**
 Với mỗi test, in ra đáp án tìm được trên một dòng.
 
-**input**
+**input:**
 ```
 2
 3
@@ -4098,7 +4011,7 @@ Với mỗi test, in ra đáp án tìm được trên một dòng.
 -4 -8
 ```
 
-**output**
+**output:**
 ```
 32
 -1
@@ -4110,16 +4023,16 @@ Cho dãy số A[] có N phần tử là các số nguyên, chỉ số tính từ
 
 Với mỗi cặp vị trí L và R, hãy in ra tổng lớn nhất có thể của dãy con nào đó trong đoạn từ vị trí L đến vị trí R. Chú ý: tính cả dãy con rỗng (không có phần tử nào).
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu ghi 2 số N và Q (không quá 100.000).
 
 Dòng tiếp theo ghi N số của dãy A[], các số có trị tuyệt đối không quá 100.000.
 
 Q dòng tiếp theo, mỗi dòng ghi một cặp số L, R (1 ≤ L ≤ R ≤ N).
-**Output:** 
+**Đầu ra:**
 Ghi ra Q dòng, lần lượt là tổng lớn nhất tính được với mỗi cặp (L, R) tương ứng.
 
-**input**
+**input:**
 ```
 5 2
 -1 2 -3 4 -5
@@ -4127,7 +4040,7 @@ Ghi ra Q dòng, lần lượt là tổng lớn nhất tính được với mỗi
 3 3
 ```
 
-**output**
+**output:**
 ```
 6
 0
@@ -4137,13 +4050,13 @@ Ghi ra Q dòng, lần lượt là tổng lớn nhất tính được với mỗi
 
 Cho 2 xâu S1 và S2. Hãy tìm xâu con chung dài nhất của 2 xâu này *(các phần tử không nhất thiết phải liên tiếp nhau).*
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm hai dòng, mô tả xâu S1 và S2, mỗi xâu có độ dài không quá 1000 và chỉ gồm các chữ cái in hoa.
 
-**Output:** 
+**Đầu ra:**
 Với mỗi test, in ra độ dài dãy con chung dài nhất trên một dòng.
 
-**input**
+**input:**
 ```
 2
 AGGTAB
@@ -4152,7 +4065,7 @@ AA
 BB
 ```
 
-**output**
+**output:**
 ```
 4
 0
@@ -4162,15 +4075,15 @@ BB
 
 Cho ba xâu ký tự X, Y, Z. Nhiệm vụ của bạn là tìm độ dài dãy con chung dài nhất có mặt trong cả ba xâu.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào độ dài xâu X, Y, X; dòng tiếp theo đưa vào ba xâu X, Y, Z.
 - T, X, Y, Z thỏa mãn ràng buộc: 1 ≤ T ≤ 100;  1 ≤ size(X), size(Y), size(Z) ≤ 100.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5 8 13
@@ -4179,7 +4092,7 @@ geeks geeksfor geeksforgeeks
 abcd1e2 bc12ea bd1ea
 ```
 
-**output**
+**output:**
 ```
 5
 3
@@ -4193,19 +4106,19 @@ Biết rằng dãy con tăng là 1 dãy A[i1],... A[ik] thỏa mãn i1 < i2 < ..
 
 Hãy cho biết dãy con tăng dài nhất của dãy này có bao nhiêu phần tử? 
 
-**Input:**
+**Đầu vào:**
 Dòng 1 gồm 1 số nguyên là số N (1 ≤ N ≤ 1000). Dòng thứ 2 ghi N số nguyên A[1], A[2], .. A[N] (1 ≤ A[i] ≤ 1000). 
 
-**Output:**
+**Đầu ra:**
 Ghi ra độ dài của dãy con tăng dài nhất.
 
-**input**
+**input:**
 ```
 6
 1 2 5 4 6 2
 ```
 
-**output**
+**output:**
 ```
 4
 ```
@@ -4214,22 +4127,22 @@ Ghi ra độ dài của dãy con tăng dài nhất.
 
 Cho mảng A[] gồm N số nguyên. Nhiệm vụ của bạn là sắp xếp lại mảng số với số lượng bước là ít nhất. Tại mỗi bước, bạn chỉ được phép chèn phần tử bất kỳ của mảng vào vị trí bất kỳ trong mảng. Ví dụ A[] = {2, 3, 5, 1, 4, 7, 6 }sẽ cho ta số phép chèn ít nhất là 3 bằng cách lấy số 1 chèn trước số 2, lấy số 4 chèn trước số 5, lấy số 6 chèn trước số 7 ta nhận được mảng được sắp.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là một số N; dòng tiếp theo đưa vào N số của mảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤1000; 1≤A[i] ≤1000.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 7
 2 3 5 1 4 7 6
 ```
 
-**output**
+**output:**
 ```
 3
 ```
@@ -4238,15 +4151,15 @@ Cho mảng A[] gồm N số nguyên. Nhiệm vụ của bạn là sắp xếp l�
 
 Cho dãy số A[] gồm N số. Nhiệm vụ của bạn là tìm tổng lớn nhất của dãy con được sắp theo thứ tự tăng dần của dãy A[]. Ví dụ với dãy A[] = {1, 101, 2, 3, 100, 4, 5} ta có kết quả là 106 = 1 + 2 + 3 + 100. Với dãy A[] = {10, 7, 5} ta có kết quả là 10. Với dãy A[] = {1, 2, 3, 5} ta có kết quả là 11.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào N là số phần tử của dãy A[]; dòng tiếp theo đưa vào N số A[i]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤10<sup>3</sup>; 0≤A[i] ≤10<sup>3</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 7
@@ -4257,7 +4170,7 @@ Cho dãy số A[] gồm N số. Nhiệm vụ của bạn là tìm tổng lớn n
 1 2 3 5
 ```
 
-**output**
+**output:**
 ```
 106
 10
@@ -4269,15 +4182,15 @@ Cho dãy số A[] gồm N số. Nhiệm vụ của bạn là tìm tổng lớn n
 
 Có N ngôi nhà trên một dãy phố, mỗi ngôi nhà chứa đựng một số lượng tài sản khác nhau. Một tên trộm muốn ăp cắp được nhiều nhất tài sản của dãy phố nhưng không muốn lấy tài sản của hai nhà kề nhau. Hãy cho biết, bằng cách đó tên trộm có thể đánh cắp được nhiều nhất bao nhiêu tài sản.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất là một số N là số lượng ngôi nhà; dòng tiếp theo đưa vào N số là tài sản tương ứng trong mỗi ngôi nhà; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤10<sup>6</sup>; 1≤A[i] ≤10<sup>7</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 6
@@ -4286,7 +4199,7 @@ Có N ngôi nhà trên một dãy phố, mỗi ngôi nhà chứa đựng một s
 3 2 7 10
 ```
 
-**output**
+**output:**
 ```
 110
 13
@@ -4296,13 +4209,13 @@ Có N ngôi nhà trên một dãy phố, mỗi ngôi nhà chứa đựng một s
 
 Cho N  số nguyên dương tạo thành dãy A={A1, A2, ..., AN}. Tìm ra một dãy con của dãy A (không nhất thiết là các phần tử liên tiếp trong dãy) có tổng bằng S cho trước.
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu ghi số bộ test T (T<10).  Mỗi bộ test có hai dòng, dòng đầu tiên ghi hai số nguyên dương N và S (0 < N ≤ 200) và S (0 < S ≤ 40000). Dòng tiếp theo lần lượt ghi N số hạng của dãy A là các số A1, A2, ..., AN (0 < Ai ≤ 200).
 
-**Output:** 
+**Đầu ra:**
 Với mỗi bộ test, nếu bài toán vô nghiệm thì in ra “NO”, ngược lại in ra “YES”
 
-**input**
+**input:**
 ```
 2
 5 6
@@ -4311,7 +4224,7 @@ Với mỗi bộ test, nếu bài toán vô nghiệm thì in ra “NO”, ngư�
 2 2 2 2 2 2 2 2 2 2
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -4321,20 +4234,20 @@ NO
 
 Cho một dãy gồm n ( n ≤ 1000) số nguyên dương A1, A2, ..., An và số nguyên dương k (k ≤ 50). Hãy tìm dãy con gồm nhiều phần tử nhất của dãy đã cho sao cho tổng các phần tử của dãy con này chia hết cho k. 
 
-**Input:**
+**Đầu vào:**
 Dòng đầu ghi số bộ test T (T<10). Mỗi bộ test gồm 2 dòng. Dòng đầu tiên chứa hai số n, k.  Dòng tiếp theo ghi n số của dãy A. Các số đều không vượt quá 100.  
 
-**Output:**
+**Đầu ra:**
 Gồm 1 dòng duy nhất ghi số lượng phần tử của dãy con dài nhất thoả mãn. Dữ liệu vào luôn đảm bảo sẽ có ít nhất một dãy con có tổng chia hết cho k.
 
-**input**
+**input:**
 ```
 1
 10 3
 2 3 5 7 9 6 12 7 11 15
 ```
 
-**output**
+**output:**
 ```
 9
 ```
@@ -4343,14 +4256,14 @@ Gồm 1 dòng duy nhất ghi số lượng phần tử của dãy con dài nhấ
 
 Cho 2 số nguyên N và K. Bạn hãy đếm số lượng các số có N chữ số mà tổng các chữ số của nó bằng K. Lưu ý, chữ số 0 ở đầu không được chấp nhận.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 50).
 - Mỗi test gồm 2 số nguyên N và K (1 ≤ N ≤ 100, 0 ≤ K ≤ 50000).
 
-**Output:**
+**Đầu ra:**
 Với mỗi test, in ra đáp số tìm được theo modulo 109+7 trên một dòng.
 
-**input**
+**input:**
 ```
 3
 2 2
@@ -4358,7 +4271,7 @@ Với mỗi test, in ra đáp số tìm được theo modulo 109+7 trên một d
 3 6
 ```
 
-**output**
+**output:**
 ```
 2
 5
@@ -4369,21 +4282,21 @@ Với mỗi test, in ra đáp số tìm được theo modulo 109+7 trên một d
 
 Cho 2 số nguyên n, k. Bạn hãy tính C(n, k) modulo 10<sup>9</sup>+7.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm 2 số nguyên n, k (1 ≤ k ≤ n ≤ 1000).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra đáp án trên một dòng.
 
-**input**
+**input:**
 ```
 2
 5 2
 10 3
 ```
 
-**output**
+**output:**
 ```
 10
 120
@@ -4393,21 +4306,21 @@ Cho 2 số nguyên n, k. Bạn hãy tính C(n, k) modulo 10<sup>9</sup>+7.
 
 Một chiếc cầu thang có N bậc. Mỗi bước, bạn được phép bước lên trên tối đa K bước. Hỏi có tất cả bao nhiêu cách bước để đi hết cầu thang? (Tổng số bước đúng bằng N).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 100).
 - Mỗi test gồm hai số nguyên dương N và K(1 ≤ N ≤ 100000, 1 ≤ K ≤ 100).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được trên một dòng theo modulo 10<sup>9</sup>+7.
 
-**input**
+**input:**
 ```
 2
 2 2
 4 2
 ```
 
-**output**
+**output:**
 ```
 2
 5
@@ -4415,18 +4328,17 @@ Một chiếc cầu thang có N bậc. Mỗi bước, bạn được phép bư�
 
 ### DSA05014 - CATALAN NUMBER
 
-Catalan Number là dãy số thỏa mãn biểu thức:
-![DSA05014](image/DSA05014.png)
+Catalan Number là dãy số thỏa mãn biểu thức:![DSA05014](image/DSA05014.png)
 Dưới đây là một số số Catalan với n=0, 1,2,.. : 1, 1, 2, 5, 14, 42, 132, 429,… Cho số tự nhiên N. Nhiệm vụ của bạn là đưa ra số Catalan thứ N.
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số nguyên n.
 - T, n thỏa mãn ràng buộc: 1 ≤ T ≤ 100;  1 ≤ n ≤ 100.
 
-**Output:**
+**Đầu ra:**
 Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 5
@@ -4434,7 +4346,7 @@ Dưới đây là một số số Catalan với n=0, 1,2,.. : 1, 1, 2, 5, 14, 42
 10
 ```
 
-**output**
+**output:**
 ```
 42
 14
@@ -4445,15 +4357,15 @@ Dưới đây là một số số Catalan với n=0, 1,2,.. : 1, 1, 2, 5, 14, 42
 
 Một dãy số được gọi là Bi-tonic nếu nó được chia thành hai dãy đầu tăng dần và dãy tiếp theo giảm dần. Nhiệm vụ của bạn là tìm tổng lớn nhất dãy con Bi-tonic của dãy số A[]. Ví dụ với dãy A[] = {1, 15, 51, 45, 33, 100, 12, 18, 9} ta có kết quả là 194 tương ứng với dãy Bi-tonic {1, 15, 51, 100, 18, 9}.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào N là số phần tử của dãy A[]; dòng tiếp theo đưa vào N số A[i]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤100; 0≤A[i] ≤100.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 6
@@ -4462,7 +4374,7 @@ Một dãy số được gọi là Bi-tonic nếu nó được chia thành hai d
 1 15 51 45 33 100 12 18 9
 ```
 
-**output**
+**output:**
 ```
 210
 194
@@ -4474,21 +4386,21 @@ Cho xâu S chỉ bao gồm các ký tự viết thường và dài không quá 1
 
 Hãy tìm xâu con đối xứng dài nhất của S.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test gồm một xâu S có độ dài không vượt quá 1000, chỉ gồm các kí tự thường.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được.
 
-**input**
+**input:**
 ```
 2
 abcbadd
 aaaaa
 ```
 
-**output**
+**output:**
 ```
 5
 5
@@ -4498,15 +4410,15 @@ aaaaa
 
 Cho một bảng số N hàng, M cột chỉ gồm 0 và 1. Bạn hãy tìm hình vuông có kích thước lớn nhất, sao cho các số trong hình vuông toàn là số 1.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test bắt đầu bởi 2 số nguyên N, M (1 ≤ N, M ≤ 500).
 - N dòng tiếp theo, mỗi dòng gồm M số mô tả một hàng của bảng.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án là kích thước của hình vuông lớn nhất tìm được trên một dòng.
 
-**input**
+**input:**
 ```
 2
 6 5
@@ -4521,7 +4433,7 @@ Cho một bảng số N hàng, M cột chỉ gồm 0 và 1. Bạn hãy tìm hìn
 0 0
 ```
 
-**output**
+**output:**
 ```
 3
 0
@@ -4533,15 +4445,15 @@ Cho bảng A[] kích thước N x M (N hàng, M cột). Bạn được phép đi
 
 Hãy tìm đường đi từ ô (1, 1) tới ô (N, M) sao cho tổng điểm là nhỏ nhất.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm số nguyên dương N và M.
 - N dòng tiếp theo, mỗi dòng gồm M số nguyên A[i][j] (0 ≤ A[i] ≤ 1000).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra độ dài dãy con tăng dài nhất trên một dòng.
 
-**input**
+**input:**
 ```
 1
 3 3
@@ -4550,7 +4462,7 @@ Hãy tìm đường đi từ ô (1, 1) tới ô (N, M) sao cho tổng điểm l�
 1 5 3
 ```
 
-**output**
+**output:**
 ```
 8
 ```
@@ -4565,16 +4477,15 @@ Giả sử bạn cần viết N ký tự giống nhau lên màn hình. Bạn ch�
 
 Hãy tìm thời gian ít nhất để có thể đưa ra màn hình N ký tự giống nhau. Ví dụ với N = 9, X =1, Y = 2, Z =1 ta có kết quả là 5 bằng cách thực hiện: insert, insert, copying, copying, insert.
 
-
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào N là số các ký tự giống nhau cần viết lên màn hình; dòng tiếp theo đưa vào bộ ba số X, Y, Z tương ứng với thời gian thực hiện ba thao tác; các số được viết cách nhau một vài khoảng trống.
 - T, N, X, Y, Z thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤100; 1≤X, Y, Z ≤100.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 9
@@ -4583,33 +4494,32 @@ Hãy tìm thời gian ít nhất để có thể đưa ra màn hình N ký tự 
 2 5 4
 ```
 
-**output**
+**output:**
 ```
 5
 14
 ```
 
-
 ### DSA05023 - TỔNG CÁC XÂU CON
 
 Cho số nguyên dương N được biểu diễn như một xâu ký tự số. Nhiệm vụ của bạn là tìm tổng của tất cả các số tạo bởi các xâu con của N. Ví dụ N=”1234” ta có kết quả là 1670 = 1 + 2 + 3 + 4 + 12 + 23 + 34 + 123 + 234 + 1234.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Mỗi bộ test bắt đầu bởi số N (không quá 500).
 - T, N thỏa mãn ràng buộc: 1≤T≤100;  1≤N ≤10<sup>12</sup>.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 1234
 421
 ```
 
-**output**
+**output:**
 ```
 1670
 491
@@ -4619,22 +4529,22 @@ Cho số nguyên dương N được biểu diễn như một xâu ký tự số.
 
 Một con ếch có thể nhảy 1, 2, 3 bước để có thể lên đến một đỉnh cần đến. Hãy đếm số các cách con ếch có thể nhảy đến đỉnh.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là số n là số bước con ếch có thể lên được đỉnh.
 - T, n thỏa mãn ràng buộc: 1≤T≤100;  1≤n ≤50.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 1
 5
 ```
 
-**output**
+**output:**
 ```
 1
 13
@@ -4644,14 +4554,14 @@ Một con ếch có thể nhảy 1, 2, 3 bước để có thể lên đến m�
 
 John có một đàn bò. Một ngày đẹp trời, anh ta quyết định mua xe tải với khả năng chở được C kg (1000 ≤ C ≤ 25000) để đưa những con bò đi xem phim. Cho số con bò là N (20 ≤ N ≤ 100) và khối lượng w[i] của từng con (đều nhỏ hơn C), hãy cho biết khối lượng bò lớn nhất mà John có thể đưa đi xem phim là bao nhiêu.
 
-**Input:** 
+**Đầu vào:**
 - Dòng 1: 2 số nguyên C và N cách nhau bởi dấu cách
 - Dòng 2..N+1:   Ghi lần lượt các số nguyên: w[i]
 
-**Output:** 
+**Đầu ra:**
 - Một số nguyên là tổng khối lượng bò lớn nhất mà John có thể mang đi xem phim.
 
-**input**
+**input:**
 ```
 259 5
 81
@@ -4661,7 +4571,7 @@ John có một đàn bò. Một ngày đẹp trời, anh ta quyết định mua 
 61
 ```
 
-**output**
+**output:**
 ```
 242
 ```
@@ -4670,15 +4580,15 @@ John có một đàn bò. Một ngày đẹp trời, anh ta quyết định mua 
 
 Một người có cái túi thể tích V (V<1000). Anh ta có N đồ vật cần mang theo (N≤1000), mỗi đồ vật có thể tích là A[i] (A[i]≤100) và giá trị là C[i] (C[i]≤100). Hãy xác định tổng giá trị lớn nhất của các đồ vật mà người đó có thể mang theo, sao cho tổng thể tích không vượt quá V.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu ghi số bộ test T (T<10)
 - Mỗi bộ test gồm ba dòng. Dòng đầu ghi 2 số N và V. Dòng tiếp theo ghi N số của mảng A. Sau đó là một dòng ghi N số của mảng C.
 - Dữ liệu vào luôn đảm bảo không có đồ vật nào có thể tích lớn hơn V.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi bộ test, ghi trên một dòng giá trị lớn nhất có thể đạt được.
 
-**input**
+**input:**
 ```
 1
 15 10
@@ -4686,7 +4596,7 @@ Một người có cái túi thể tích V (V<1000). Anh ta có N đồ vật c�
 1 2 3 5 1 2 5 8 7 4 1 2 3 2 1
 ```
 
-**output**
+**output:**
 ```
 15
 ```
@@ -4695,22 +4605,22 @@ Một người có cái túi thể tích V (V<1000). Anh ta có N đồ vật c�
 
 Một bản tin M đã mã hóa bí mật thành các con số theo ánh xạ như sau: ‘A’->1, ‘B’->2, .., ‘Z’->26. Hãy cho biết có bao nhiêu cách khác nhau để giải mã bản tin M. Ví dụ với bản mã M=”123” nó có thể được giải mã thành ABC (1 2 3), LC (12 3), AW(1 23).
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu ký tự số M.
 - T, M thỏa mãn ràng buộc: 1≤T≤100;  1≤length(M)≤40.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 123
 2563
 ```
 
-**output**
+**output:**
 ```
 3
 2
@@ -4720,15 +4630,15 @@ Một bản tin M đã mã hóa bí mật thành các con số theo ánh xạ nh
 
 Mọi số nguyên dương N đều có thể phân tích thành tổng các bình phương của các số nhỏ hơn N. Ví dụ số 100 = 10<sup>2</sup> hoặc 100 = 5<sup>2</sup> + 5<sup>2</sup> + 5<sup>2</sup> + 5<sup>2</sup>. Cho số nguyên dương N. Nhiệm vụ của bạn là tìm số lượng ít nhất các số nhỏ hơn N mà có tổng bình phương bằng N.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi test là một số tự nhiên N được viết trên 1 dòng.
 - T, N thỏa mãn ràng buộc: 1≤T≤100;  1≤N≤10000.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 100
@@ -4736,7 +4646,7 @@ Mọi số nguyên dương N đều có thể phân tích thành tổng các bì
 25
 ```
 
-**output**
+**output:**
 ```
 1
 3
@@ -4752,15 +4662,15 @@ Hãy tính độ dài dài nhất của dãy các vị trí (không cần liên 
 - Nếu xét các vị trí đó trên dãy A[] thì dãy con thu được thỏa mãn tính chất tăng dần (giá trị bằng nhau không được tính vào dãy tăng).
 - Nếu xét các vị trí đó trên dãy A[] thì dãy con thu được thỏa mãn tính chất tăng dần (giá trị bằng nhau không được tính vào dãy tăng).
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Mỗi bộ test bắt đầu bởi số N (không quá 500).
 - Tiếp theo là N dòng, mỗi dòng ghi 2 giá trị A[i] và B[i]
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, ghi ra độ dài tính được trên một dòng.
 
-**input**
+**input:**
 ```
 3
 2
@@ -4779,7 +4689,7 @@ Hãy tính độ dài dài nhất của dãy các vị trí (không cần liên 
 10.0 5.5
 ```
 
-**output**
+**output:**
 ```
 2
 1
@@ -4790,22 +4700,22 @@ Hãy tính độ dài dài nhất của dãy các vị trí (không cần liên 
 
 Cho xâu ký tự S. Nhiệm vụ của bạn là tìm số phép loại bỏ ít nhất các ký tự trong S để S trở thành xâu đối xứng. Chú ý, phép loại bỏ phải bảo toàn tính trước sau của các ký tự trong S.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu ký tự được viết trên một dòng
 - T, str thỏa mãn ràng buộc: 1≤T≤100;  1≤length(S)≤100.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 aebcbda
 geeksforgeeks
 ```
 
-**output**
+**output:**
 ```
 2
 8
@@ -4817,15 +4727,15 @@ Cho dãy số A[] gồm có N phần tử không âm và số K.
 
 Nhiệm vụ của bạn là hãy xác định xem có tìm được 1 dãy con liên tiếp mà tổng các phần tử bằng K hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm số nguyên N và K (1≤ N ≤ 100 000, 0 ≤ K ≤ 10<sup>18</sup>).
 - Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 10<sup>9</sup>).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng là đáp án thu được. Nếu có hãy in ra “YES”. Nếu không tìm được đáp án, in ra “NO”.
 
-**input**
+**input:**
 ```
 3
 6 33
@@ -4836,7 +4746,7 @@ Nhiệm vụ của bạn là hãy xác định xem có tìm được 1 dãy con 
 1 4
 ```
 
-**output**
+**output:**
 ```
 YES
 YES
@@ -4847,13 +4757,13 @@ NO
 
 Cho hai số nguyên lớn N và M có không quá 1000 chữ số. Người ta muốn tính xem liệu có thể lấy ra nhiều nhất bao nhiêu chữ số trong N (không cần liên tiếp) và giữ nguyên thứ tự của nó để tạo ra một số X sao cho ta cũng có thể tìm thấy X trong số M theo cách tương tự.
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm hai dòng, dòng thứ nhất ghi số N, dòng thứ 2 ghi số M.
 
-**Output:** 
+**Đầu ra:**
 Với mỗi test, hãy in ra số chữ số nhiều nhất có thể của X.
 
-**input**
+**input:**
 ```
 2
 144615
@@ -4862,7 +4772,7 @@ Với mỗi test, hãy in ra số chữ số nhiều nhất có thể của X.
 88
 ```
 
-**output**
+**output:**
 ```
 4
 0
@@ -4874,14 +4784,14 @@ Với mỗi test, hãy in ra số chữ số nhiều nhất có thể của X.
 
 Cho danh sách liên kết đơn lưu giữ các số nguyên được quản lý bởi con trỏ First. Viết chương trình con xóa tất cả các phần tử có giá trị bằng x trong danh sách liên kết đơn; chương trình con trả về số lượng các phần tử đã xóa. Sau khi xóa xong, liệt kê các phần tử còn lại trong danh sách liên kết đơn First.
 
-**input**
+**input:**
 ```
 14
 1 1 1 4 5 1 1 1 1 7 1 8 1 9
 1
 ```
 
-**output**
+**output:**
 ```
 4 5 7 8 9
 ```
@@ -4890,13 +4800,13 @@ Cho danh sách liên kết đơn lưu giữ các số nguyên được quản l�
 
 Cho danh sách liên kết đơn lưu giữ các số nguyên được quản lý bởi con trỏ First. Viết chương trình con lọc tất cả các phần tử có giá trị trùng nhau trong danh sách liên kết đơn First, chỉ để lại 1 phần tử đại diện cho nhóm trùng. Sau khi lọc xong, liệt kê các phần tử  trong danh sách liên kết đơn First.
 
-**input**
+**input:**
 ```
 12
 1 1 1 4 5 1 4 7 7 8 1 9
 ```
 
-**output**
+**output:**
 ```
 1 4 5 7 8 9
 ```
@@ -4907,15 +4817,15 @@ Một mê cung được mô tả dưới dạng ma trận ký tự trong đó d�
 
 Hãy đếm xem trong mê cung có bao nhiêu vật cản.
 
-**Input:** 
+**Đầu vào:**
 Dong đầu ghi số hai số N, M là số hàng và số cột của mê cung.
 
 N dòng tiếp theo mô tả mê cung trong đó chỉ có các ký tự ‘.’ và ‘#’.
 
-**Output:** 
+**Đầu ra:**
 Ghi ra số vật cản đếm được.
 
-**input**
+**input:**
 ```
 5 6
 .#....
@@ -4925,7 +4835,7 @@ Ghi ra số vật cản đếm được.
 .#....
 ```
 
-**output**
+**output:**
 ```
 5
 ```
@@ -4934,15 +4844,15 @@ Ghi ra số vật cản đếm được.
 
 Cho mảng A[] gồm n số nguyên khác nhau. Hãy đưa ra các phần tử của mảng theo khuôn dạng lớn nhất, nhỏ nhất, lớn thứ hai, nhỏ thứ 2, … Ví dụ với A[] = {9, 7, 12, 8, 6, 5} ta đưa ra : 12, 5, 9, 6, 8, 7.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên là số phần tử của mảng n; dòng tiếp theo là n số A [i] của mảng A [];các số được viết cách nhau một vài khoảng trống.
 - T, n thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n ≤10<sup>3</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 7
@@ -4951,7 +4861,7 @@ Cho mảng A[] gồm n số nguyên khác nhau. Hãy đưa ra các phần tử c
 1 6 9 4 3 7 8 2
 ```
 
-**output**
+**output:**
 ```
 7 1 6 2 5 3 4
 9 1 8 2 7 3 6 4
@@ -4961,15 +4871,15 @@ Cho mảng A[] gồm n số nguyên khác nhau. Hãy đưa ra các phần tử c
 
 Cho mảng A[] gồm n phần tử và số X. Hãy đưa sắp xếp các phần tử của mảng theo trị tuyệt đối của |X - A[i] |. Ví dụ với A[] = {10, 5, 3, 9, 2} và X = 7 ta đưa ra mảng được sắp xếp theo nguyên tắc kể trên: A[] = {5, 9, 10, 3, 2} vì |7-10|=3, |7-5|=2, |7-3|=4, |7-9|=2, |7-2|=5.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên là số phần tử của mảng n và X; dòng tiếp theo là n số A [i] của mảng A [];các số được viết cách nhau một vài khoảng trống.
 - T, n, X thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n, X, A[i] ≤10<sup>5</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5 7
@@ -4978,7 +4888,7 @@ Cho mảng A[] gồm n phần tử và số X. Hãy đưa sắp xếp các phầ
 1 2 3 4 5
 ```
 
-**output**
+**output:**
 ```
 5 9 10 3 2
 5 4 3 2 1
@@ -4988,15 +4898,15 @@ Cho mảng A[] gồm n phần tử và số X. Hãy đưa sắp xếp các phầ
 
 Cho mảng A[] gồm n phần tử. Hãy tìm số phép đổi chỗ ít nhất giữa các phần tử của mảng để mảng A[] được sắp xếp. Ví dụ với A[] = {4, 3, 2, 1} ta cần thực hiện ít nhất 2 phép đổi chỗ: Swap(A[0], A[3]),  Swap(A[1], A[2]).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên là số phần tử của mảng n và X; dòng tiếp theo là n số A [i] của mảng A [];các số được viết cách nhau một vài khoảng trống.
 - T, n thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n ≤10<sup>3</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4
@@ -5005,7 +4915,7 @@ Cho mảng A[] gồm n phần tử. Hãy tìm số phép đổi chỗ ít nhất
 1 5 4 3 2
 ```
 
-**output**
+**output:**
 ```
 2
 2
@@ -5015,15 +4925,15 @@ Cho mảng A[] gồm n phần tử. Hãy tìm số phép đổi chỗ ít nhất
 
 Cho mảng A[] gồm n phần tử, mảng B[] gồm m phần tử khác nhau. Các phần tử của mảng A[] và B[] đã được sắp xếp. Hãy tìm mảng hợp và giao được sắp giữa A[] và B[]. Ví dụ với A[] = {1, 3, 4, 5, 7}, B[]={2, 3, 5, 6} ta có mảng hợp Union = {1, 2, 3, 4, 5, 6, 7}, mảng giao Intersection = {3, 5}. In ra đáp án theo giá trị phần tử từ nhỏ đến lớn.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm ba dòng: dòng đầu tiên đưa vào n, m là số phần tử của mảng A[] và B[]; dòng tiếp theo là n số A [i] của mảng A [];dòng tiếp theo là m số B[i] của mảng B[]; các số được viết cách nhau một vài khoảng trống.
 - T, n, m, A[i], B[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n, m, A[i], B[i] ≤10<sup>5</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 5 3
@@ -5031,7 +4941,7 @@ Cho mảng A[] gồm n phần tử, mảng B[] gồm m phần tử khác nhau. C
 1 2 3
 ```
 
-**output**
+**output:**
 ```
 1 2 3 4 5
 1 2 3
@@ -5041,15 +4951,15 @@ Cho mảng A[] gồm n phần tử, mảng B[] gồm m phần tử khác nhau. C
 
 Cho mảng A[] gồm n phần tử, mảng B[] gồm m phần tử khác nhau. Các phần tử của mảng A[] và B[] chưa được sắp xếp. Hãy tìm mảng hợp và giao được sắp giữa A[] và B[]. Ví dụ với A[] = {7, 1, 5, 2, 3, 6}, B[]={3, 8, 6, 20, 7} ta có mảng hợp Union = {1, 2, 3, 5, 6, 7, 8, 20}, mảng giao Intersection = {3, 6}.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm ba dòng: dòng đầu tiên đưa vào n, m là số phần tử của mảng A[] và B[]; dòng tiếp theo là n số A [i] của mảng A [];dòng tiếp theo là m số B[i] của mảng B[]; các số được viết cách nhau một vài khoảng trống.
 - T, n, m, A[i], B[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n, m, A[i], B[i] ≤10<sup>5</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 6 5
@@ -5057,7 +4967,7 @@ Cho mảng A[] gồm n phần tử, mảng B[] gồm m phần tử khác nhau. C
 3 8 6 20 7
 ```
 
-**output**
+**output:**
 ```
 1 2 3 5 6 7 8 20
 2 6
@@ -5067,15 +4977,15 @@ Cho mảng A[] gồm n phần tử, mảng B[] gồm m phần tử khác nhau. C
 
 Cho mảng A[] gồm n phần tử. Các phần tử của mảng A[] chỉ bao gồm các số 0, 1, 2. Hãy sắp xếp mảng A[] theo thứ tự tăng dần. Ví dụ với A[] = {0, 2, 1, 2, 0} ta kết quả A[] = {0, 0, 1, 2, 2}.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào n là số phần tử của mảng A[]; dòng tiếp theo là n số A [i] của mảng A []các số được viết cách nhau một vài khoảng trống.
 - T, n, A[i] thỏa mãn ràng buộc: 1≤ T ≤100; 0≤ A[i] ≤2; 1≤ n ≤10<sup>6</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5
@@ -5084,7 +4994,7 @@ Cho mảng A[] gồm n phần tử. Các phần tử của mảng A[] chỉ bao 
 0 1 0
 ```
 
-**output**
+**output:**
 ```
 0 0 1 2 2
 0 1
@@ -5094,16 +5004,16 @@ Cho mảng A[] gồm n phần tử. Các phần tử của mảng A[] chỉ bao 
 
 Cho mảng A[] gồm n phần tử. Hãy tìm dãy con liên tục của mảng A[R], .., A[L] sao cho khi sắp xếp lại dãy con ta nhận được một mảng được sắp xếp. Ví dụ với A[] = {10, 12, 20, 30, 25, 40, 32, 31, 35, 50, 60} ta chỉ cần sắp xếp lại dãy con từ A[4],.., A[9]: {30, 25, 40, 32, 31, 35} để có mảng được sắp.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào n là số phần tử của mảng A[]; dòng tiếp theo là n số A [i] của mảng A []các số được viết cách nhau một vài khoảng trống.
 T, n, A[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n ≤10<sup>6</sup>; 0≤ A[i] ≤10<sup>7</sup>.
 - T, N thỏa mãn ràng buộc: 1≤T≤100;  1≤N≤1010.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 11
@@ -5112,7 +5022,7 @@ T, n, A[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n ≤10<sup>6</sup>; 0�
 0 1 15 25 6 7 30 40 50
 ```
 
-**output**
+**output:**
 ```
 4 9
 3 6
@@ -5122,15 +5032,15 @@ T, n, A[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n ≤10<sup>6</sup>; 0�
 
 Cho mảng X[] gồm n phần tử và mảng Y[] gồm m phần tử. Hãy đếm số các cặp xy>yx, trong đó x€X[] và y€Y[]. Ví dụ X[] = {2, 1, 6 }, Y[] = {1, 5} ta có kết quả là 3 cặp (2, 1), (2, 5), (6, 1).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm ba dòng: dòng đầu tiên đưa vào n, m tương ứng với số phần tử của mảng X[] và Y[]; dòng tiếp theo là n số X[i] của mảng X[]; dòng cuối cùng là m số của mảng Y[]; các số được viết cách nhau một vài khoảng trống.
 - T, n, m, X[i], Y[j] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n, m ≤10<sup>5</sup>; 0≤ X[i], Y[j] ≤10<sup>3</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 3 2
@@ -5138,7 +5048,7 @@ Cho mảng X[] gồm n phần tử và mảng Y[] gồm m phần tử. Hãy đ�
 1 5
 ```
 
-**output**
+**output:**
 ```
 3
 ```
@@ -5147,15 +5057,15 @@ Cho mảng X[] gồm n phần tử và mảng Y[] gồm m phần tử. Hãy đ�
 
 Cho mảng A[] gồm n phần tử và số k. Đếm tất cả các cặp phần tử của mảng có tổng bằng k. Ví dụ A[] = {1, 5, 3, 4, 2 }, k = 7 ta có kết quả là 2 cặp (3, 4), (5, 2).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào n là số phần tử của mảng A[] và k; dòng tiếp theo là n số A[i] của mảng A[]các số được viết cách nhau một vài khoảng trống.
 - T, n, k, A[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n ≤100; 0≤ k ≤100, 0≤ A[i] ≤10<sup>3</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5 9 
@@ -5164,7 +5074,7 @@ Cho mảng A[] gồm n phần tử và số k. Đếm tất cả các cặp ph�
 1 1 1
 ```
 
-**output**
+**output:**
 ```
 1
 3
@@ -5174,15 +5084,15 @@ Cho mảng A[] gồm n phần tử và số k. Đếm tất cả các cặp ph�
 
 Cho mảng A[] gồm n phần tử. Nhiệm vụ của bạn là đưa ra mảng đã được sắp xếp bao gồm các chữ số của mỗi phần tử trong A[]. Ví dụ A[] = {110, 111, 112, 113, 114 }ta có kết quả là {0, 1, 2, 3, 4}.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào n là số phần tử của mảng A[]; dòng tiếp theo là n số A[i] ; các số được viết cách nhau một vài khoảng trống.
 - T, n, A[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n ≤10<sup>7</sup>; 0≤ A[i] ≤10<sup>16</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 3
@@ -5191,7 +5101,7 @@ Cho mảng A[] gồm n phần tử. Nhiệm vụ của bạn là đưa ra mảng
 111 222 333 446
 ```
 
-**output**
+**output:**
 ```
 1 3 4 8
 1 2 3 4 6
@@ -5201,15 +5111,15 @@ Cho mảng A[] gồm n phần tử. Nhiệm vụ của bạn là đưa ra mảng
 
 TỔNG GẦN 0 NHẤT
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào n là số phần tử của mảng A[]; dòng tiếp theo đưa vào n số A[i]; các số được viết cách nhau một vài khoảng trống.
 - T, n, A[i] thỏa mãn ràng buộc: 1≤T≤100; 2≤N ≤10<sup>3</sup>, -10<sup>6</sup>≤A[i] ≤10<sup>6</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra tổng gần nhất với 0 của cặp phần tử.
 
-**input**
+**input:**
 ```
 2
 3
@@ -5218,7 +5128,7 @@ TỔNG GẦN 0 NHẤT
 -21 -67 -37 -18 4 -65  
 ```
 
-**output**
+**output:**
 ```
 -68
 -14
@@ -5228,15 +5138,15 @@ TỔNG GẦN 0 NHẤT
 
 Cho mảng A[] gồm n phần tử, hãy tìm k phần tử lớn nhất của mảng. Các phần tử được đưa ra theo thứ tự giảm dần.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào N và K; dòng tiếp theo đưa vào n số A[i]; các số được viết cách nhau một vài khoảng trống.
 - T, N, K, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤K < N ≤10<sup>3</sup>, 1≤A[i] ≤10<sup>6</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra k phần tử lớn nhất trên một dòng.
 
-**input**
+**input:**
 ```
 2
 5 3
@@ -5245,7 +5155,7 @@ Cho mảng A[] gồm n phần tử, hãy tìm k phần tử lớn nhất của m
 9 7 12 8 6 5
 ```
 
-**output**
+**output:**
 ```
 12 10 9
 12 9
@@ -5255,15 +5165,15 @@ Cho mảng A[] gồm n phần tử, hãy tìm k phần tử lớn nhất của m
 
 Cho mảng A[] gồm n phần tử đã được sắp xếp. Hãy tìm số lần xuất hiện số X trong mảng. Nếu số lần xuất hiện số x trong mảng là 0 hãy đưa ra -1.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào N và X; dòng tiếp theo đưa vào n số A[i]; các số được viết cách nhau một vài khoảng trống.
 - T, N, X, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤ N ≤10<sup>3</sup>, 1≤A[i], X ≤106.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 7 2
@@ -5272,7 +5182,7 @@ Cho mảng A[] gồm n phần tử đã được sắp xếp. Hãy tìm số l�
 1 1 2 2 2 2 3
 ```
 
-**output**
+**output:**
 ```
 4
 -1
@@ -5282,22 +5192,22 @@ Cho mảng A[] gồm n phần tử đã được sắp xếp. Hãy tìm số l�
 
 Cho số tự nhiên N. Hãy tìm cặp số nguyên tố đầu tiên có tổng là N. Nếu không tồn tại cặp số nguyên tố có tổng bằng N, hãy đưa ra -1.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm là một số N được ghi trên một dòng.
 - T, N thỏa mãn ràng buộc: 1≤T≤100; 1≤ N ≤10<sup>6</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4
 8
 ```
 
-**output**
+**output:**
 ```
 2 2
 2 5
@@ -5307,15 +5217,15 @@ Cho số tự nhiên N. Hãy tìm cặp số nguyên tố đầu tiên có tổn
 
 Cho mảng A[] gồm N phần tử chưa được sắp xếp. Nhiệm vụ của bạn là sắp xếp các phần tử của mảng A[] theo thứ tự tăng dần bằng thuật toán Merge Sort.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào số N tương ứng với số phần tử của mảng A[]; phần thứ 2 là N số của mảng A[]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤N, A[i]≤10<sup>6</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5
@@ -5324,7 +5234,7 @@ Cho mảng A[] gồm N phần tử chưa được sắp xếp. Nhiệm vụ củ
 10 9 8 7 6 5 4 3 2 1
 ```
 
-**output**
+**output:**
 ```
 1 3 4 7 9
 1 2 3 4 5 6 7 8 9 10
@@ -5334,15 +5244,15 @@ Cho mảng A[] gồm N phần tử chưa được sắp xếp. Nhiệm vụ củ
 
 Cho mảng A[] gồm n phần tử và mảng B[] gồm m phần tử. Nhiệm vụ của bạn là tìm tích giữa phần tử lớn nhất của mảng A[] và phần tử nhỏ nhất của mảng B[]. Ví dụ A[] = {5, 7, 112, 9, 3, 6, 2 }, B[] = {1, 2, 6, -1, 0, 9} ta có kết quả là -9 = 9*(-1).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm ba dòng: dòng đầu tiên đưa vào n, m tương ứng với số phần tử của mảng A[] và B[]; dòng tiếp theo là n số A[i] ; dòng cuối cùng là m số B[i]; các số được viết cách nhau một vài khoảng trống.
 - T, n, m, A[i], B[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n, m ≤10<sup>6</sup>; -10<sup>8</sup>≤ A[i] ≤10<sup>8</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 6 6
@@ -5353,7 +5263,7 @@ Cho mảng A[] gồm n phần tử và mảng B[] gồm m phần tử. Nhiệm v
 4 2 6 5 2 9
 ```
 
-**output**
+**output:**
 ```
 -9
 20
@@ -5363,15 +5273,15 @@ Cho mảng A[] gồm n phần tử và mảng B[] gồm m phần tử. Nhiệm v
 
 Cho mảng A[] gồm n phần tử và mảng B[] gồm m phần tử. Nhiệm vụ của bạn là hợp nhất hai mảng A[] và B[] để được một mảng mới đã được sắp xếp. Ví dụ A[] = {5, 7, 112, 9, 3, 6, 2 }, B[] = {1, 2, 6, -1, 0, 9} ta có kết quả là C[] = {-1, 1, 0, 2, 3, 5, 6, 6, 7, .
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm ba dòng: dòng đầu tiên đưa vào n, m tương ứng với số phần tử của mảng A[] và B[]; dòng tiếp theo là n số A[i] ; dòng cuối cùng là m số B[i]; các số được viết cách nhau một vài khoảng trống.
 - T, n, m, A[i], B[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n, m ≤10<sup>6</sup>; -10<sup>8</sup>≤ A[i] ≤10<sup>8</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 3 3
@@ -5379,7 +5289,7 @@ Cho mảng A[] gồm n phần tử và mảng B[] gồm m phần tử. Nhiệm v
 20 3 2
 ```
 
-**output**
+**output:**
 ```
 2 3 5 10 15 20
 ```
@@ -5388,15 +5298,15 @@ Cho mảng A[] gồm n phần tử và mảng B[] gồm m phần tử. Nhiệm v
 
 Cho mảng A[] gồm n số nguyên dương. Gọi L, R là max và min các phần tử của A[]. Nhiệm vụ của bạn là tìm số phần tử cần thiết cần thêm vào mảng để mảng có đầy đủ các số trong khoảng [L, R]. Ví dụ A[] = {5, 7, 9, 3, 6, 2 } ta nhận được kết quả là 2 tương ứng với các số còn thiếu là 4, 8.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào n, tương ứng với số phần tử của mảng A[]; dòng tiếp theo là n số A[i] ; các số được viết cách nhau một vài khoảng trống.
 - T, n, A[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n, A[i] ≤10<sup>3</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5
@@ -5405,7 +5315,7 @@ Cho mảng A[] gồm n số nguyên dương. Gọi L, R là max và min các ph�
 2 1 3
 ```
 
-**output**
+**output:**
 ```
 1
 0
@@ -5415,15 +5325,15 @@ Cho mảng A[] gồm n số nguyên dương. Gọi L, R là max và min các ph�
 
 Cho mảng A[] gồm n số nguyên. Nhiệm vụ của bạn là sắp xếp mảng theo số lần xuất hiện các phần tử của mảng. Số xuất hiện nhiều lần nhất đứng trước. Nếu hai phần tử có số lần xuất hiện như nhau, số nhỏ hơn đứng trước. Ví dụ A[] = {5, 5, 4, 6, 4 }, ta nhận được kết quả là A[] = {4, 4, 5, 5, 6}.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào n, tương ứng với số phần tử của mảng A[] và số k; dòng tiếp theo là n số A[i] ; các số được viết cách nhau một vài khoảng trống.
 - T, n, A[i] thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ n ≤10<sup>4</sup>; 1≤ k ≤10<sup>3</sup>; 1≤ A[i] ≤10<sup>5</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5
@@ -5432,7 +5342,7 @@ Cho mảng A[] gồm n số nguyên. Nhiệm vụ của bạn là sắp xếp m�
 9 9 9 2 5
 ```
 
-**output**
+**output:**
 ```
 4 4 5 5 6
 9 9 9 2 5
@@ -5442,15 +5352,15 @@ Cho mảng A[] gồm n số nguyên. Nhiệm vụ của bạn là sắp xếp m�
 
 Cho mảng A[] gồm n phần tử đã được sắp xếp. Hãy đưa ra 1 nếu X có mặt trong mảng A[], ngược lại đưa ra -1.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào n, X là số các phần tử của mảng A[] và số X cần tìm; dòng tiếp theo đưa vào n số A[i] (1≤i≤n) các số được viết cách nhau một vài khoảng trống.
 - T, n, A, X thỏa mãn ràng buộc: 1≤T≤100; 1≤N, X, A[i] ≤10<sup>6</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2 
 5 16
@@ -5459,7 +5369,7 @@ Cho mảng A[] gồm n phần tử đã được sắp xếp. Hãy đưa ra 1 n�
 1 22 37 47 54 88 96
 ```
 
-**output**
+**output:**
 ```
 1
 -1
@@ -5469,15 +5379,15 @@ Cho mảng A[] gồm n phần tử đã được sắp xếp. Hãy đưa ra 1 n�
 
 Một mảng được sắp được chia thành hai đoạn tăng dần được gọi là mảng sắp xếp vòng. Ví dụ mảng A[] = { 5, 6, 7, 8, 9, 10, 1, 2, 3, 4} là mảng sắp xếp vòng. Cho mảng A[] gồm n phần tử, hãy tìm vị trí của phần tử x trong mảng A[] với thời gian log(n).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào n và x; dòng tiếp theo đưa vào n số A[i]; các số được viết cách nhau một vài khoảng trống.
 - T, n, A[i], x  thỏa mãn ràng buộc: 1≤T≤100; 1≤N, x, A[i] ≤10<sup>7</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 10 3
@@ -5486,7 +5396,7 @@ Một mảng được sắp được chia thành hai đoạn tăng dần đượ
 1 2 3 4 5 6 7 8 9 10
 ```
 
-**output**
+**output:**
 ```
 9
 3
@@ -5496,15 +5406,15 @@ Một mảng được sắp được chia thành hai đoạn tăng dần đượ
 
 Cho mảng A[] gồm n phần tử, hãy đưa ra số nhỏ nhất và số nhỏ thứ hai của mảng. Nếu không có số nhỏ thứ hai, hãy đưa ra -1.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào n là số phần tử của mảng A[]; dòng tiếp theo đưa vào n số A[i]; các số được viết cách nhau một vài khoảng trống.
 - T, n, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N, A[i] ≤10<sup>7</sup>.
 
-**Output:**
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 10
@@ -5513,7 +5423,7 @@ Cho mảng A[] gồm n phần tử, hãy đưa ra số nhỏ nhất và số nh�
 1 1 1  1  1
 ```
 
-**output**
+**output:**
 ```
 1 2
 -1
@@ -5523,19 +5433,19 @@ Cho mảng A[] gồm n phần tử, hãy đưa ra số nhỏ nhất và số nh�
 
 Hãy thực hiện thuật toán sắp xếp đổi chỗ trực tiếp trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
 
-**Input:**
+**Đầu vào:**
 Dòng 1 ghi số N (không quá 100). Dòng 2 ghi N số nguyên dương (không quá 100).
 
-**Output:**
+**Đầu ra:**
 Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống.
 
-**input**
+**input:**
 ```
 4
 5 7 3 2
 ```
 
-**output**
+**output:**
 ```
 Buoc 1: 2 7 5 3
 Buoc 2: 2 3 7 5
@@ -5546,19 +5456,19 @@ Buoc 3: 2 3 5 7
 
 Hãy thực hiện thuật toán sắp xếp chọn trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
 
-**Input:**
+**Đầu vào:**
 Dòng 1 ghi số N (không quá 100). Dòng 2 ghi N số nguyên dương (không quá 100).
 
-**Output:**
+**Đầu ra:**
 Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống.
 
-**input**
+**input:**
 ```
 4
 5 7 3 2
 ```
 
-**output**
+**output:**
 ```
 Buoc 1: 2 7 3 5
 Buoc 2: 2 3 7 5
@@ -5569,19 +5479,19 @@ Buoc 3: 2 3 5 7
 
 Hãy thực hiện thuật toán sắp xếp chọn trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
 
-**Input:**
+**Đầu vào:**
 Dòng 1 ghi số N (không quá 100). Dòng 2 ghi N số nguyên dương (không quá 100).
 
-**Output:**
+**Đầu ra:**
 Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống.
 
-**input**
+**input:**
 ```
 4
 5 7 3 2
 ```
 
-**output**
+**output:**
 ```
 Buoc 0: 5
 Buoc 1: 5 7
@@ -5593,19 +5503,19 @@ Buoc 3: 2 3 5 7
 
 Hãy thực hiện thuật toán sắp xếp chọn trên dãy N số nguyên. Ghi ra các bước thực hiện thuật toán.
 
-**Input:**
+**Đầu vào:**
 Dòng 1 ghi số N (không quá 100). Dòng 2 ghi N số nguyên dương (không quá 100).
 
-**Output:**
+**Đầu ra:**
 Ghi ra màn hình từng bước thực hiện thuật toán. Mỗi bước trên một dòng, các số trong dãy cách nhau đúng một khoảng trống.
 
-**input**
+**input:**
 ```
 4
 5 7 3 2
 ```
 
-**output**
+**output:**
 ```
 Buoc 1: 3 2 5 7
 Buoc 2: 2 3 5 7
@@ -5615,25 +5525,23 @@ Buoc 2: 2 3 5 7
 
 Cho dãy số A[] có n phần tử là các số nguyên dương. Hãy sắp xếp dãy số theo thuật toán sắp xếp đổi chỗ trực tiếp. Nhưng yêu cầu in ra lần lượt các bước chạy của thuật toán theo thứ tự ngược (bước cuối cùng in ra đầu tiên).
 
-**Input:**
-
+**Đầu vào:**
 Dòng đầu ghi số bộ test (không quá 10). Mỗi test gồm 2 dòng:
 
 - Dòng đầu ghi số n (1 < n < 100)
 - Dòng thứ 2 ghi n số của dãy A (các số đều nguyên dương và nhỏ hơn 1000)
 
-**Output:**
-
+**Đầu ra:**
 Ghi ra lần lượt các bước thuật toán theo thứ tự ngược (xem ví dụ mẫu để hiểu rõ hơn).
 
-**input**
+**input:**
 ```
 1
 6
 5 8 3 9 1 4
 ```
 
-**output**
+**output:**
 ```
 Buoc 5: 1 3 4 5 8 9
 Buoc 4: 1 3 4 5 9 8
@@ -5646,20 +5554,20 @@ Buoc 1: 1 8 5 9 3 4
 
 Cho dãy số A[] có n phần tử là các số nguyên dương. Hãy sắp xếp dãy số theo thuật toán sắp xếp chọn. Nhưng yêu cầu in ra lần lượt các bước chạy của thuật toán theo thứ tự ngược (bước cuối cùng in ra đầu tiên).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu ghi số n (1 < n < 100)
 - Dòng thứ 2 ghi n số của dãy A (các số đều nguyên dương và nhỏ hơn 100000)
 
-**Output:**
+**Đầu ra:**
 - Ghi ra lần lượt các bước thuật toán theo thứ tự ngược (xem ví dụ mẫu để hiểu rõ hơn).
 
-**input**
+**input:**
 ```
 6
 5 8 3 9 1 4
 ```
 
-**output**
+**output:**
 ```
 Buoc 5: 1 3 4 5 8 9
 Buoc 4: 1 3 4 5 9 8
@@ -5672,20 +5580,20 @@ Buoc 1: 1 8 3 9 5 4
 
 Cho dãy số A[] có n phần tử là các số nguyên dương. Hãy sắp xếp dãy số theo thuật toán sắp xếp chèn. Nhưng yêu cầu in ra lần lượt các bước chạy của thuật toán theo thứ tự ngược (bước cuối cùng in ra đầu tiên).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu ghi số n (1 < n < 100)
 - Dòng thứ 2 ghi n số của dãy A (các số đều nguyên dương và nhỏ hơn 100000)
 
-**Output:**
+**Đầu ra:**
 - Ghi ra lần lượt các bước thuật toán theo thứ tự ngược (xem ví dụ mẫu để hiểu rõ hơn).
 
-**input**
+**input:**
 ```
 6
 5 8 3 9 1 4
 ```
 
-**output**
+**output:**
 ```
 Buoc 5: 1 3 4 5 8 9
 Buoc 4: 1 3 5 8 9
@@ -5701,25 +5609,23 @@ Cho dãy số A[] có n phần tử là các số nguyên dương. Hãy sắp x�
 
 *Chú ý: thuật toán sắp xếp nổi bọt có thể kết thúc khi tất cả dãy đã sắp xếp, không còn cặp số cạnh nhau nào sai thứ tự.*
 
-**Input:**
-
+**Đầu vào:**
 Dòng đầu ghi số bộ test (không quá 10). Mỗi test gồm 2 dòng:
 
 - Dòng đầu ghi số n (1 < n < 100)
 - Dòng thứ 2 ghi n số của dãy A (các số đều nguyên dương và nhỏ hơn 1000)
 
-**Output:**
-
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 6
 4 1 3 9 8 5
 ```
 
-**output**
+**output:**
 ```
 Buoc 2: 1 3 4 5 8 9
 Buoc 1: 1 3 4 8 5 9
@@ -5731,15 +5637,15 @@ Cho dãy số A[] gồm có N phần tử và số nguyên K.
 
 Với mỗi dãy con liên tiếp có độ dài bằng K (từ trái sang phải), bạn hãy in ra phần tử lớn nhất trong dãy con này.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test gồm số nguyên N và K (1≤ N ≤ 100 000, 1 ≤ K ≤ N).
 - Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 10<sub>9</sub>).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng N-K+1 số nguyên là đáp án tìm được.
 
-**input**
+**input:**
 ```
 2
 9 3
@@ -5748,7 +5654,7 @@ Với mỗi dãy con liên tiếp có độ dài bằng K (từ trái sang phả
 8 5 10 7 9 4 15 12 90 13
 ```
 
-**output**
+**output:**
 ```
 3 3 4 5 5 5 6
 10 10 10 15 15 90 90
@@ -5760,15 +5666,15 @@ Cho dãy số A[] gồm có N phần tử.
 
 Nhiệm vụ của bạn là hãy đếm số bộ ba (i, j, k) mà A[i] + A[j] + A[k] < K cho trước.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm số nguyên N và K (1≤ N ≤5000, -10<sup>9</sup> ≤ K ≤ 10<sup>9</sup>).
 - Dòng tiếp theo gồm N số nguyên A[i] (-10<sup>9</sup> ≤ A[i] ≤ 10<sup>9</sup>).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng là đáp án tìm được.
 
-**input**
+**input:**
 ```
 2
 4 2
@@ -5777,7 +5683,7 @@ Nhiệm vụ của bạn là hãy đếm số bộ ba (i, j, k) mà A[i] + A[j] 
 5 1 3 4 7
 ```
 
-**output**
+**output:**
 ```
 2
 4
@@ -5787,15 +5693,15 @@ Nhiệm vụ của bạn là hãy đếm số bộ ba (i, j, k) mà A[i] + A[j] 
 
 Cho dãy số A[] gồm có N phần tử. Bạn cần tìm 2 vị trí i, j sao cho j-i lớn nhất và A[j] > A[i].
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test gồm số nguyên N (1≤ N ≤ 100 000).
 - Dòng tiếp theo gồm N số nguyên A[i] (-10^6 ≤ A[i] ≤ 10^6).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng là giá trị của hiệu j-i tìm được.
 
-**input**
+**input:**
 ```
 3
 9
@@ -5806,7 +5712,7 @@ Cho dãy số A[] gồm có N phần tử. Bạn cần tìm 2 vị trí i, j sao
 6 5 4 3 2 1
 ```
 
-**output**
+**output:**
 ```
 6
 5
@@ -5819,15 +5725,15 @@ Cho dãy số A[] gồm có N phần tử.
 
 Nhiệm vụ của bạn là đếm xem có bao nhiêu cặp (i, j) mà A[i] + A[j] = K cho trước.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test gồm số nguyên N và K (1≤ N ≤ 100 000, 0 ≤ K ≤ 10^9).
 - Dòng tiếp theo gồm N số nguyên A[i] (-10^9 ≤ A[i] ≤ 10^9).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng là đáp án thu được.
 
-**input**
+**input:**
 ```
 4
 4 6
@@ -5840,7 +5746,7 @@ Nhiệm vụ của bạn là đếm xem có bao nhiêu cặp (i, j) mà A[i] + A
 10 12 10 15 -1 7 6 5 4 2 1 1 1
 ```
 
-**output**
+**output:**
 ```
 2
 3
@@ -5860,15 +5766,15 @@ Lưu ý: Dãy đơn điệu không giảm hoặc không tăng cũng là dãy tam
 
 Ví dụ A[] = {10, 20, 30, 40} là một dãy tam giác.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test gồm số nguyên N(1≤ N ≤ 100 000).
 - Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 10^6).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng là độ dài của dãy con tìm được.
 
-**input**
+**input:**
 ```
 2
 6
@@ -5877,7 +5783,7 @@ Ví dụ A[] = {10, 20, 30, 40} là một dãy tam giác.
 20 4 1 2 3 4 2 10
 ```
 
-**output**
+**output:**
 ```
 5
 5
@@ -5889,15 +5795,15 @@ Cho dãy số A[] gồm có N phần tử.
 
 Nhiệm vụ của bạn là hãy kiểm tra tồn tại bộ ba (i, j, k) mà A[i] + A[j] + A[k] = K cho trước hay không.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm số nguyên N và K (1≤ N ≤5000, 0 ≤ K ≤ 10^9).
 - Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 10^9).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng là “YES” nếu tìm được bộ ba thỏa mãn, “NO” trong trường hợp ngược lại.
 
-**input**
+**input:**
 ```
 2
 6 22
@@ -5906,7 +5812,7 @@ Nhiệm vụ của bạn là hãy kiểm tra tồn tại bộ ba (i, j, k) mà A
 1 1 1
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -5916,19 +5822,18 @@ NO
 
 Cho dãy số nguyên A[] độ dài N. Xác định số lượng chỉ số M (M < N) thỏa mãn: nếu sắp xếp đoạn con (A<sub>1</sub>,…,A<sub>M</sub>) và (A<sub>M+1</sub>, …, A<sub>N</sub>) theo thứ tự tăng dần thì được dãy số A tăng dần.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên ghi số bộ test T
 - Mỗi bộ test bắt đầu bằng một dòng chứa số N (2 ≤ N ≤ 10<sup>5</sup>)
 - Dòng tiếp theo ghi N số của dãy A (|Ai| ≤ 10<sup>9</sup>)
 
-**Output:** 
-
+**Đầu ra:**
 Với mỗi bộ test:
 
 - Dòng đầu tiên ghi số K là số lượng vị trí M tìm được
 - Dòng thứ 2 ghi ra K số theo thứ tự tăng dần lần lượt là các chỉ số thỏa mãn. Nếu K = 0 thì dòng này bỏ trống. 
 
-**input**
+**input:**
 ```
 2
 2
@@ -5937,7 +5842,7 @@ Với mỗi bộ test:
 2 1 3 5 4
 ```
 
-**output**
+**output:**
 ```
 0
 
@@ -5954,21 +5859,19 @@ Hãy đếm xem có bao nhiêu cặp (i,j) thỏa mãn:
 - A[i] > A[j] và đều là số chẵn
 - Tồn tại chỉ số k với i < k < j sao cho A[k] là số lẻ
 
-**Input:** 
-
+**Đầu vào:**
 Dòng đầu tiên ghi số n (1 ≤ n ≤ 10<sup>5</sup>).
 
-**Output:** 
-
+**Đầu ra:**
 Dòng thứ 2 ghi n số của dãy A, các giá trị A[i] không vượt quá 10<sup>6</sup>.
 
-**input**
+**input:**
 ```
 5
 4 3 2 5 1
 ```
 
-**output**
+**output:**
 ```
 1
 ```
@@ -5977,15 +5880,15 @@ Dòng thứ 2 ghi n số của dãy A, các giá trị A[i] không vượt quá 
 
 Cho dãy số A[] gồm có N phần tử. Nhiệm vụ của bạn là hãy tìm số xuất hiện nhiều hơn 1 lần trong dãy số và số thứ tự là nhỏ nhất.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test gồm số nguyên N (1≤ N ≤ 100 000), số lượng phần tử trong dãy số ban đầu.
 - Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 10^9).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test in ra đáp án của bài toán trên một dòng. Nếu không tìm được đáp án, in ra “NO”.
 
-**input**
+**input:**
 ```
 2
 7
@@ -5994,7 +5897,7 @@ Cho dãy số A[] gồm có N phần tử. Nhiệm vụ của bạn là hãy tì
 1 2 3 4
 ```
 
-**output**
+**output:**
 ```
 5
 NO
@@ -6004,15 +5907,15 @@ NO
 
 Cho ba dãy số A[], B[], C[] gồm N1, N2, N3 phần tử đã được sắp xếp. Hãy đưa ra các phần tử có mặt trong cả ba dãy theo thứ tự tăng dần. Nếu không có đáp án, in ra -1.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm bốn dòng: dòng thứ nhất đưa vào N1, N2, N3 là số phần tử của mảng A[], B[], C[]; các dòng tiếp theo đưa vào 3 dãy A[], B[], C[].
 - Ràng buộc: 1≤T≤100; 1≤ N1, N2, N3 ≤10^6, 0≤ A[i], B[j], C[k] ≤10^18.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 6 5 8
@@ -6021,7 +5924,7 @@ Cho ba dãy số A[], B[], C[] gồm N1, N2, N3 phần tử đã được sắp 
 3 4 15 20 30 70 80 120
 ```
 
-**output**
+**output:**
 ```
 20 80
 ```
@@ -6030,15 +5933,15 @@ Cho ba dãy số A[], B[], C[] gồm N1, N2, N3 phần tử đã được sắp 
 
 Cho dãy số A[] gồm có N phần tử. Nhiệm vụ của bạn là hãy tìm một số có tần số xuất hiện nhiều nhất, yêu cầu lớn hơn N/2 lần xuất hiện trong dãy số.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test gồm số nguyên N (1≤ N ≤ 100 000), số lượng phần tử trong dãy số ban đầu.
 - Dòng tiếp theo gồm N số nguyên A[i] (1 ≤ A[i] ≤ 1 000 000).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test in ra đáp án của bài toán trên một dòng. Nếu không tìm được đáp án, in ra “NO”.
 
-**input**
+**input:**
 ```
 2
 9
@@ -6047,7 +5950,7 @@ Cho dãy số A[] gồm có N phần tử. Nhiệm vụ của bạn là hãy tì
 3 3 4 2 4 4 2 4
 ```
 
-**output**
+**output:**
 ```
 4
 NO
@@ -6059,15 +5962,15 @@ Cho dãy số A[] gồm có N phần tử nguyên dương. Phần tử thứ i �
 
 Nhiệm vụ của bạn là điểm cân bằng đầu tiên của dãy A[] cho trước. Nếu không có đáp án, in ra -1.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test gồm số nguyên N (1≤ N ≤ 100 000), số lượng phần tử trong dãy số ban đầu.
 - Dòng tiếp theo gồm N số nguyên A[i] (-1000 ≤ A[i] ≤ 1000).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng vị trí của điểm cân bằng tìm được.
 
-**input**
+**input:**
 ```
 2
 7
@@ -6076,7 +5979,7 @@ Nhiệm vụ của bạn là điểm cân bằng đầu tiên của dãy A[] cho
 1 2 3 4 5
 ```
 
-**output**
+**output:**
 ```
 4
 -1
@@ -6086,20 +5989,20 @@ Nhiệm vụ của bạn là điểm cân bằng đầu tiên của dãy A[] cho
 
 Cho dãy số a[] có n phần tử, đánh số từ 1 đến n. Hãy sắp xếp các phần tử ở vị trí lẻ theo thứ tự tăng dần, các phần tử ở vị trí chẵn theo thứ tự giảm dần.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên ghi số n, không quá 10<sup>5</sup>
 - Dòng thứ 2 ghi n số của dãy a[] (a ≤ a[i] ≤ 10<sup>9</sup>)
 
-**Output:**
+**Đầu ra:**
 - Ghi ra dãy số kết quả trên một dòng
 
-**input**
+**input:**
 ```
 4
 1 2 3 4
 ```
 
-**output**
+**output:**
 ```
 1 4 3 2
 ```
@@ -6140,14 +6043,14 @@ Ví dụ: AABBAA,  AABA,.. là các xâu tốt.
 
 Giá sử cho xâu s chỉ có 2 ký tự A và B. Hãy đếm số xâu con là xâu tốt trong s ( Xâu con là hợp các phần tử liền kề nhau của xâu gốc ).
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu là số ký tự của s ( Không vượt quá 10<sup>5</sup>)
 - Dòng thứ 2 là xâu S chỉ gồm các ký tự A và B
 
-**Output:**
+**Đầu ra:**
 - Ghi ra kết quả đếm được
 
-**input**
+**input:**
 
 test 1
 ```
@@ -6160,7 +6063,7 @@ test 2
 BAABBA
 ```
 
-**output**
+**output:**
 
 test 1
 ```
@@ -6175,15 +6078,15 @@ test 2
 
 Cho dãy số A[] gồm có N phần tử. Bạn cần tìm chênh lệch nhỏ nhất giữa hai phần tử bất kì trong dãy số đã cho.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
 - Mỗi test gồm số nguyên N (1≤ N ≤ 100 000).
 - Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 10<sup>9</sup>).
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng là đáp án tìm được.
 
-**input**
+**input:**
 ```
 3
 6
@@ -6194,7 +6097,7 @@ Cho dãy số A[] gồm có N phần tử. Bạn cần tìm chênh lệch nhỏ 
 1 19 2 31 38 25 100
 ```
 
-**output**
+**output:**
 ```
 1
 4
@@ -6207,15 +6110,15 @@ Cho dãy số A[] gồm có N phần tử. Một bộ 3 số (a, b, c) được 
 
 Nhiệm vụ của bạn là kiểm tra xem có tồn tại bộ ba số Pytago trong dãy số A[] hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm số nguyên N và K (1≤ N ≤5000, 0 ≤ K ≤ 10^9).
 - Dòng tiếp theo gồm N số nguyên A[i] (1 ≤ A[i] ≤ 10^9).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng “YES” nếu tìm được, và “NO” trong trường hợp ngược lại.
 
-**input**
+**input:**
 ```
 2
 5
@@ -6224,7 +6127,7 @@ Nhiệm vụ của bạn là kiểm tra xem có tồn tại bộ ba số Pytago 
 1 1 1
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -6236,15 +6139,15 @@ Ban đầu dãy số A[] gồm N phần tử đã được sắp xếp tăng d�
 
 Cho trạng thái dãy số của A[] sau khi đã thực hiện quay vòng K lần. Hãy tìm K.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất đưa vào số M, N, K; dòng tiếp theo đưa vào N số của mảng A[]các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100;  1≤ N≤10<sup>7</sup>; 0≤ A[i]≤10<sup>18</sup>.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra số lần quay vòng K của mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5
@@ -6253,7 +6156,7 @@ Cho trạng thái dãy số của A[] sau khi đã thực hiện quay vòng K l�
 1 2 3 4 5
 ```
 
-**output**
+**output:**
 ```
 1
 0
@@ -6263,15 +6166,15 @@ Cho trạng thái dãy số của A[] sau khi đã thực hiện quay vòng K l�
 
 Cho mảng A[] gồm n số nguyên dương và số k. Nhiệm vụ của bạn là đếm số các cặp phần tử có hiệu nhỏ hơn k. Ví dụ A[] = {1, 10, 4, 2 }, k=3 ta nhận được kết quả là 2 tương ứng với hiệu các cặp (1, 2), (4, 2).
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào n, tương ứng với số phần tử của mảng A[] và số k; dòng tiếp theo là n số A[i] ; các số được viết cách nhau một vài khoảng trống.
 - T, n, k, A[i] thỏa mãn ràng buộc: 1 ≤  T  ≤ 100; 1 ≤  n  ≤ 10<sup>4</sup>; 1 ≤  k ≤ 10<sup>3</sup>; 1 ≤  A[i]  ≤ 10<sup>5</sup>.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 32
 4 3
@@ -6280,7 +6183,7 @@ Cho mảng A[] gồm n số nguyên dương và số k. Nhiệm vụ của bạn
 2 3 4
 ```
 
-**output**
+**output:**
 ```
 2
 3
@@ -6292,13 +6195,13 @@ Cho mảng A[] gồm n số nguyên dương và số k. Nhiệm vụ của bạn
 
 Cho một ngăn xếp các số nguyên. Các thao tác gồm 3 lệnh: push, pop và show. Trong đó thao tác push kèm theo một giá trị cần thêm (không quá 1000). Hãy viết chương trình ghi ra kết quả của các lệnh show.
 
-**Input:** 
+**Đầu vào:**
 Gồm nhiều dòng, mỗi dòng chứa một lệnh push, pop hoặc show. Input đảm bảo số lượng phần tử trong stack khi nhiều nhất cũng không vượt quá 200.
 
-**Output:** 
+**Đầu ra:**
 Ghi ra màn hình các phần tử đang có trong stack theo thứ tự lưu trữ mỗi khi gặp lệnh show. Các số viết cách nhau đúng một khoảng trống. Nếu trong stack không còn gì thì in ra dòng “empty”
 
-**input**
+**input:**
 ```
 push 3
 push 5
@@ -6310,7 +6213,7 @@ pop
 show
 ```
 
-**output**
+**output:**
 ```
 3 5
 3 5 7
@@ -6327,14 +6230,14 @@ Yêu cầu bạn xây dựng một stack với các truy vấn sau đây:
 
 “POP”: Xóa phần tử đầu tiên của stack. Nếu stack rỗng, không làm gì cả.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng truy vấn Q (Q ≤ 100000).
 - Mỗi truy vấn có dạng như trên.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi truy vấn “PRINT”, hãy in ra phần tử đầu tiên của stack. Nếu stack rỗng, in ra “NONE”.
 
-**input**
+**input:**
 ```
 9
 PUSH 1
@@ -6348,7 +6251,7 @@ POP
 PRINT
 ```
 
-**output**
+**output:**
 ```
 1
 3
@@ -6359,17 +6262,17 @@ NONE
 
 Cho biểu thức số học, hãy cho biết biểu thức số học có dư thừa các cặp ký hiệu ‘(’,’) ‘ hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:**
 - T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤20.
 
-**input**
+**input:**
 ```
 3
 ((a+b))
@@ -6377,7 +6280,7 @@ Cho biểu thức số học, hãy cho biết biểu thức số học có dư t
 (a+b*(c-d))
 ```
 
-**output**
+**output:**
 ```
 Yes
 Yes
@@ -6388,14 +6291,14 @@ No
 
 Cho một xâu chỉ gồm các kí tự ‘(‘, ‘) và có độ dài chẵn. Hãy đếm số lượng dấu ngoặc cần phải đổi chiều ít nhất, sao cho xâu mới thu được là một dãy ngoặc đúng.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm 1 xâu S có độ dài không vượt quá 100 000, chỉ gồm dấu ( và ).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được trên một dòng.
 
-**input**
+**input:**
 ```
 4
 ))((
@@ -6404,7 +6307,7 @@ Cho một xâu chỉ gồm các kí tự ‘(‘, ‘) và có độ dài chẵn
 )(())(((
 ```
 
-**output**
+**output:**
 ```
 2
 2
@@ -6416,24 +6319,24 @@ Cho một xâu chỉ gồm các kí tự ‘(‘, ‘) và có độ dài chẵn
 
 Cho biểu thức đúng P chỉ bao gồm các phép toán +, -, các toán hạng cùng với các ký tự ‘(’, ‘)’. Hãy bỏ tất cả các ký tự ‘(’, ‘)’ trong P để nhận được biểu thức tương đương. Ví dụ với P = a – (b + c) ta có kết quả P = a – b – c .
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức P được viết trên một dòng.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:**
 - T, P thỏa mãn ràng buộc: 1≤T≤100; 1≤length(P)≤10<sup>3</sup>.
 
-**input**
+**input:**
 ```
 2
 a-(b+c)
 a-(b-c-(d+e))-f
 ```
 
-**output**
+**output:**
 ```
 a-b-c
 a-b+c+d+e-f
@@ -6453,19 +6356,19 @@ Ví dụ: Cho biểu thức: (2+(2*2)+2) Các biểu thức tìm được:
 
 Các biểu thức (2+2*2)+2 và 2+(2*2+2) không được chấp nhận vì không xóa đi các cặp dấu ngoặc tương ứng với nhau
 
-**Input:** 
+**Đầu vào:**
 - Một dòng chứa biểu thức gồm các số nguyên không âm, các dấu +, -, *, / và dấu ngoặc đơn.
 - Biểu thức không quá 200 kí tự, có chứa ít nhất 1 và không quá 10 cặp dấu ngoặc.
 
-**Output:** 
+**Đầu ra:**
 - In ra tất các các biểu thức khác nhau thỏa mãn đầu bài theo thứ tự từ điển
 
-**input**
+**input:**
 ```
 (1+(2*(3+4)))
 ```
 
-**output**
+**output:**
 ```
 (1+(2*3+4))
 (1+2*(3+4))
@@ -6480,17 +6383,17 @@ Các biểu thức (2+2*2)+2 và 2+(2*2+2) không được chấp nhận vì kh�
 
 Cho P1, P2 là hai biểu thức đúng chỉ bao gồm các ký tự mở ngoặc ‘(’ hoặc đóng ngoặc ‘)’ và các toán hạng in thường. Nhiệm vụ của bạn là định xem P1 và P2 có giống nhau hay không.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào P1, dòng tiếp theo đưa vào P2.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:**
 - T, P thỏa mãn ràng buộc: 1≤T≤100; 1≤length(P) ≤100.
 
-**input**
+**input:**
 ```
 2
 -(a+b+c)
@@ -6499,7 +6402,7 @@ a-b-(c-d)
 a-b-c-d
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -6509,25 +6412,25 @@ NO
 
 Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng trung tố về dạng hậu tố.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:**
 - T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤10.
 - Các phép toán bao gồm +, -, *, /, ^. Phép lũy thừa có ưu tiên cao hơn nhân chia và cộng trừ.
 
-**input**
+**input:**
 ```
 2
 (A+(B+C)
 ((A*B)+C)
 ```
 
-**output**
+**output:**
 ```
 ABC++
 AB*C+
@@ -6537,24 +6440,24 @@ AB*C+
 
 Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng tiền tố về dạng trung tố.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:**
 - T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤10<sup>6</sup>.
 
-**input**
+**input:**
 ```
 2
 *+AB-CD
 *-A/BC-/AKL
 ```
 
-**output**
+**output:**
 ```
 ((A+B)*(C-D))
 ((A-(B/C))*((A/K)-L)
@@ -6564,24 +6467,24 @@ Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới 
 
 Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng tiền tố về dạng hậu tố.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:**
 - T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤10<sup>6</sup>.
 
-**input**
+**input:**
 ```
 2
 *+AB-CD
 *-A/BC-/AKL
 ```
 
-**output**
+**output:**
 ```
 AB+CD-*
 ABC/-AK/L-*
@@ -6591,24 +6494,24 @@ ABC/-AK/L-*
 
 Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng hậu tố về dạng tiền tố.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:**
 - T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤10<sup>6</sup>.
 
-**input**
+**input:**
 ```
 2
 AB+CD-*
 ABC/-AK/L-*
 ```
 
-**output**
+**output:**
 ```
 *+AB-CD
 *-A/BC-/AKL
@@ -6618,24 +6521,24 @@ ABC/-AK/L-*
 
 Hãy viết chương trình chuyển đổi biểu thức biểu diễn dưới dạng hậu tố về dạng trung tố.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:**
 - T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤10<sup>6</sup>.
 
-**input**
+**input:**
 ```
 2
 ABC++
 AB*C+
 ```
 
-**output**
+**output:**
 ```
 (A+(B+C)
 ((A*B)+C)
@@ -6645,24 +6548,24 @@ AB*C+
 
 Hãy viết chương trình chuyển tính toán giá trị của biểu thức hậu tố.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức hậu tố exp. Các số xuất hiện trong biểu thức là các số đơn có 1 chữ số.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng, chỉ lấy giá trị phần nguyên.
 
 **Ràng buộc:**
 - T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤20.
 
-**input**
+**input:**
 ```
 2
 231*+9–
 875*+9-
 ```
 
-**output**
+**output:**
 ```
 -4
 34
@@ -6672,24 +6575,24 @@ Hãy viết chương trình chuyển tính toán giá trị của biểu thức 
 
 Hãy viết chương trình tính toán giá trị của biểu thức tiền tố.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức tiền tố exp. Các số xuất hiện trong biểu thức là các số đơn có 1 chữ số.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng, chỉ lấy giá trị phần nguyên.
 
 **Ràng buộc:**
 - T, exp thỏa mãn ràng buộc: 1≤T≤100; 2≤length(exp)≤20.
 
-**input**
+**input:**
 ```
 2
 -+8/632
 -+7*45+20
 ```
 
-**output**
+**output:**
 ```
 8
 25
@@ -6699,14 +6602,14 @@ Hãy viết chương trình tính toán giá trị của biểu thức tiền t�
 
 Cho biểu thức trung tố S với các toán tử +, -, *, / và dấu ngoặc (). Các toán hạng là các số có giá trị không vượt quá 100. Hãy tính giá trị biểu thức S. Phép chia thực hiện với số nguyên, input đảm bảo số bị chia luôn khác 0, đáp số biểu thức có không quá 10 chữ số.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test (T ≤ 100).
 - Mỗi dòng gồm một xâu S, không quá 100 kí tự. Các toán hạng là các số nguyên không âm.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được.
 
-**input**
+**input:**
 ```
 4
 6*3+2-(6-4/2)
@@ -6715,7 +6618,7 @@ Cho biểu thức trung tố S với các toán tử +, -, *, / và dấu ngoặ
 1-2
 ```
 
-**output**
+**output:**
 ```
 16
 2278
@@ -6731,15 +6634,15 @@ Cho dãy ký tự S chỉ bao gồm các ký tự I hoặc D. Ký tự I đượ
 - A[] = ”DD”      : số giảm nhỏ nhất là 321
 - A[] = “DDIDDIID”: số thỏa mãn 321654798
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là một xâu S
 - T, S thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ length(S) ≤8; .
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 4
 I
@@ -6748,7 +6651,7 @@ DD
 DDIDDIID
 ```
 
-**output**
+**output:**
 ```
 12
 21
@@ -6770,17 +6673,17 @@ Cho mảng A[] gồm n phần tử. Hãy đưa ra các phần tử nhỏ hơn ti
 | 1 -> 7       | 7 -> -1       |
 | 7 -> -1      | 7 -> -1       |
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test gồm hai dòng: dòng thứ nhất đưa vào n là số phần tử của mảng A[], dòng tiếp theo đưa vào n số A[i].
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:** 
 - T, n, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤n, A[i] ≤10<sup>6</sup>.
 
-**input**
+**input:**
 ```
 2
 7
@@ -6789,7 +6692,7 @@ Cho mảng A[] gồm n phần tử. Hãy đưa ra các phần tử nhỏ hơn ti
 4 8 2 1 9 5 6 3
 ```
 
-**output**
+**output:**
 ```
 2 2 1 1 -1 -1 -1
 2 5 5 5 -1 3 -1 -1
@@ -6799,21 +6702,21 @@ Cho mảng A[] gồm n phần tử. Hãy đưa ra các phần tử nhỏ hơn ti
 
 Cho hai đa thức có bậc không quá 10000 (chỉ viết ra các phần tử có hệ số khác 0). Hãy sử dụng danh sách liên kết đơn để viết chương trình tính tổng hai đa thức đó.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu ghi số bộ test. Mỗi bộ test có hai dòng, mỗi dòng ghi một đa thức theo mẫu như trong ví dụ. Số phần tử của đa thức không quá 20.
 - Chú ý: Bậc của các hạng tử luôn theo thứ tự giảm dần, trong đa thức chỉ có phép cộng và luôn được viết đầy đủ hệ số + số mũ (kể cả mũ 0).
 
-**Output:** 
+**Đầu ra:**
 - Ghi ra một dòng đa thức tổng tính được (theo mẫu như ví dụ)
 
-**input**
+**input:**
 ```
 1
 3*x^8 + 7*x^2 + 4*x^0
 11*x^6 + 9*x^2 + 2*x^1 + 3*x^0
 ```
 
-**output**
+**output:**
 ```
 3*x^8 + 11*x^6 + 16*x^2 + 2*x^1 + 7*x^0
 ```
@@ -6824,16 +6727,15 @@ Cho N cột, mỗi cột có chiều cao bằng H[i]. Bạn hãy tìm hình ch�
 
 <img width="279" alt="DSA07019" src="image\DSA07019.png" />
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi số nguyên N (N ≤ 100 000).
 - Dòng tiếp theo gồm N số nguyên H[i] (1 ≤ H[i] ≤ 10<sup>9</sup>).
 
-
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra diện tích hình chữ nhật lớn nhất tìm được.
 
-**input**
+**input:**
 ```
 2
 7
@@ -6842,7 +6744,7 @@ Cho N cột, mỗi cột có chiều cao bằng H[i]. Bạn hãy tìm hình ch�
 2 2 2
 ```
 
-**output**
+**output:**
 ```
 12
 6
@@ -6857,14 +6759,14 @@ Cho một xâu chỉ gồm các kí tự ‘(‘ và ‘)’. Một dãy ngoặc
 
 Cho một xâu S. Nhiệm vụ của bạn là hãy tìm dãy ngoặc đúng dài nhất xuất hiện trong xâu đã cho.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm một xâu S có độ dài không vượt quá 10<sup>5</sup> kí tự.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test in ra một số nguyên là độ dài dãy ngoặc đúng dài nhất tìm được.
 
-**input**
+**input:**
 ```
 3
 ((()
@@ -6872,7 +6774,7 @@ Cho một xâu S. Nhiệm vụ của bạn là hãy tìm dãy ngoặc đúng dà
 ()(()))))
 ```
 
-**output**
+**output:**
 ```
 2
 4
@@ -6885,24 +6787,24 @@ Cho mảng A[]  gồm n phần tử. Nhiệm vụ của bạn là tìm phần t�
 
 Ví dụ với dãy A[] = {1, 1, 2, 3, 4, 2, 1 }, ta nhận được kết quả ans[] = {-1, -1, 1, 2, 2, 1, -1} vì số lần xuất hiện mỗi phần tử trong mảng là F = {3, 3, 2, 1, 1, 2, 3} vì vậy phần tử A[0] = 1 có số lần xuất hiện là 3 và không có phần tử nào xuất hiện nhiều hơn 3 nên ans[0] = -1, tương tự như vậy với A[2]=2 tồn tại A[6] =1 có số lần xuất hiện là 3 nên ans[2] = 1.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test gồm hai dòng, dòng đầu tiên đưa vào số n là số các phần tử của mảng A[]; dòng tiếp theo đưa vào n số của mảng A[]; các phần tử được viết cách nhau một vài khoảng trống.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:** 
 - T, n, A[i] thỏa mãn ràng buộc: 1≤T≤100; 0≤n, A[i]≤10<sup>6</sup>.
 
-**input**
+**input:**
 ```
 1
 7
 1 1 2 3 4 2 1
 ```
 
-**output**
+**output:**
 ```
 -1 -1 1 2 2 1 -1
 ```
@@ -6911,22 +6813,22 @@ Ví dụ với dãy A[] = {1, 1, 2, 3, 4, 2, 1 }, ta nhận được kết quả
 
 Cho xâu ký tự S. Nhiệm vụ của bạn là đảo ngược các từ trong S. Ví dụ S =  “I like this program very much”, ta nhận được kết quả là “much very program this like I”.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là một xâu ký tự S.
 - T, S thỏa mãn ràng buộc: 1≤ T ≤100; 1≤ Length(S)≤10<sup>3</sup>.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 I like this program very much
 much very program this like I
 ```
 
-**output**
+**output:**
 ```
 much very program this like I
 I like this program very much
@@ -6939,16 +6841,15 @@ Trong giấc mơ, Tí thấy mình bị lạc trên hòn đảo với cư dân x
 Tí muốn tấm biển quảng cáo của mình thật đặc biệt, nên Tí đã chọn nhất định nó sẽ là hình vuông. Không có eke, thước, dây, … nên Tí phải dựa vào các miếng gỗ ban đầu để căn nhát cưa. Việc cưa theo chiều dọc rất dễ dàng, nhưng theo chiều ngang, Tí chỉ có thể cưa theo một đường thẳng trùng với một cạnh của miếng gỗ nào đó.
 
 Các bạn hãy giúp Tí tính thử xem tấm biển quảng cáo của Tí có kích thước lớn nhất bằng bao nhiêu (kích thước ở đây là độ dài cạnh hình vuông).
-
 ![DSA07024](image/DSA07024.png)
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test bắt đầu bởi số nguyên N (N ≤ 100 000). Dòng tiếp theo gồm N số nguyên A[i] (1 ≤ A[i] ≤ 10<sup>9</sup>).
 
-**Output:** 
+**Đầu ra:**
 Với mỗi test, in ra chiều dài cạnh của tấm biển. Nếu Tí không thể tạo thành tấm biển, in ra 0.
 
-**input**
+**input:**
 ```
 4
 5 2 4 3 3 1 4
@@ -6960,7 +6861,7 @@ Với mỗi test, in ra chiều dài cạnh của tấm biển. Nếu Tí không
 5 5 5 5 3 1
 ```
 
-**output**
+**output:**
 ```
 4
 2
@@ -6972,15 +6873,15 @@ Với mỗi test, in ra chiều dài cạnh của tấm biển. Nếu Tí không
 
 Cho dãy số A[] gồm N phần tử. Với mỗi A[i], bạn cần tìm phần tử bên phải đầu tiên lớn hơn nó. Nếu không tồn tại, in ra -1.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi số nguyên N (1 ≤ N ≤ 100000).
 - Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 10<sup>9</sup>).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra trên một dòng N số R[i], với R[i] là giá trị phần tử đầu tiên lớn hơn A[i].
 
-**input**
+**input:**
 ```
 3
 4
@@ -6991,7 +6892,7 @@ Cho dãy số A[] gồm N phần tử. Với mỗi A[i], bạn cần tìm phần
 4 4 5 5
 ```
 
-**output**
+**output:**
 ```
 5 25 25 -1
 -1 -1 -1
@@ -7002,22 +6903,22 @@ Cho dãy số A[] gồm N phần tử. Với mỗi A[i], bạn cần tìm phần
 
 Bạn là một nhà đầu tư chứng khoán nổi tiếng. Nhiệm vụ hàng ngày của bạn là tính nhịp tăng giảm của phiên chứng khoán trong N ngày để có thể bắt kịp thị trường. Nhịp chứng khoán của ngày thứ i được định nghĩa là số ngày liên tiếp từ ngày thứ i trở về mà giá chứng khoán bé hơn hoặc bằng với giá chứng khoán của ngày i.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu ghi số bộ test (không quá 10). Mỗi test có 2 dòng.
 - Dòng đầu tiên gồm 1 số nguyên N (1 ≤ N ≤ 105) là số ngày.
 - Dòng tiếp theo gồm N số nguyên A1, A2, …, AN (1 ≤ Ai ≤ 10<sup>6</sup>) là giá chứng khoán của các ngày.
 
-**Output:** 
+**Đầu ra:**
 - In ra N số B1, B2, …, BN trong đó Bi là nhịp chứng khoán của ngày thứ i.
 
-**input**
+**input:**
 ```
 1
 7
 100 80 60 70 60 75 85
 ```
 
-**output**
+**output:**
 ```
 1 1 1 2 1 4 6
 ```
@@ -7028,24 +6929,24 @@ Cho xâu ký tự mã hóa str. Hãy viết chương trình giải mã xâu ký 
 
 Xâu đầu vào: “abbbababbbababbbab ”
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T;
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một xâu mã hóa str được viết trên một dòng.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
 **Ràng buộc:** 
 - T, str thỏa mãn ràng buộc: 1≤T≤100; 1≤length(str)≤100.
 
-**input**
+**input:**
 ```
 2
 1[b]
 3[b2[ca]]
 ```
 
-**output**
+**output:**
 ```
 b
 bcacabcacabcaca
@@ -7061,15 +6962,15 @@ Yêu cầu: Hãy tìm một hình chữ nhật gồm các ô của bảng thoả
 2. Cạnh hình chữ nhật song song với cạnh bảng
 3. Diện tích hình chữ nhật là lớn nhất có thể
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi hai số nguyên N và M (1 ≤ M, N ≤ 500).
 - N dòng tiếp theo, mỗi dòng gồm M số nguyên 0 hoặc 1.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra diện tích hình chữ nhật lớn nhất tìm được.
 
-**input**
+**input:**
 ```
 1
 11 13
@@ -7086,7 +6987,7 @@ Yêu cầu: Hãy tìm một hình chữ nhật gồm các ô của bảng thoả
 0 0 0 0 0 1 0 0 0 0 0 1 1
 ```
 
-**output**
+**output:**
 ```
 49
 ```
@@ -7097,14 +6998,14 @@ Cho biểu thức P chỉ bao gồm các ký tự mở ngoặc ‘(’ hoặc đ
 
 Chú ý: Độ dài của biểu thức đúng ngắn nhất là 2.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T (không quá 100)
 - Những dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một biểu thức P được viết trên một dòng (độ dài của P không quá 100).
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 4
 (()(
@@ -7113,7 +7014,7 @@ Chú ý: Độ dài của biểu thức đúng ngắn nhất là 2.
 ()(())(
 ```
 
-**output**
+**output:**
 ```
 2
 4
@@ -7132,20 +7033,18 @@ Trong quá trình gõ một dòng văn bản, chúng ta thường sử dụng ph
 
 Hãy thử tính toán và viết ra kết quả tương ứng.
 
-**Input:** 
-
+**Đầu vào:**
 Có một dòng không quá 10<sup>6</sup> ký tự mô tả dãy gõ bàn phím.
 
-**Output:** 
-
+**Đầu ra:**
 Ghi ra kết quả.
 
-**input**
+**input:**
 ```
 <<PI<T>>Ta-
 ```
 
-**output**
+**output:**
 ```
 PTIT
 ```
@@ -7160,21 +7059,21 @@ Cho một xâu chỉ gồm các kí tự ‘(‘, ‘)’, ‘[‘, ‘]’, ‘
 
 Cho một xâu S. Nhiệm vụ của bạn là xác định xâu S có là dãy ngoặc đúng hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm 1 xâu S có độ dài không vượt quá 100 000.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra “YES” nếu như S là dãy ngoặc đúng, in ra “NO” trong trường hợp ngược lại.
 
-**input**
+**input:**
 ```
 2
 [()]{}{[()()]()}
 [(])
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -7193,15 +7092,15 @@ Ban đầu cho một queue rỗng. Bạn cần thực hiện các truy vấn sau
 5. Trả về phần tử ở đầu queue, nếu queue rỗng in ra -1.
 6. Trả về phần tử ở cuối queue, nếu queue rỗng in ra -1.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên chứa số nguyên T là số bộ dữ liệu, mỗi bộ dữ theo dạng sau.
 - Dòng đầu tiên chứa số nguyên n - lượng truy vấn (1 ≤ n ≤ 1000)
 - N dòng tiếp theo, mỗi dòng sẽ ghi loại truy vấn như trên, với truy vấn loại 3 sẽ có thêm một số nguyên, không quá 10<sup>6</sup>.
 
-**Output:** 
+**Đầu ra:**
 - In ra kết quả của các truy vấn..
 
-**input**
+**input:**
 ```
 1
 14
@@ -7221,7 +7120,7 @@ Ban đầu cho một queue rỗng. Bạn cần thực hiện các truy vấn sau
 1
 ```
 
-**output**
+**output:**
 ```
 1
 3
@@ -7239,14 +7138,14 @@ Yêu cầu bạn xây dựng một queue với các truy vấn sau đây:
 
 “POP”: Xóa phần tử ở đầu của queue. Nếu queue rỗng, không làm gì cả.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng truy vấn Q (Q ≤ 100000).
 - Mỗi truy vấn có dạng như trên.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi truy vấn “PRINT”, hãy in ra phần tử đầu tiên của queue. Nếu queue rỗng, in ra “NONE”.
 
-**input**
+**input:**
 ```
 9
 PUSH 1
@@ -7260,7 +7159,7 @@ POP
 PRINTFRONT
 ```
 
-**output**
+**output:**
 ```
 2
 2
@@ -7283,14 +7182,14 @@ Yêu cầu bạn xây dựng một hàng đợi hai đầu với các truy vấn
 
 “POPBACK”: Xóa phần tử cuối của dequeue. Nếu dequeue rỗng, không làm gì cả.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng truy vấn Q (Q ≤ 100000).
 - Mỗi truy vấn có dạng như trên.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi truy vấn “PRINTFRONT” và “PRINTBACK”, hãy in ra kết quả trên một dòng.
 
-**input**
+**input:**
 ```
 10
 PUSHBACK 1
@@ -7305,7 +7204,7 @@ POPFRONT
 PRINTBACK
 ```
 
-**output**
+**output:**
 ```
 2
 1
@@ -7317,14 +7216,14 @@ NONE
 
 Cho xâu ký tự S[] bao gồm các ký tự in hoa [A, B, …,Z]. Ta định nghĩa giá trị của xâu S[] là tổng bình phương số lần xuất hiện mỗi ký tự trong xâu. Ví dụ với xâu S[] = “AAABBCD” ta có F(S) = 3<sup>2</sup> + 2<sup>2</sup> + 1<sup>2</sup> + 1<sup>2</sup> = 15. Hãy tìm giá trị nhỏ nhất của xâu S[] sau khi loại bỏ K ký tự trong xâu.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T (T≤100).
 - Mỗi test được tổ chức thành 2 dòng. Dòng thứ nhất ghi lại số K. Dòng thứ 2 ghi lại xâu ký tự S[] có độ dài không vượt quá 10^6.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra giá trị nhỏ nhất của mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 0
@@ -7333,7 +7232,7 @@ ABCC
 ABCC
 ```
 
-**output**
+**output:**
 ```
 6
 3
@@ -7343,21 +7242,21 @@ ABCC
 
 Cho số tự nhiên n. Hãy in ra tất cả các số nhị phân từ 1 đến n.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T (T≤100).
 - Mỗi test là một số tự nhiên n được ghi trên một dòng (n≤10000).
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test trên một dòng.
 
-**input**
+**input:**
 ```
 2
 2
 5
 ```
 
-**output**
+**output:**
 ```
 1 10
 1 10 11 100 101
@@ -7367,21 +7266,21 @@ Cho số tự nhiên n. Hãy in ra tất cả các số nhị phân từ 1 đế
 
 Cho số tự nhiên N. Hãy tìm số nguyên dương X nhỏ nhất được tạo bởi số 9 và số 0 chia hết cho N. Ví dụ với N = 5 ta sẽ tìm ra  X = 90.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T (T≤100).
 - Những dòng kế tiếp mỗi dòng ghi lại một test. Mỗi test là một số tự nhiên N được ghi trên một dòng (N≤100).
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra theo từng dòng số X nhỏ nhất chia hết cho N tìm được .
 
-**input**
+**input:**
 ```
 2
 5
 7
 ```
 
-**output**
+**output:**
 ```
 90
 9009
@@ -7391,14 +7290,14 @@ Cho số tự nhiên N. Hãy tìm số nguyên dương X nhỏ nhất được t
 
 Ta gọi số nguyên dương K là một số BDN nếu các chữ số trong K chỉ bao gồm các 0 hoặc 1 có nghĩa. Ví dụ số K = 1, 10, 101. Cho số tự nhiên N (N<2<sup>63</sup>). Hãy cho biết có bao nhiêu số BDN nhỏ hơn N. Ví dụ N=100 ta có 4 số BDN bao gồm các số: 1, 10, 11, 100.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
 - T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một số tự nhiên N.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 10
@@ -7406,7 +7305,7 @@ Ta gọi số nguyên dương K là một số BDN nếu các chữ số trong K
 200
 ```
 
-**output**
+**output:**
 ```
 2
 4
@@ -7421,14 +7320,14 @@ Số BDN của N là số P =M*N sao cho P là số BDN. Cho số tự nhiên N 
 
 Ví dụ. Với N=2, ta tìm được số BDN của N là P = 5 * 2 = 10. N = 17 ta tìm được số BDN của 17 là P = 653 * 17 = 11101.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
 - T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một số tự nhiên N.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 2
@@ -7436,7 +7335,7 @@ Ví dụ. Với N=2, ta tìm được số BDN của N là P = 5 * 2 = 10. N = 1
 17
 ```
 
-**output**
+**output:**
 ```
 10
 11100
@@ -7461,14 +7360,14 @@ Thao tác (a): 3*2 = 6;
 
 Thao tác (b): 6-1 = 5;
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
 - T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một bộ đôi S và T.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 2 5
@@ -7476,7 +7375,7 @@ Thao tác (b): 6-1 = 5;
 7 4
 ```
 
-**output**
+**output:**
 ```
 4
 4
@@ -7497,14 +7396,14 @@ Chỉ được phép sử dụng hai thao tác (a) hoặc (b), hãy biến đổ
 - Thao tác (b): 4 = max(2,2) = 2
 - Thao tác (a): 2 = 2-1 = 1
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên ghi lại số tự nhiên T là số lượng Test;
 - T dòng kế tiếp mỗi dòng ghi lại một bộ Test. Mỗi test là một số N.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 17
@@ -7512,7 +7411,7 @@ Chỉ được phép sử dụng hai thao tác (a) hoặc (b), hãy biến đổ
 100
 ```
 
-**output**
+**output:**
 ```
 4
 5
@@ -7523,21 +7422,21 @@ Chỉ được phép sử dụng hai thao tác (a) hoặc (b), hãy biến đổ
 
 Cho tập n xâu ký tự S và hai xâu s, t ∈ S. Ta giả thiết các xâu ký tự S[i] ∈ S có độ dài bằng nhau.  Hãy tìm khoảng cách đường đi ngắn nhất từ s đến t. Biết từ một xâu ký tự bất kỳ ta chỉ được phép dịch chuyển đến xâu khác với nó duy nhất 1 ký tự. Ví dụ ta có tập các từ S = { POON, TOON, PLEE, SAME, POIE, PLEA, PLIE, POIN }, s = TOON, t = PLEA ta có độ dài đường đi ngắn nhất là 7 tương ứng với các phép dịch chuyển : TOON -> POON –> POIN –> POIE –> PLIE –> PLEE –> PLEA.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T (T≤100).
 - Mỗi test được tổ chức thành 2 dòng. Dòng thứ nhất ghi lại n là số từ trong S và hai từ s, t.  Dòng thứ 2 đưa vào n xâu xâu ký tự của S; các xâu ký tự được viết cách nhau một vài khoảng trống, có độ dài không vượt quá 10 kí tự.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 8 TOON  PLEA
 POON TOON PLEE SAME  POIE  PLEA  PLIE  POIN
 ```
 
-**output**
+**output:**
 ```
 7
 ```
@@ -7551,22 +7450,22 @@ Cho hai số nguyên dương L, R. Hãy đưa ra số các số K trong khoảng
 
 Ví dụ với L = 4, R = 13 ta có 5 số thỏa mãn yêu cầu là 4, 5, 10, 12, 13,
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T.
 - Dòng tiếp theo đưa vào các bộ test. Mỗi bộ test được là một cặp L, R được viết trên một dòng.
 - T, L, R thỏa mãn ràng buộc: 1≤T≤100; 0≤L≤R≤10<sup>5</sup>.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4 13
 100 1000
 ```
 
-**output**
+**output:**
 ```
 5
 100
@@ -7580,16 +7479,16 @@ Mỗi bước di chuyển, bạn có thể đi từ ô (x, y) tới ô (u, v) n�
 
 Cho điểm xuất phát và điểm đích. Bạn hãy tính số bước di chuyển ít nhất?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu ghi số bộ test (không quá 10). Mỗi test gồm:
   - Dòng đầu tiên là số nguyên dương N (1 ≤ N ≤ 100).
   - N dòng tiếp theo, mỗi dòng gồm N kí tự mô tả bảng.
   - Cuối cùng là 4 số nguyên a, b, c, d với (a, b) là tọa độ điểm xuất phát, (c, d) là tọa độ đích. Dữ liệu đảm bảo hai vị trí này không phải là ô có vật cản.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra một số nguyên là đáp số của bài toán.
 
-**input**
+**input:**
 ```
 1
 3
@@ -7599,7 +7498,7 @@ Cho điểm xuất phát và điểm đích. Bạn hãy tính số bước di ch
 0 0 0 2
 ```
 
-**output**
+**output:**
 ```
 3
 ```
@@ -7612,7 +7511,7 @@ Mỗi ngày, các cây non sẽ lan truyền chất dinh dưỡng của nó cho 
 
 Các bạn hãy xác định xem cần ít nhất bao nhiêu ngày để tất cả các hạt đều mầm?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu ghi số bộ test (không quá 10). Mỗi bộ test gồm:
   - Dòng đầu tiên gồm 2 số nguyên R và C (1 ≤ R, C ≤ 500).
   - R dòng tiếp theo, mỗi dòng gồm C số nguyên A[i][j].
@@ -7620,10 +7519,10 @@ Các bạn hãy xác định xem cần ít nhất bao nhiêu ngày để tất c
   - A[i][j] = 1, ô (i, j) là hạt chưa nảy mầm.
   - A[i][j] = 2, ô (i, j) là cây non.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test in ra thời gian ngắn nhất để tất cả các hạt đều nảy mầm. Nếu có hạt nào chưa nảy mầm, in ra -1.
 
-**input**
+**input:**
 ```
 2
 3 5
@@ -7636,7 +7535,7 @@ Các bạn hãy xác định xem cần ít nhất bao nhiêu ngày để tất c
 1 0 0 2 1
 ```
 
-**output**
+**output:**
 ```
 2
 -1
@@ -7648,15 +7547,15 @@ Cho một hình hộp chữ nhật có kích thước A x B x C, trong đó A l�
 
 Mỗi bước, bạn được phép di chuyển sang một ô kề bên cạnh (không được đi chéo). Nhiệm vụ của bạn là tìm đường đi ngắn nhất bắt đầu ‘S’ tới vị trí kết thúc ‘E’.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (1 ≤ N ≤ 50).
 - Mỗi test bắt đầu bởi 3 số nguyên A, B, C (A, B, C ≤ 30).
 - Tiếp theo là A khối, mỗi khối gồm B x C kí tự mô tả một lát cắt của hình hộp chữ nhật. Giữa 2 khối có một dấu xuống dòng.
 
-**Output:** 
+**Đầu ra:**
 - In ra một số nguyên là đường đi ngắn nhất từ S tới E. Nếu không di chuyển được, in ra -1.
 
-**input**
+**input:**
 ```
 2
 3 4 5
@@ -7681,7 +7580,7 @@ S##
 ###
 ```
 
-**output**
+**output:**
 ```
 11
 -1
@@ -7690,21 +7589,20 @@ S##
 ### DSA08016 - HEXGAME
 
 HEXGAME là một trò chơi xếp hình gồm 10 miếng ghép hình lục giác đều, trên mỗi miếng ghép được điền một số nguyên, có 8 miếng được điền số  từ 1 đến 8 và có hai miếng điền số 0. Các miếng liên kết với nhau tạo thành lưới tổ ong. Ban đầu các miếng ghép ở vị trí như hình vẽ. Tại mỗi bước, chọn một miếng ghép có đúng 6 miếng ghép kề cạnh làm tâm, rồi xoay một nấc 6 miếng ghép kề cạnh đó theo chiều kim đồng hồ. Như vậy chỉ có hai cách chọn tâm, đó là chọn tâm bên trái và chọn tâm bên phải.
-
 ![DSA08016](image/DSA08016.png)
 
 Yêu cầu: Cho một trạng thái của trò chơi (nhận được sau một dãy biến đổi từ trạng thái ban đầu), hãy tính số phép biến đổi ít nhất để đưa về trạng thái ban đầu.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu ghi số bộ test (không quá 10). Mỗi bộ test gồm:
   - Dòng đầu tiên chứa 3 số ở 3 miếng ghép dòng thứ nhất (thứ tự từ trái qua phải).
   - Dòng thứ hai chứa 4 số ở 4 miếng ghép dòng thứ hai (thứ tự từ trái qua phải).
   - Dòng thứ 3 chứa 3 số ở 3 miếng ghép dòng thứ ba (thứ tự từ trái qua phải).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi bộ test in ra một số nguyên là số phép biến đổi ít nhất để đưa được về trạng thái ban đầu.
 
-**input**
+**input:**
 ```
 1
 1 0 2
@@ -7712,7 +7610,7 @@ Yêu cầu: Cho một trạng thái của trò chơi (nhận được sau một 
 7 5 4
 ```
 
-**output**
+**output:**
 ```
 5
 ```
@@ -7721,21 +7619,21 @@ Yêu cầu: Cho một trạng thái của trò chơi (nhận được sau một 
 
 Một số được gọi là lộc phát nếu chỉ có 2 chữ số 6 và 8. Cho số tự nhiên N. Hãy liệt kê các số lộc phát có không quá N chữ số.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên ghi lại số tự nhiên T là số lượng bộ test (T<10);
 - T dòng kế tiếp mỗi dòng ghi số N (1<N<15).
 
-**Output:** 
+**Đầu ra:**
 - In ra đáp án theo thứ tự giảm dần.
 
-**input**
+**input:**
 ```
 2
 2
 3
 ```
 
-**output**
+**output:**
 ```
 88 86 68 66 8 6
 888 886 868 866 688 686 668 666 88 86 68 66 8 6
@@ -7745,21 +7643,21 @@ Một số được gọi là lộc phát nếu chỉ có 2 chữ số 6 và 8. 
 
 Một số được gọi là lộc phát nếu chỉ có 2 chữ số 6 và 8. Cho số tự nhiên N. Hãy liệt kê các số lộc phát có không quá N chữ số.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên ghi lại số tự nhiên T là số lượng bộ test (T<10);
 - T dòng kế tiếp mỗi dòng ghi số N (1<N<15).
 
-**Output:** 
+**Đầu ra:**
 - Dòng đầu tiên là số lượng số lộc phát tìm được. Dòng thứ hai in đáp án theo thứ tự tăng dần.
 
-**input**
+**input:**
 ```
 2
 2
 3
 ```
 
-**output**
+**output:**
 ```
 6
 6 8 66 68 86 88
@@ -7771,21 +7669,21 @@ Một số được gọi là lộc phát nếu chỉ có 2 chữ số 6 và 8. 
 
 Một số được gọi là lộc phát nếu chỉ có 2 chữ số 6 và 8. Cho số tự nhiên N. Hãy liệt kê các số lộc phát có không quá N chữ số.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên ghi lại số tự nhiên T là số lượng bộ test (T<10);
 - T dòng kế tiếp mỗi dòng ghi số N (1<N<15).
 
-**Output:** 
+**Đầu ra:**
 - Dòng đầu tiên là số lượng số lộc phát tìm được. Dòng thứ hai in ra đáp án theo thứ tự giảm dần.
 
-**input**
+**input:**
 ```
 2
 2
 3
 ```
 
-**output**
+**output:**
 ```
 6
 88 86 68 66 8 6
@@ -7805,22 +7703,21 @@ Ví dụ số các phép dịch chuyển ít nhất để S = 1033 thành  T = 8
 
 8179 <- 8779 <- 3779 <- 3739 <- 3733 <- 1733 <- 1033.
 
-
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T (T≤100)
 - Những dòng kế tiếp mỗi dòng đưa vào một test. Mỗi test là một bộ đôi S, T.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 1033 8179
 1033 8779
 ```
 
-**output**
+**output:**
 ```
 6
 5
@@ -7830,15 +7727,15 @@ Ví dụ số các phép dịch chuyển ít nhất để S = 1033 thành  T = 8
 
 Cho ma trận A[M][N]. Nhiệm vụ của bạn hãy tìm số bước đi ít nhất dịch chuyển từ vị trí A[1][1] đến vị trí A[M][N]. Biết mỗi bước đi ta chỉ được phép dịch chuyển đến vị trí A[i][j+A[i][j]] hoặc vị trí A[i+A[i][j]][j] bên trong ma trận.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng test T.
 - Dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất là hai số M, N; phần thứ hai là các phần tử của ma trận A[][]; các số được viết cách nhau một vài khoảng trống.
 - T, M, N, A[i][j] thỏa mãn ràng buộc: 1≤T≤100; 1≤M, N, A[i][j]≤10<sup>3</sup>.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng. In ra -1 nếu không tìm được đáp án.
 
-**input**
+**input:**
 ```
 1
 3 3
@@ -7847,7 +7744,7 @@ Cho ma trận A[M][N]. Nhiệm vụ của bạn hãy tìm số bước đi ít n
 1 1 1
 ```
 
-**output**
+**output:**
 ```
 2
 ```
@@ -7858,15 +7755,15 @@ Cho dãy số A[] có N phần tử là các chữ số từ 0 đến 9. Nhiệm
 
 Nếu không tìm được số nào, in ra -1.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (1 ≤ N ≤ 50).
 - Mỗi test bắt đầu bởi số nguyên N (1 ≤ N ≤ 100 000).
 - Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 9).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được trên một dòng.
 
-**input**
+**input:**
 ```
 3
 3
@@ -7879,7 +7776,7 @@ Nếu không tìm được số nào, in ra -1.
 2 2 1 1 1
 ```
 
-**output**
+**output:**
 ```
 981
 8760
@@ -7890,17 +7787,16 @@ Nếu không tìm được số nào, in ra -1.
 ### DSA08025 - QUÂN MÃ
 
 Cho một quân mã trên bàn cờ vua tại vị trí ST. Nhiệm vụ của bạn là hãy tìm số bước di chuyển ít nhất để đưa quân mã tới vị trí EN.
-
 ![DSA08025](image/DSA08025.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm 2 xâu dạng “xy” và “uv”, trong đó x, y là kí tự trong “abcdefgh” còn y, v là số thuộc 1, 2, 3, 4, 5, 6, 7, 8.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được trên một dòng.
 
-**input**
+**input:**
 ```
 8
 e2 e4
@@ -7913,7 +7809,7 @@ b1 c3
 f6 f6
 ```
 
-**output**
+**output:**
 ```
 2
 4
@@ -7928,27 +7824,26 @@ f6 f6
 ### DSA08029 - QUAY HÌNH VUÔNG
 
 Có một chiếc bảng hình chữ nhật với 6 miếng ghép, trên mỗi miếng ghép được điền một số nguyên trong khoảng từ 1 đến 6. Tại mỗi bước, chọn một hình vuông (bên trái hoặc bên phải), rồi quay theo chiều kim đồng hồ.
-
 ![DSA08029](image/DSA08029.png)
 
 Yêu cầu: Cho một trạng thái của bảng, hãy tính số phép biến đổi ít nhất để đưa bảng đến trạng thái đích.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu ghi số bộ test (không quá 10). Mỗi bộ test gồm hai dòng:
   - Dòng đầu tiên chứa 6 số là trạng thái bảng ban đầu (thứ tự từ trái qua phải, dòng 1 tới dòng 2).
   - Dòng thứ hai chứa 6 số là trạng thái bảng đích (thứ tự từ trái qua phải, dòng 1 tới dòng 2).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra một số nguyên là đáp số của bài toán.
 
-**input**
+**input:**
 ```
 1
 1 2 3 4 5 6
 4 1 2 6 5 3
 ```
 
-**output**
+**output:**
 ```
 2
 ```
@@ -7961,17 +7856,17 @@ Có M chú bò đang ăn cỏ trên cánh đồng. Mỗi chú bò được thể
 
 Các bạn hãy tìm xem đàn bò nào có số lượng nhiều nhất?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu ghi số bộ test (không quá 10). Mỗi bộ test như sau:
   - Dòng đầu tiên là 2 số N, M (1 <= N, M <= 500).
   - N dòng tiếp theo, mỗi dòng gồm 4 số nguyên Ax, Ay, Bx, By mô tả tọa độ của một hàng rào.
   - M dòng tiếp theo, mỗi dòng gồm 2 số nguyên Cx, Cy mô tả tọa độ của một chú bò.
   - Các tọa độ có giá trị trong khoảng từ 0 tới 10^6.
 
-**Output:** 
+**Đầu ra:**
 - In ra số lượng lớn nhất có thể của một đàn bò.
 
-**input**
+**input:**
 ```
 1
 7 3
@@ -7987,7 +7882,7 @@ Các bạn hãy tìm xem đàn bò nào có số lượng nhiều nhất?
 17 3
 ```
 
-**output**
+**output:**
 ```
 2
 ```
@@ -7998,15 +7893,15 @@ Các bạn hãy tìm xem đàn bò nào có số lượng nhiều nhất?
 
 Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết chương trình thực hiện chuyển đổi biểu diễn đồ thị dưới dạng danh sách kề.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:**
+**Đầu ra:**
 - Đưa ra danh sách kề của các đỉnh tương ứng theo khuôn dạng của ví dụ dưới đây. Các đỉnh trong danh sách in ra theo thứ tự tăng dần.
 
-**input**
+**input:**
 ```
 1
 6 9
@@ -8021,7 +7916,7 @@ Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh
 5 6
 ```
 
-**output**
+**output:**
 ```
 1: 2 3
 2: 1 3 5
@@ -8035,14 +7930,14 @@ Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đơn đồ thị G vô hướng liên thông được mô tả bởi danh sách kề. Hãy in ra danh sách cạnh tương ứng của G.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên ghi số N là số đỉnh (1<N<50)
 - N dòng tiếp theo mỗi dòng ghi 1 danh sách kề lần lượt theo thứ tự từ đỉnh 1 đến đỉnh N
 
-**Output:**
+**Đầu ra:**
 - Ghi ra lần lượt từng cạnh của đồ thị theo thứ tự tăng dần.
 
-**input**
+**input:**
 ```
 3
 2 3
@@ -8050,7 +7945,7 @@ Cho đơn đồ thị G vô hướng liên thông được mô tả bởi danh s
 1 2
 ```
 
-**output**
+**output:**
 ```
 1 2
 1 3
@@ -8061,15 +7956,15 @@ Cho đơn đồ thị G vô hướng liên thông được mô tả bởi danh s
 
 Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết chương trình thực hiện chuyển đổi biểu diễn đồ thị dưới dạng danh sách kề.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:**
+**Đầu ra:**
 - Đưa ra danh sách kề của các đỉnh tương ứng theo khuôn dạng của ví dụ dưới đây. Các đỉnh trong danh sách in ra theo thứ tự tăng dần.
 
-**input**
+**input:**
 ```
 1
 6 9
@@ -8084,7 +7979,7 @@ Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh
 6 4
 ```
 
-**output**
+**output:**
 ```
 1: 2
 2: 5
@@ -8098,15 +7993,15 @@ Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toán duyệt theo chiều sâu bắt đầu tại đỉnh u∈V (DFS(u)=?)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra danh sách các đỉnh được duyệt theo thuật toán DFS(u) của mỗi test theo khuôn dạng của ví dụ dưới đây.
 
-**input**
+**input:**
 ```
 1
 6 9 5
@@ -8121,7 +8016,7 @@ Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh
 5 6
 ```
 
-**output**
+**output:**
 ```
 5 3 1 2 4 6
 ```
@@ -8130,22 +8025,22 @@ Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toán duyệt theo chiều sâu bắt đầu tại đỉnh u∈V (BFS(u)=?)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra danh sách các đỉnh được duyệt theo thuật toán BFS(u) của mỗi test theo khuôn dạng của ví dụ dưới đây.
 
-**input**
+**input:**
 ```
 1
 6 9 1
 1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
 ```
 
-**output**
+**output:**
 ```
 1 2 3 5 4 6
 ```
@@ -8154,22 +8049,22 @@ Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từ đỉnh s∈V đến đỉnh t∈V trên đồ thị bằng thuật toán DFS.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán DFS của mỗi test theo khuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
 
-**input**
+**input:**
 ```
 1
 6 9 1 6
 1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
 ```
 
-**output**
+**output:**
 ```
 1 2 3 4 5 6
 ```
@@ -8178,22 +8073,22 @@ Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từ đỉnh s∈V đến đỉnh t∈V trên đồ thị bằng thuật toán BFS.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán BFS của mỗi test theo khuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
 
-**input**
+**input:**
 ```
 1
 6 9 1 6
 1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
 ```
 
-**output**
+**output:**
 ```
 1 2 5 6
 ```
@@ -8202,22 +8097,22 @@ Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm số thành phần liên thông của đồ thị.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra số thành phần liên thông của đồ thị.
 
-**input**
+**input:**
 ```
 1
 5 6 
 1 2 1 3 2 3 3 4 3 5 4 5
 ```
 
-**output**
+**output:**
 ```
 1
 ```
@@ -8226,22 +8121,22 @@ Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm số thành phần liên thông của đồ thị bằng thuật toán BFS.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra số thành phần liên thông của đồ thị bằng thuật toán BFS.
 
-**input**
+**input:**
 ```
 1
 6 6 
 1 2 1 3 2 3 3 4 3 5 4 5
 ```
 
-**output**
+**output:**
 ```
 2
 ```
@@ -8250,22 +8145,22 @@ Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy kiểm tra xem đồ thị có liên thông mạnh hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra “YES”, hoặc “NO” theo từng dòng tương ứng với test là liên thông mạnh hoặc không liên thông mạnh.
 
-**input**
+**input:**
 ```
 1
 6 9 
 1 2 2 4 3 1 3 2 3 5 4 3 5 4 5 6 6 3
 ```
 
-**output**
+**output:**
 ```
 YES
 ```
@@ -8276,15 +8171,15 @@ Cho một bản đồ kích thước N x M được mô tả bằng ma trận A[
 
 Nhiệm vụ của bạn là hãy đếm số lượng đảo xuất hiện trên bản đồ.
 
-**Input:**
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi 2 số nguyên N và M (1 ≤ N, M ≤ 500).
 - N dòng tiếp theo, mỗi dòng gồm M số nguyên A[i][j].
 
-**Output:**
+**Đầu ra:**
 - Với mỗi test, in ra số lượng hòn đảo tìm được.
 
-**input**
+**input:**
 ```
 1
 5 5
@@ -8295,7 +8190,7 @@ Nhiệm vụ của bạn là hãy đếm số lượng đảo xuất hiện trê
 1 0 1 0 1
 ```
 
-**output**
+**output:**
 ```
 5
 ```
@@ -8304,22 +8199,22 @@ Nhiệm vụ của bạn là hãy đếm số lượng đảo xuất hiện trê
 
 Cho đồ thị vô hướng liên thông G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy đưa ra tất cả các đỉnh trụ của đồ thị?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra danh sách các đỉnh trụ của mỗi test  theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 5 5
 1 2 1 3 2 3 2 5 3 4
 ```
 
-**output**
+**output:**
 ```
 2 3
 ```
@@ -8328,15 +8223,15 @@ Cho đồ thị vô hướng liên thông G=<V, E> được biểu diễn dướ
 
 Cho đồ thị vô hướng liên thông G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy đưa ra tất cả các cạnh cầu của đồ thị?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra danh sách các cạch cầu của mỗi test theo từng dòng. In ra đáp án theo thứ tự từ điển, theo dạng “a b …” với a < b.
 
-**input**
+**input:**
 ```
 1
 5 5
@@ -8351,22 +8246,22 @@ Cho đồ thị vô hướng liên thông G=<V, E> được biểu diễn dướ
 
 Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy kiểm tra xem đồ thị có tồn tại chu trình hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra YES hoặc “NO” kết quả test theo từng dòng tương ứng với đồ thị tồn tại hoặc không tồn tại chu trình.
 
-**input**
+**input:**
 ```
 1
 6  9
 1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
 ```
 
-**output**
+**output:**
 ```
 YES
 ```
@@ -8375,22 +8270,22 @@ YES
 
 Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy kiểm tra xem đồ thị có tồn tại chu trình hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra YES hoặc “NO” kết quả test theo từng dòng tương ứng với đồ thị tồn tại hoặc không tồn tại chu trình.
 
-**input**
+**input:**
 ```
 1
 6 9  
 1 2 2 4 3 1 3 2 3 5 4 3 5 4 5 6 6 4
 ```
 
-**output**
+**output:**
 ```
 YES
 ```
@@ -8399,22 +8294,22 @@ YES
 
 Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Sử dụng thuật toán DFS, hãy kiểm tra xem đồ thị có tồn tại chu trình hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E| +1 dòng: dòng đầu tiên đưa vào ba số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị, và u là đỉnh xuất phát; |E| dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra YES hoặc “NO” kết quả test theo từng dòng tương ứng với đồ thị tồn tại hoặc không tồn tại chu trình.
 
-**input**
+**input:**
 ```
 1
 6 9  
 1 2 2 4 3 1 3 2 3 5 4 3 5 4 5 6 6 4
 ```
 
-**output**
+**output:**
 ```
 YES
 ```
@@ -8423,15 +8318,15 @@ YES
 
 Một đồ thị N đỉnh là một cây, nếu như nó có đúng N-1 cạnh và giữa 2 đỉnh bất kì, chỉ tồn tại duy nhất 1 đường đi giữa chúng.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi số nguyên N (1 ≤ N ≤ 1000).
 - N-1 dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối giữa đỉnh u và v.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra “YES” nếu đồ thị đã cho là một cây, in ra “NO” trong trường hợp ngược lại.
 
-**input**
+**input:**
 ```
 2
 4
@@ -8444,7 +8339,7 @@ Một đồ thị N đỉnh là một cây, nếu như nó có đúng N-1 cạnh
 2 3
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -8456,13 +8351,13 @@ Cho đơn đồ thị vô hướng có n đỉnh dưới dạng danh sách kề.
 
 Hãy biểu diễn đồ thị bằng ma trận kề.
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên chứa số nguyên n – số đỉnh của đồ thị (1 ≤  n ≤  1000). n dòng tiếp theo, dòng thứ i chứa các số nguyên là các đỉnh kề với đỉnh i.  
 
-**Output:** 
+**Đầu ra:**
 Ma trận kề của đồ thị.
 
-**input**
+**input:**
 ```
 3
 2 3
@@ -8470,7 +8365,7 @@ Ma trận kề của đồ thị.
 1 2
 ```
 
-**output**
+**output:**
 ```
 0 1 1
 1 0 1
@@ -8485,13 +8380,13 @@ Danh sách kề thì liệt kê các đỉnh kề với đỉnh đó theo thứ 
 
 Hãy chuyển biểu diễn đồ thị từ dạng ma trận kề sang dạng danh sách kề.
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên chứa số nguyên n – số đỉnh của đồ thị (1 < n ≤ 1000). n dòng tiếp theo, mỗi dòng có n số nguyên có giá trị 0 và 1 mô tả ma trận kề của đồ thị. 
 
-**Output:** 
+**Đầu ra:**
 Gồm n dòng, dòng thứ i chứa các số nguyên là đỉnh có nối với đỉnh i và được sắp xếp tăng dần. Dữ liệu đảm bảo mỗi đỉnh có kết nối với ít nhất 1 đỉnh khác.
 
-**input**
+**input:**
 ```
 3
 0 1 1
@@ -8499,7 +8394,7 @@ Gồm n dòng, dòng thứ i chứa các số nguyên là đỉnh có nối vớ
 1 1 0
 ```
 
-**output**
+**output:**
 ```
 2 3
 1 3
@@ -8510,22 +8405,22 @@ Gồm n dòng, dòng thứ i chứa các số nguyên là đỉnh có nối vớ
 
 Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toán duyệt theo chiều sâu bắt đầu tại đỉnh u∈V (DFS(u)=?)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào ba số |V|, |E|, u∈V tương ứng với số đỉnh, số cạnh và đỉnh bắt đầu duyệt; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra danh sách các đỉnh được duyệt theo thuật toán DFS(u) của mỗi test theo khuôn dạng của ví dụ dưới đây.
 
-**input**
+**input:**
 ```
 1
 6 9 5
 1 2 2 5 3 1 3 2 3 5 4 3 5 4 5 6 6 3
 ```
 
-**output**
+**output:**
 ```
 5 4 3 1 2 6
 ```
@@ -8534,22 +8429,22 @@ Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy viết thuật toán duyệt theo chiều sâu bắt đầu tại đỉnh u∈V (BFS(u)=?)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào ba số |V|, |E|, u∈V tương ứng với số đỉnh, số cạnh và đỉnh bắt đầu duyệt; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra danh sách các đỉnh được duyệt theo thuật toán BFS(u) của mỗi test theo khuôn dạng của ví dụ dưới đây.
 
-**input**
+**input:**
 ```
 1
 6 9 1
 1 2 2 5 3 1 3 2 3 5 4 3 5 4 5 6 6 4
 ```
 
-**output**
+**output:**
 ```
 1 2 5 4 6 3
 ```
@@ -8558,22 +8453,22 @@ Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từ đỉnh s∈V đến đỉnh t∈V trên đồ thị bằng thuật toán DFS.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào ba số |V|, |E|, u∈V tương ứng với số đỉnh, số cạnh và đỉnh bắt đầu duyệt; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán DFS của mỗi test theo khuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
 
-**input**
+**input:**
 ```
 1
 6 9 1 6
 1 2 2 5 3 1 3 2 3 5 4 3 5 4 5 6 6 4
 ```
 
-**output**
+**output:**
 ```
 1 2 5 6
 ```
@@ -8582,22 +8477,22 @@ Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy tìm đường đi từ đỉnh s∈V đến đỉnh t∈V trên đồ thị bằng thuật toán BFS.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào ba số |V|, |E|, u∈V tương ứng với số đỉnh, số cạnh và đỉnh bắt đầu duyệt; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤200; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra đường đi từ đỉnh s đến đỉnh t của mỗi test theo thuật toán BFS của mỗi test theo khuôn dạng của ví dụ dưới đây. Nếu không có đáp án, in ra -1.
 
-**input**
+**input:**
 ```
 1
 6 9 1 6
 1 2 2 5 3 1 3 2 3 5 4 3 5 4 5 6 6 4
 ```
 
-**output**
+**output:**
 ```
 1 2 5 6
 ``` 
@@ -8606,17 +8501,17 @@ Cho đồ thị có hướng G=<V, E> được biểu diễn dưới dạng danh
 
 Cho đồ thị vô hướng có N đỉnh và M cạnh. Có Q truy vấn, mỗi truy vấn yêu cầu trả lời câu hỏi giữa 2 đỉnh x và y có tồn tại đường đi tới nhau hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test gồm 2 số nguyên N, M (1 ≤ N, M ≤ 1000).
 - M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối giữa đỉnh u và v.
 - Dòng tiếp là số lượng truy vấn Q (1 ≤ Q ≤ 1000).
 - Q dòng tiếp theo, mỗi dòng gồm 2 số nguyên x và y.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi truy vấn, in ra “YES” nếu có đường đi từ x tới y, in ra “NO” nếu ngược lại.
 
-**input**
+**input:**
 ```
 1
 6 5
@@ -8630,7 +8525,7 @@ Cho đồ thị vô hướng có N đỉnh và M cạnh. Có Q truy vấn, mỗi
 2 4
 ```
 
-**output**
+**output:**
 ```
 NO
 YES
@@ -8639,18 +8534,17 @@ YES
 ###	DSA09028 - TÔ MÀU ĐỒ THỊ
 
 Một trong những bài toán kinh điển của lý thuyết đồ thị là bài toán Tô màu đồ thị. Bài toán được phát biểu như sau: Cho đồ thị vô hướng G =<V, E> được biểu diễn dưới dạng danh sách cạnh và số M. Nhiệm vụ của bạn là kiểm tra xem đồ thị có thể tô màu các đỉnh bằng nhiều nhất M màu sao cho hai đỉnh kề nhau đều có màu khác nhau hay không?
-
 ![DSA09028](image/DSA09028.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào ba số V, E, M tương ứng với số đỉnh, số cạnh và số màu; phần thứ hai đưa vào các cạnh của đồ thị.
 - T, V, E, M thỏa mãn ràng buộc: 1≤T ≤100; 1≤V≤10; 1≤ E ≤N(N-1), 1≤V≤N.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4 5 3
@@ -8665,7 +8559,7 @@ Một trong những bài toán kinh điển của lý thuyết đồ thị là b
 1 3
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -8675,15 +8569,15 @@ NO
 
 Đường đi đơn trên đồ thị có hướng hoặc vô hướng đi qua tất cả các đỉnh của đồ thị mỗi đỉnh đúng một lần được gọi là đường đi Hamilton. Cho đồ thị vô hướng G = <V, E>, hãy kiểm tra xem đồ thị có đường đi Hamilton hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào hai số V, E tương ứng với số đỉnh, số cạnh của đồ thị; phần thứ hai đưa vào các cạnh của đồ thị.
 - T, V, E thỏa mãn ràng buộc: 1≤T ≤100; 1≤V≤10; 1≤ E ≤15.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra 1 hoặc 0 tương ứng với test có hoặc không có đường đi Hamilton theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4 4
@@ -8692,7 +8586,7 @@ NO
 1 2 2 3 2 4
 ```
 
-**output**
+**output:**
 ```
 1
 0
@@ -8701,18 +8595,17 @@ NO
 ###	DSA09030 - ĐỒ THỊ HAI PHÍA
 
 Đồ thị hai phía là một đồ thị đặc biệt, trong đó tập các đỉnh có thể được chia thành hai tập không giao nhau thỏa mãn điều kiện không có cạnh nối hai đỉnh bất kỳ thuộc cùng một tập. Cho đồ thị N đỉnh và M cạnh, bạn hãy kiểm tra đồ thị đã cho có phải là một đồ thị hai phía hay không?
-
 ![DSA09030](image/DSA09030.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤  20).
 - Mỗi test bắt đầu bởi số nguyên N và M (1 ≤  N, M ≤  1000).
 - M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối giữa đỉnh u và v.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra “YES” nếu đồ thị đã cho là một đồ thị hai phía, in ra “NO” trong trường hợp ngược lại.
 
-**input**
+**input:**
 ```
 2
 5 4
@@ -8726,7 +8619,7 @@ NO
 2 3
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -8738,16 +8631,14 @@ Trên cánh đồng kích thước N x N có K chú cừu. Người nông dân s
 
 Hai chú cừu A và B được gọi là ‘xa cách’ nếu như chúng không thể di chuyển tới vị trí của nhau. Các bạn hãy xác định xem số cặp chú cừu xa cách bằng nhau nhiêu?
 
-
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên gồm 3 số nguyên dương N, K và M (1 ≤  N ≤  100, K ≤  100, M ≤  N^2).  M dòng tiếp theo, mỗi dòng gồm 4 số nguyên u, v, x, y cho biết có rào chắn ở giữa hai khu vực (u, v) và (x, y) (2 ô này cạnh nhau). K dòng cuối, mỗi dòng chứa 2 số nguyên là tọa độ của mỗi chú cừu.
 
-**Output:** 
+**Đầu ra:**
 In ra số cặp chú cừu bị xa cách tìm được.
-
 ![DSA09031](image/DSA09031.png)
 
-**input**
+**input:**
 ```
 3 3 3
 2 2 2 3
@@ -8758,7 +8649,7 @@ In ra số cặp chú cừu bị xa cách tìm được.
 2 3
 ```
 
-**output**
+**output:**
 ```
 2
 ``` 
@@ -8771,15 +8662,15 @@ Trường học X có N sinh viên, trong đó có M cặp là bạn bè của n
 
 Các bạn hãy xác định xem số lượng sinh viên nhiều nhất trong một nhóm bạn là bao nhiêu?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi 2 số nguyên N và M (N, M ≤ 100 000).
 - M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v (u #v) cho biết sinh viên u là bạn của sinh viên v.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được trên một dòng.
 
-**input**
+**input:**
 ```
 2
 3 2
@@ -8800,7 +8691,7 @@ Các bạn hãy xác định xem số lượng sinh viên nhiều nhất trong m
 8 9
 ```
 
-**output**
+**output:**
 ```
 3
 7
@@ -8812,15 +8703,15 @@ Tý đang xây dựng một mạng xã hội và mời các bạn của mình d�
 
 Các bạn hãy xác định xem mạng xã hội hiện tại của Tý có là hoàn hảo hay không? Nếu có hãy in ra “YES”, “NO” trong trường hợp ngược lại.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi 2 số nguyên N và M (N, M ≤ 100 000).
 - M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v (u #v) cho biết sinh viên u là bạn của sinh viên v.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra đáp án tìm được trên một dòng.
 
-**input**
+**input:**
 ```
 3
 4 3
@@ -8839,7 +8730,7 @@ Các bạn hãy xác định xem mạng xã hội hiện tại của Tý có là
 1 2
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -8850,16 +8741,15 @@ YES
 
 Sau khi thi trượt môn Cấu trúc dữ liệu và giải thuật, một số sinh viên D19 CNTT - PTIT quyết định bỏ học, đầu tư thuê đất để trồng rau. Mảnh đất thuê là một hình chữ nhật N x M (1≤ N≤ 100; 1≤ M≤ 100) ô đất hình vuông. Nhưng chỉ sau đó vài ngày, trận lụt khủng khiếp đã diễn ra làm một số ô đất bị ngập. Mảnh đất bỗng biến thành các cái ao. Và sinh viên D19 lại dự định chuyển sang nuôi cá. Các bạn ấy muốn biết mảnh đất được chia thành bao nhiêu cái ao để có thể tính toán nuôi cá cho hợp lý. Hãy giúp các bạn ấy nhé. *Chú ý: Ao là gồm một số ô đất bị ngập có chung đỉnh. Dễ nhận thấy là một ô đất có thể có tối đa 8 ô chung đỉnh.*
 
-
 Các bạn hãy xác định xem mạng xã hội hiện tại của Tý có là hoàn hảo hay không? Nếu có hãy in ra “YES”, “NO” trong trường hợp ngược lại.
 
-**Input:** 
+**Đầu vào:**
 Dòng1: 2 số nguyên cách nhau bởi dấu cách: N và M. Dòng 2..N+1: M kí tự liên tiếp nhau mỗi dòng đại diện cho 1 hàng các ô đất.  Mỗi kí tự là 'W' hoặc '.' tương ứng với ô đất đã bị ngập và ô đất vẫn còn nguyên.
 
-**Output:** 
+**Đầu ra:**
 Một dòng chứa 1 số nguyên duy nhất là số ao tạo thành.
 
-**input**
+**input:**
 ```
 10 12
 W........WW.
@@ -8874,7 +8764,7 @@ W.W.W.....W.
 ..W.......W.
 ```
 
-**output**
+**output:**
 ```
 3
 ``` 
@@ -8885,15 +8775,15 @@ Có K người (1 ≤ K ≤ 100) đứng tại vị trí nào đó trong N đị
 
 Mọi người muốn cùng tụ họp tại một địa điểm nào đó. Tuy nhiên, với các đường đi cho trước, chỉ có một số địa điểm nào đó có thể được chọn là điểm họp mặt. Cho trước K, N, M và vị trí ban đầu của K người cùng với M đường đi một chiều, hãy xác định xem có bao nhiêu điểm có thể được chọn làm điểm họp mặt. 
 
-**Input:** 
+**Đầu vào:**
 - Dòng 1: Ghi 3 số: K, N, và M 
 - Dòng 2 đến K+1: dòng i+1 chứa một số nguyên trong khoảng (1..N) cho biết địa điểm mà người thứ i đang đứng. 
 - Dòng K+2 đến M+K+1: Mỗi dòng ghi một cặp số A và B mô tả một đoạn đường đi một chiều từ A đến B (cả hai trong khoảng 1..N và A != B).
 
-**Output:** 
+**Đầu ra:**
 - Số địa điểm có thể được chọn là điểm họp mặt.
 
-**input**
+**input:**
 ```
 2 4 4
 2
@@ -8904,7 +8794,7 @@ Mọi người muốn cùng tụ họp tại một địa điểm nào đó. Tuy
 3 4
 ```
 
-**output**
+**output:**
 ```
 2
 ``` 
@@ -8919,35 +8809,33 @@ Quá trình lan truyền năng lượng sẽ làm tăng giá trị dinh dưỡng
 
 Biết rằng mỗi nút lá ban đầu tổng hợp được chất dinh dưỡng có giá trị 1. Nhiệm vụ của bạn là hãy xác định xem mỗi nút của cây tổng hợp được bao nhiêu giá trị dinh dưỡng?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng đỉnh N (N <= 200 000).
 - Dòng tiếp theo gồm N-1 số nguyên, a[2], a[3], …, a[N] lần lượt là cha của các nút 2, 3, …, N.
 
-**Output:** 
+**Đầu ra:**
 - In ra N số nguyên, số nguyên thứ i cho biết giá trị dinh dưỡng mà nút i tổng hợp được.
 
 ***Test1***
-
-**input**
+**input:**
 ```
 3
 1 1
 ```
 
-**output**
+**output:**
 ```
 5 1 1
 ``` 
 
 ***Test2***
-
-**input**
+**input:**
 ```
 5
 1 2 2 4
 ```
 
-**output**
+**output:**
 ```
 13 8 1 3 1
 ``` 
@@ -8956,22 +8844,22 @@ Biết rằng mỗi nút lá ban đầu tổng hợp được chất dinh dưỡ
 
 Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Sử dụng **Disjoin Set**, hãy kiểm tra xem đồ thị có tồn tại chu trình hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh,  số cạnh của đồ thị; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra YES hoặc “NO” kết quả test theo từng dòng tương ứng với đồ thị tồn tại hoặc không tồn tại chu trình.
 
-**input**
+**input:**
 ```
 1
 6 9
 1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
 ```
 
-**output**
+**output:**
 ```
 YES
 ``` 
@@ -8984,15 +8872,15 @@ Cho đồ thị vô hướng liên thông G=<V, E> được biểu diễn dướ
 
 Chu trình Euler bắt đầu tại một đỉnh, và kết thúc chu trình tại chính đỉnh đó.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh,  số cạnh của đồ thị; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra 1, 2, 0 kết quả mỗi test theo từng dòng tương ứng với đồ thị có đường đi Euler, chu trình Euler và trường hợp không tồn tại.
 
-**input**
+**input:**
 ```
 2
 6 10  
@@ -9001,7 +8889,7 @@ Chu trình Euler bắt đầu tại một đỉnh, và kết thúc chu trình t�
 1 2 1 3 2 3 2 4 2 5 3 4 3 5 4 5 4 6
 ```
 
-**output**
+**output:**
 ```
 2
 1
@@ -9011,15 +8899,15 @@ Chu trình Euler bắt đầu tại một đỉnh, và kết thúc chu trình t�
 
 Cho đồ thị có hướng liên thông yếu G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy kiểm tra xem đồ thị có chu trình Euler hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh,  số cạnh của đồ thị; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra 1, 0 kết quả mỗi test theo từng dòng tương ứng với đồ thị có chu trình Euler và trường hợp không tồn tại đáp án.
 
-**input**
+**input:**
 ```
 2
 6  10  
@@ -9028,7 +8916,7 @@ Cho đồ thị có hướng liên thông yếu G=<V, E> được biểu diễn 
 1 2 2 3 1 3
 ```
 
-**output**
+**output:**
 ```
 1
 0
@@ -9038,24 +8926,24 @@ Cho đồ thị có hướng liên thông yếu G=<V, E> được biểu diễn 
 
 Cho đồ thị vô hướng G= được biểu diễn dưới dạng danh sách cạnh. Hãy kiểm tra xem đồ thị có chu trình từ đỉnh 1 hay không, nếu có, hãy in ra chu trình đầu tiên tìm thấy theo DFS.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào hai số N, M  tương ứng với số đỉnh, số cạnh.
 - Dòng tiếp theo đưa vào các bộ đôi u, v tương ứng với một cạnh của đồ thị.
 - T, N, M thỏa mãn ràng buộc: 1≤T≤100; 1≤ N ≤10<sup>3</sup>; 1≤ M ≤ N*(N-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra chu trình đầu tiên tìm thấy theo DFS từ đỉnh 1.
 - Nếu không có chu trình từ đỉnh 1, ghi ra NO
 
-**input**
+**input:**
 ```
 1
 6 9
 1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
 ```
 
-**output**
+**output:**
 ```
 1 2 3 1
 ``` 
@@ -9066,22 +8954,22 @@ Cho đồ thị vô hướng G= được biểu diễn dưới dạng danh sách
 
 Cho đồ thị vô hướng liên thông G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy đưa ra tất cả các đỉnh trụ của đồ thị?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra danh sách các đỉnh trụ của mỗi test  theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 5 5
 1 2 1 3 2 3 2 5 3 4
 ```
 
-**output**
+**output:**
 ```
 2 3
 ``` 
@@ -9090,22 +8978,22 @@ Cho đồ thị vô hướng liên thông G=<V, E> được biểu diễn dướ
 
 Cho đồ thị vô hướng G=<V, E> được biểu diễn dưới dạng danh sách cạnh. Hãy kiểm tra xem đồ thị có tồn tại chu trình hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh; Dòng tiếp theo đưa vào các bộ đôi u∈V, v∈V tương ứng với một cạnh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra YES hoặc “NO” kết quả test theo từng dòng tương ứng với đồ thị tồn tại hoặc không tồn tại chu trình.
 
-**input**
+**input:**
 ```
 1
 6 9
 1 2 1 3 2 3 2 5 3 4 3 5 4 5 4 6 5 6
 ```
 
-**output**
+**output:**
 ```
 YES
 ``` 
@@ -9114,15 +9002,15 @@ YES
 
 Cho một bảng S[][] kích thước N x M, bao gồm các ô trống, các vật cản. Ban đầu bạn ở vị trí S. Nhiệm vụ của bạn là hãy di chuyển tới vị trí T, sao cho số lần đổi hướng không quá hai lần.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi hai số nguyên N và M (1 ≤ N, M ≤ 500).
 - N dòng tiếp theo, mỗi dòng gồm M kí tự mô tả bảng S. Trong đó: ‘.’ là một ô trống, ‘*’ là vật cản, ‘S’ là vị trí xuất phát và ‘T’ là vị trí đích. (Chỉ có một vị trí S và T duy nhất).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra “YES” nếu tìm được đường đi, ra in “NO” trong trường hợp ngược lại.
 
-**input**
+**input:**
 ```
 2
 5 5
@@ -9139,7 +9027,7 @@ S....
 ..T..
 ```
 
-**output**
+**output:**
 ```
 YES
 NO
@@ -9149,8 +9037,7 @@ NO
 
 Cho đồ thị vô hướng G=(V, E). Hãy xây dựng một cây khung của đồ thị G với đỉnh u ∈ V là gốc của cây bằng thuật toán DFS.
 
-**Input:** 
-
+**Đầu vào:**
 Dòng đầu tiên gồm một số nguyên T (1 ≤ T ≤ 20) là số lượng bộ test.
 
 Tiếp theo là T bộ test, mỗi bộ test có dạng sau:
@@ -9160,12 +9047,10 @@ Tiếp theo là T bộ test, mỗi bộ test có dạng sau:
 - M dòng tiếp theo, mỗi dòng gồm 2 số nguyên a, b (1 ≤ a, b ≤ N, a ≠ b) tương ứng cạnh nối hai chiều từ a tới b.
 - Dữ liệu đảm bảo giữa hai đỉnh chỉ tồn tại nhiều nhất một cạnh nối.
 
-**Output:** 
-
+**Đầu ra:**
 Với mỗi bộ test, nếu tồn tại cây khung thì in ra N – 1 cạnh của cây khung với gốc là đỉnh u trên N – 1 dòng theo thứ tự duyệt của thuật toán DFS. Ngược lại nếu không tồn tại cây khung thì in ra -1.
 
-
-**input**
+**input:**
 ```
 2
 4 4 2
@@ -9178,7 +9063,7 @@ Với mỗi bộ test, nếu tồn tại cây khung thì in ra N – 1 cạnh c�
 3 4
 ```
 
-**output**
+**output:**
 ```
 2 1
 1 3
@@ -9190,8 +9075,7 @@ Với mỗi bộ test, nếu tồn tại cây khung thì in ra N – 1 cạnh c�
 
 Cho đồ thị vô hướng G=(V, E). Hãy xây dựng một cây khung của đồ thị G với đỉnh u ∈ V là gốc của cây bằng thuật toán BFS.
 
-**Input:** 
-
+**Đầu vào:**
 Dòng đầu tiên gồm một số nguyên T (1 ≤ T ≤ 20) là số lượng bộ test.
 
 Tiếp theo là T bộ test, mỗi bộ test có dạng sau:
@@ -9201,12 +9085,10 @@ Tiếp theo là T bộ test, mỗi bộ test có dạng sau:
 - M dòng tiếp theo, mỗi dòng gồm 2 số nguyên a, b (1 ≤ a, b ≤ N, a ≠ b) tương ứng cạnh nối hai chiều từ a tới b.
 - Dữ liệu đảm bảo giữa hai đỉnh chỉ tồn tại nhiều nhất một cạnh nối.
 
-**Output:** 
-
+**Đầu ra:**
 Với mỗi bộ test, nếu tồn tại cây khung thì in ra N – 1 cạnh của cây khung với gốc là đỉnh u trên N – 1 dòng theo thứ tự duyệt của thuật toán BFS. Ngược lại nếu không tồn tại cây khung thì in ra -1.
 
-
-**input**
+**input:**
 ```
 2
 4 4 2
@@ -9219,7 +9101,7 @@ Với mỗi bộ test, nếu tồn tại cây khung thì in ra N – 1 cạnh c�
 3 4
 ```
 
-**output**
+**output:**
 ```
 2 1
 2 4
@@ -9231,16 +9113,15 @@ Với mỗi bộ test, nếu tồn tại cây khung thì in ra N – 1 cạnh c�
 
 Cho đồ thị có trọng số không âm G=<V, E> được biểu diễn dưới dạng danh sách cạnh trọng số. Hãy viết chương trình tìm đường đi ngắn nhất từ đỉnh u∈V đến tất cả các đỉnh còn lại trên đồ thị.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E|+1 dòng: dòng đầu tiên đưa vào hai ba số |V|, |E| tương ứng với số đỉnh và u∈V là đỉnh bắt đầu; |E| dòng tiếp theo mỗi dòng đưa vào bộ ba u∈V, v∈V, w tương ứng với một cạnh cùng với trọng số canh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả của mỗi test theo từng dòng. Kết quả mỗi test là trọng số đường đi ngắn nhất từ đỉnh u đến các đỉnh còn lại của đồ thị theo thứ tự tăng dần các đỉnh.
 
-
-**input**
+**input:**
 ```
 1
 9 12 1
@@ -9258,7 +9139,7 @@ Cho đồ thị có trọng số không âm G=<V, E> được biểu diễn dư�
 6 9 6
 ```
 
-**output**
+**output:**
 ```
 0 4 12 19 26 16 18 8 14 
 ``` 
@@ -9269,17 +9150,16 @@ Cho đơn đồ thị vô hướng liên thông G = (V, E) gồm N đỉnh và M
 
 Có Q truy vấn, mỗi truy vấn yêu cầu bạn tìm đường đi ngắn nhất giữa đỉnh X[i] tới Y[i].
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên hai số nguyên N và M (1 ≤ N ≤ 100, 1 ≤ M ≤ N*(N-1)/2).
 - M dòng tiếp theo, mỗi dòng gồm 3 số nguyên u, v, c cho biết có cạnh nối giữa đỉnh u và v có độ dài bằng c (1 ≤ c ≤ 1000).
 - Tiếp theo là số lượng truy vấn Q (1 ≤ Q ≤ 100 000).
 - Q dòng tiếp theo, mỗi dòng gồm 2 số nguyên X[i], Y[i].
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi truy vấn, in ra đáp án là độ dài đường đi ngắn nhất tìm được.
 
-
-**input**
+**input:**
 ```
 5 6
 1 2 6
@@ -9294,7 +9174,7 @@ Có Q truy vấn, mỗi truy vấn yêu cầu bạn tìm đường đi ngắn nh
 4 3
 ```
 
-**output**
+**output:**
 ```
 8
 10
@@ -9305,16 +9185,15 @@ Có Q truy vấn, mỗi truy vấn yêu cầu bạn tìm đường đi ngắn nh
 
 Cho một bảng số kích thước N x M. Chi phí khi đi qua ô (i,j) bằng A[i][j]. Nhiệm vụ của bạn là hãy tìm một đường đi từ ô (1, 1) tới ô (N, M) sao cho chi phí là nhỏ nhất. Tại mỗi ô, bạn được phép đi sang trái, sang phải, đi lên trên và xuống dưới.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi hai số nguyên N và M (1 ≤ N, M ≤ 500).
 - N dòng tiếp theo, mỗi dòng gồm M số nguyên A[i][j] (0 ≤ A[i][j] ≤ 9).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra một số nguyên là chi phí nhỏ nhất cho đường đi tìm được.
 
-
-**input**
+**input:**
 ```
 3
 4
@@ -9334,7 +9213,7 @@ Cho một bảng số kích thước N x M. Chi phí khi đi qua ô (i,j) bằng
 1 1 1 1 1
 ```
 
-**output**
+**output:**
 ```
 24
 15
@@ -9344,17 +9223,15 @@ Cho một bảng số kích thước N x M. Chi phí khi đi qua ô (i,j) bằng
 ###	DSA10012 - ĐƯỜNG ĐI TRUNG BÌNH
 
 Cho một đồ thị có hướng gồm N đỉnh và M cạnh. Nhiệm vụ của bạn là hãy tính khoảng cách trung bình ngắn nhất giữa hai node bất kì nếu như chúng liên thông với nhau. Input đảm bảo rằng trong một nhóm liên thông, nếu như u đi tới được v thì v cũng đi tới được v với mọi cặp u, v.
-
 ![DSA10012](image/DSA10012.png)
 
-**Input:** 
+**Đầu vào:**
 Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test bắt đầu bởi hai số nguyên N và M (1 ≤ N ≤ 100, M ≤ N*(N-1)/2). M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối đơn hướng từ u tới v.
 
-**Output:** 
+**Đầu ra:**
 Với mỗi test, in ra đáp án tìm được với độ chính xác 2 chữ số sau dấu phảy.
 
-
-**input**
+**input:**
 ```
 2
 4 5
@@ -9371,7 +9248,7 @@ Với mỗi test, in ra đáp án tìm được với độ chính xác 2 chữ 
 7 1
 ```
 
-**output**
+**output:**
 ```
 1.83
 1.75
@@ -9387,17 +9264,17 @@ Trung bình bằng 22/12 = 1.83
 
 ###	DSA10015 - KRUSKAL
 
-Cho đồ thị vô hướng có trọng số G=<V, E, W>. Nhiệm vụ của bạn là hãy xây dựng một cây khung nhỏ nhất của đồ thị bằng thuật toán Kruskal.
+Cho đồ thị vô hướng có trọng số G=< V, E, W>. Nhiệm vụ của bạn là hãy xây dựng một cây khung nhỏ nhất của đồ thị bằng thuật toán Kruskal.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai phần: phần thứ nhất đưa vào hai số V, E tương ứng với số đỉnh và số cạnh của đồ thị; phần thứ 2 đưa vào E cạnh của đồ thị, mỗi cạnh là một bộ 3: đỉnh đầu, đỉnh cuối và trọng số của cạnh.
 - T, S, D thỏa mãn ràng buộc: 1≤T≤100;  1≤V≤100; 1≤E, W≤10000.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 3 3
@@ -9408,7 +9285,7 @@ Cho đồ thị vô hướng có trọng số G=<V, E, W>. Nhiệm vụ của b�
 1 2 5
 ```
 
-**output**
+**output:**
 ```
 4
 5
@@ -9420,15 +9297,15 @@ Cho N điểm trên mặt phẳng Oxy. Để vẽ được đoạn thẳng nối
 
 Nhiệm vụ của bạn là nối các điểm với nhau, sao cho N điểm đã cho tạo thành 1 thành phần liên thông duy nhất và chi phí để thực hiện là nhỏ nhất có thể.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
 - Mỗi test bắt đầu bởi số nguyên N (1 ≤ N ≤ 100).
 - N dòng tiếp theo, mỗi dòng gồm 2 số thực x[i], y[i] là tọa độ của điểm thứ i (|x[i]|, |y[i]| ≤ 100).
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra chi phí nhỏ nhất tìm được với độ chính xác 6 chữ số thập phân sau dấu phẩy.
 
-**input**
+**input:**
 ```
 1
 3
@@ -9437,24 +9314,24 @@ Nhiệm vụ của bạn là nối các điểm với nhau, sao cho N điểm đ
 2.0 4.0
 ```
 
-**output**
+**output:**
 ```
 3.414214
 ``` 
 
 ###	DSA10017 - CHU TRÌNH ÂM
 
-Cho đồ thị có trọng số G=<V, E> được biểu diễn dưới dạng danh sách cạnh trọng số âm hoặc dương. Hãy viết chương trình xác định xem đồ thị có chu trình âm hay không.
+Cho đồ thị có trọng số G=< V,E > được biểu diễn dưới dạng danh sách cạnh trọng số âm hoặc dương. Hãy viết chương trình xác định xem đồ thị có chu trình âm hay không.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào T là số lượng bộ test.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm |E|+1 dòng: dòng đầu tiên đưa vào hai số |V|, |E| tương ứng với số đỉnh và số cạnh của đồ thị; |E| dòng tiếp theo mỗi dòng đưa vào bộ ba u∈V, v∈V, w tương ứng với một cạnh cùng với trọng số canh của đồ thị.
 - T, |V|, |E| thỏa mãn ràng buộc: 1≤T≤100; 1≤|V|≤10<sup>3</sup>; 1≤|E|≤|V|(|V|-1)/2;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra 1 hoặc 0 theo từng dòng của mỗi test tương ứng với đồ thị có hoặc không có chu trình âm.
 
-**input**
+**input:**
 ```
 2
 3 3
@@ -9467,7 +9344,7 @@ Cho đồ thị có trọng số G=<V, E> được biểu diễn dưới dạng 
 3 1 -2
 ```
 
-**output**
+**output:**
 ```
 0
 1
@@ -9478,29 +9355,28 @@ Cho đồ thị có trọng số G=<V, E> được biểu diễn dưới dạng 
 ###	DSA11001 - CÂY BIỂU THỨC 1
 
 Cây biểu thức là một cây nhị phân trong đó mỗi node trung gian là một phép toán, mỗi node lá là một toán hạng. Ví dụ với biểu thức P = 3 + ((5+9)*2) sẽ được biểu diễn như cây dưới đây.
-
 ![DSA11001](image/DSA11001.png)
 
 Đối với cây biểu thức, duyệt theo thứ tự trước ta sẽ được biểu thức tiền tố, duyệt theo thứ tự sau ta sẽ được biểu thức hậu tố, duyệt theo thứ tự giữa ta được biểu thức trung tố. Chú ý, cây biểu thức luôn là cây nhị phân đầy (mỗi node trung gian đều có hai node con).
 
 Cho biểu thức hậu tố P, hãy sử dụng cây biểu thức để đưa ra biểu thức trung tố tương ứng với biểu thức P.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test là một biểu thức hậu tố P.
 - T, P thỏa mãn ràng buộc : 1≤T≤100; 1≤lengh(P)≤100.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra biểu thức trung tố tương ứng với P.
 
-**input**
+**input:**
 ```
 2
 ab+ef*g*-
 wlrb+-*
 ```
 
-**output**
+**output:**
 ```
 a + b - e * f * g
 w * l - r + b
@@ -9509,18 +9385,17 @@ w * l - r + b
 ###	DSA11002 - CÂY BIỂU THỨC 2
 
 Cho một cây biểu thức là một cây nhị phân đầy đủ bao gồm các phép toán +, -, \*. / và một số toán hạng có giá trị nguyên. Nhiệm vụ của bạn là hãy tính toán giá trị biểu thức được biểu diễn trên cây nhị phân đầy đủ. Ví dụ với cây dưới đây là biểu diễn của biểu thức P = ( (5\*4) + (100-20)) sẽ cho ta giá trị là 100.
-
 ![DSA11002](image/DSA11002.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test là gồm hai dòng: dòng thứ nhất đưa vào N là số lượng node của cây; dòng thứ hai đưa vào nội dung các node của cây; các node được viết cách nhau một vài khoảng trống. Các số có giá trị nguyên không vượt quá 1000.
 - T, N, P thỏa mãn ràng buộc : 1≤T≤100; 1≤N, lenght(P)≤100.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra giá trị của cây biểu thức.
 
-**input**
+**input:**
 ```
 2
 7
@@ -9529,7 +9404,7 @@ Cho một cây biểu thức là một cây nhị phân đầy đủ bao gồm c
 - 4 7 
 ```
 
-**output**
+**output:**
 ```
 100
 -3
@@ -9553,15 +9428,15 @@ Preorder: 1 2 4 5 3 6
 
 Postorder: 4 5 2 6 3 1 
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng đầu tiên đưa vào số N là số lượng node; dòng tiếp theo đưa vào N số theo phép duyệt Inorder; dòng cuối cùng đưa vào N số là kết quả của phép duyệt Preorder; các số được viết cách nhau một vài khoảng trống.
 - T, N, node thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤1000; 1≤ giá trị node ≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt Postorder theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 6
@@ -9569,7 +9444,7 @@ Postorder: 4 5 2 6 3 1
 1 2 4 5 3 6
 ```
 
-**output**
+**output:**
 ```
 4 5 2 6 3 1
 ```
@@ -9577,18 +9452,17 @@ Postorder: 4 5 2 6 3 1
 ###	DSA11004 - DUYỆT CÂY THEO MỨC
 
 Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo Level-order. Phép duyệt level-order trên cây là phép thăm node theo từng mức của cây. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt level-order: 20  8  22  4  12  10  14.
-
 ![DSA11004](image/DSA11004.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
 - T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤u, v≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt level-order theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 2
@@ -9597,7 +9471,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo Level-order
 10 20 L 10 30 R 20 40 L 20 60 R
 ```
 
-**output**
+**output:**
 ```
 1 3 2
 10 20 30 40 60
@@ -9610,18 +9484,17 @@ Cho hai mảng là phép duyệt Inorder và Level-order, nhiệm vụ của b�
 Inorder : 4 8 10 12 14 20 22
 
 Level order: 20 8 22 4 12 10 14
-
 ![DSA11005](image/DSA11005.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng đầu tiên đưa vào số N là số lượng node; dòng tiếp theo đưa vào N số là phép duyệt Inorder; dòng cuối cùng đưa vào N số là phép duyệt Level-order; các số được viết cách nhau một vài khoảng trống.
 - T, N, node thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤A[i]≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt Postorder theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 3
@@ -9632,7 +9505,7 @@ Level order: 20 8 22 4 12 10 14
 0 1 2 3 4 5 6 
 ```
 
-**output**
+**output:**
 ```
 1 2 0
 3 4 1 5 6 2 0
@@ -9641,18 +9514,17 @@ Level order: 20 8 22 4 12 10 14
 ###	DSA11006 - DUYỆT CÂY KIỂU XOẮN ỐC
 
 Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo xoắn ốc (spiral-order). Phép. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt spiral-order: 1 2 3  4 5 6 7.
-
 ![DSA11006](image/DSA11006.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
 - T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤u, v≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt Postorder theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 2
@@ -9661,7 +9533,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo xoắn ốc
 10 20 L 10 30 R 20 40 L 20 60 R
 ```
 
-**output**
+**output:**
 ```
 1 3 2
 10 0 30 60 40
@@ -9670,18 +9542,17 @@ Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo xoắn ốc
 ###	DSA11008 - KIỂM TRA NODE LÁ
 
 Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem tất cả các node lá của cây có cùng một mức hay không? Ví dụ với cây dưới đây sẽ cho ta kết quả là Yes.
-
 ![DSA11008](image/DSA11008.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
 - T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤u, v≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt Postorder theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 2
@@ -9690,7 +9561,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem tất cả cá
 10 20 L 10 30 R 20 40 L 20 60 R
 ```
 
-**output**
+**output:**
 ```
 1
 0
@@ -9700,15 +9571,15 @@ Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem tất cả cá
 
 Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị phân có phải là một cây hoàn hảo hay không (perfect tree)? Một cây nhị phân được gọi là cây hoàn hảo nếu tất cả các node trung gian của nó đều có hai node con và tất cả các node lá đều có cùng một mức.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
 - T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤u, v≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt Postorder theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 6
@@ -9719,7 +9590,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị ph�
 1 2 L 2 4 R 1 3 R 3 5 L 3 6 R
 ```
 
-**output**
+**output:**
 ```
 Yes
 Yes
@@ -9730,15 +9601,15 @@ No
 
 Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị phân có phải là một cây đủ hay không (full binary tree)? Một cây nhị phân được gọi là cây đủ nếu tất cả các node trung gian của nó đều có hai node con.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
 - T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤u, v≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt Postorder theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 4
@@ -9747,7 +9618,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị ph�
 1 2 L 1 3 R 2 4 L
 ```
 
-**output**
+**output:**
 ```
 1
 0
@@ -9757,15 +9628,15 @@ Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị ph�
 
 Cho hai cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị phân có giống nhau hay không?
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái của mỗi cây; u, v, x được viết cách nhau một vài khoảng trống.
 - T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤u, v≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt Postorder theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 2
@@ -9778,7 +9649,7 @@ Cho hai cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị
 1 3 L 1 2 R
 ```
 
-**output**
+**output:**
 ```
 1
 0
@@ -9787,18 +9658,17 @@ Cho hai cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị
 ###	DSA11014 - TỔNG NODE LÁ BÊN PHẢI
 
 Cho cây nhị phân, nhiệm vụ của bạn là tính tổng của tất cả các node lá bên phải trên cây? Ví dụ với cây dưới đây ta có kết quả là 2.
-
 ![DSA11014](image/DSA11014.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
 - T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤u, v≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt Postorder theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 2
@@ -9807,7 +9677,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là tính tổng của tất cả
 10 20 L 10 30 R 20 40 L 20 60 R 30 90 L
 ```
 
-**output**
+**output:**
 ```
 3
 60
@@ -9816,25 +9686,24 @@ Cho cây nhị phân, nhiệm vụ của bạn là tính tổng của tất cả
 ###	DSA11015 - TỔNG LỚN NHẤT
 
 Cho cây nhị phân có giá trị mỗi node là một số, nhiệm vụ của bạn là tìm tổng lớn nhất từ một node lá này sang một node lá khác? Ví dụ với cây dưới đây ta có tổng lớn nhất là 27.
-
 ![DSA11015](image/DSA11015.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
 - T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤u, v≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt Postorder theo từng dòng.
 
-**input**
+**input:**
 ```
 1
 12
 -15 5 L -15 6 R 5 -8 L 5 1 R -8 2 L -8 -3 R 6 3 L 6 9 R 9 0 R 0 4 L 0 -1 R -1 10 L
 ```
 
-**output**
+**output:**
 ```
 27
 ```
@@ -9842,18 +9711,17 @@ Cho cây nhị phân có giá trị mỗi node là một số, nhiệm vụ củ
 ###	DSA11016 - BIẾN ĐỔI SANG CÂY NHỊ PHÂN TÌM KIẾM
 
 Cho cây nhị phân, nhiệm vụ của bạn là dịch chuyển cây nhị phân thành cây nhị phân tìm kiếm. Phép dịch chuyển phải bảo toàn được cấu trúc cây nhị phân ban đầu. Ví dụ dưới đây sẽ minh họa phép dịch chuyển:
-
 ![DSA11016](image/DSA11016.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
 - T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤u, v≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng là phép duyệt Inorder của cây tìm kiếm.
 
-**input**
+**input:**
 ```
 2
 2
@@ -9862,7 +9730,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là dịch chuyển cây nhị ph
 10 20 L 10 30 R 20 40 L 20 60 R
 ```
 
-**output**
+**output:**
 ```
 1 2 3
 10 20 30 40 60
@@ -9872,15 +9740,15 @@ Cho cây nhị phân, nhiệm vụ của bạn là dịch chuyển cây nhị ph
 
 Cho mảng A[] gồm N node là biểu diễn phép duyệt theo thứ tự giữa (Preorder) của cây nhị phân tìm kiếm. Nhiệm vụ của bạn là đưa ra phép duyệt theo thứ tự sau của cây nhị phân tìm kiếm.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng node; dòng tiếp theo đưa vào N số A[i]; các số được viết cách nhau một vài khoảng trống.
 - T, N, node thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤A[i]≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả phép duyệt Postorder theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 5
@@ -9889,7 +9757,7 @@ Cho mảng A[] gồm N node là biểu diễn phép duyệt theo thứ tự gi�
 40 30 32 35 80 90 100 120
 ```
 
-**output**
+**output:**
 ```
 35 30 100 80 40
 35 32 30 120 100 90 80 40
@@ -9899,15 +9767,15 @@ Cho mảng A[] gồm N node là biểu diễn phép duyệt theo thứ tự gi�
 
 Cho một mảng là phép duyệt level-order của cây nhị phân tìm kiếm. Nhiệm vụ của bạn là xây dựng lại cây nhị phân tìm kiếm bảo toàn được cấu trúc cây nhị phân ban đầu.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm dòng: dòng đầu tiên đưa vào số N là số lượng node của cây tìm kiếm; dòng tiếp theo đưa vào phép duyệt level-order của cây tìm kiếm; các số được viết cách nhau một vài khoảng trống.
 - T, N, node thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤node≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng là phép duyệt trước (preOrder) của cây tìm kiếm.
 
-**input**
+**input:**
 ```
 2
 9
@@ -9916,7 +9784,7 @@ Cho một mảng là phép duyệt level-order của cây nhị phân tìm kiế
 1 3 4 6 7 8
 ```
 
-**output**
+**output:**
 ```
 7 4 3 1 6 5 12 8 10
 1 3 4 6 7 8
@@ -9926,15 +9794,15 @@ Cho một mảng là phép duyệt level-order của cây nhị phân tìm kiế
 
 Cho một mảng A[] gồm N phần tử biểu diễn phép duyệt preorder của cây nhị phân tìm kiếm. Nhiệm vụ của bạn là đưa ra phép duyệt postorder của cây nhị phân tìm kiếm.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng node của cây tìm kiếm; dòng tiếp theo đưa vào phép duyệt preorder của cây tìm kiếm; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤A[i]≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng là phép duyệt postorder của cây tìm kiếm.
 
-**input**
+**input:**
 ```
 2
 5
@@ -9943,7 +9811,7 @@ Cho một mảng A[] gồm N phần tử biểu diễn phép duyệt preorder c�
 40 30 32 35 80 90 100 120
 ```
 
-**output**
+**output:**
 ```
 35 30 100 80 40
 35 32 30 120 100 90 80 40
@@ -9953,15 +9821,15 @@ Cho một mảng A[] gồm N phần tử biểu diễn phép duyệt preorder c�
 
 Cho một mảng A[] gồm N phần tử. Nhiệm vụ của bạn là đưa ra 1 nếu mảng A[] biểu diễn phép duyệt inorder của cây nhị phân tìm kiếm, ngược lại đưa ra 0.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
 - Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng node của cây tìm kiếm; dòng tiếp theo đưa vào N số A[i]; các số được viết cách nhau một vài khoảng trống.
 - T, N, A[i] thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10<sup>3</sup>; 1≤A[i]≤10<sup>4</sup>;
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 3
 5
@@ -9972,7 +9840,7 @@ Cho một mảng A[] gồm N phần tử. Nhiệm vụ của bạn là đưa ra 
 1 1 2
 ```
 
-**output**
+**output:**
 ```
 1
 0
@@ -9985,14 +9853,14 @@ Cho dãy số gồm N số là phép duyệt theo thứ tự trước (Preorder)
 
 Ví dụ với dãy A[] = {30, 20, 15, 25, 23, 28, 40, 35, 33, 38, 45} là phép duyệt cây theo thứ tự trước sẽ cho ta kết quả: 15, 23, 28, 33, 38, 45.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T (T≤100).
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất là số tự nhiên N (N≤1000). Dòng tiếp theo là N số là phép duyệt theo thứ tự trước của cây BST.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 6
@@ -10001,7 +9869,7 @@ Ví dụ với dãy A[] = {30, 20, 15, 25, 23, 28, 40, 35, 33, 38, 45} là phép
 30 20 15 25 23 28 40 35 33 38 45
 ```
 
-**output**
+**output:**
 ```
 1 7 50
 15 23 28 33 38 45
@@ -10013,14 +9881,14 @@ Cho dãy số gồm N số là phép duyệt theo thứ tự trước (Preorder)
 
 Ví dụ với dãy A[] = {30, 20, 15, 25, 23, 28, 40, 35, 33, 38, 45} là phép duyệt cây theo thứ tự trước sẽ cho ta kết quả là 5 bao gồm các node: 30, 20, 25, 40, 35.                     
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T (T≤100).
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất là số tự nhiên N (N≤1000). Dòng tiếp theo là N số là phép duyệt theo thứ tự trước của cây BST.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 6
@@ -10029,7 +9897,7 @@ Ví dụ với dãy A[] = {30, 20, 15, 25, 23, 28, 40, 35, 33, 38, 45} là phép
 30 20 15 25 23 28 40 35 33 38 45
 ```
 
-**output**
+**output:**
 ```
 3
 5
@@ -10041,14 +9909,14 @@ Cho dãy số gồm N số là phép duyệt theo thứ tự trước (Preorder)
 
 Ví dụ với dãy A[] = {30, 20, 15, 25, 23, 28, 40, 35, 33, 38, 45} là phép duyệt cây theo thứ tự trước sẽ cho ta kết quả là 3.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T (T≤100).
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất là số tự nhiên N (N≤1000). Dòng tiếp theo là N số là phép duyệt theo thứ tự trước của cây BST.
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 6
@@ -10057,7 +9925,7 @@ Ví dụ với dãy A[] = {30, 20, 15, 25, 23, 28, 40, 35, 33, 38, 45} là phép
 30 20 15 25 23 28 40 35 33 38 45
 ```
 
-**output**
+**output:**
 ```
 2
 3
@@ -10067,14 +9935,14 @@ Ví dụ với dãy A[] = {30, 20, 15, 25, 23, 28, 40, 35, 33, 38, 45} là phép
 
 Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A[] =(a0, a1, .., an-1}. Đưa ra nội dung node gốc của cây tìm kiếm cân bằng.  Ví dụ với dãy A[]={40, 28, 45, 38, 33, 15, 25, 20, 23, 35, 30} ta sẽ có cây nhị phân tìm kiếm cân bằng với node gốc là 33.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T (T≤100).
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất là số tự nhiên N (N≤10<sup>6</sup>). Dòng tiếp theo là N số của mảng A[].
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 11
@@ -10083,7 +9951,7 @@ Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A
 1 2 3 4 5 6 7 8 9 10
 ```
 
-**output**
+**output:**
 ```
 30
 5
@@ -10093,14 +9961,14 @@ Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A
 
 Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A[] =(a0, a1, .., an-1}. Đưa ra phép duyệt theo thứ tự trước (preorder) của cây tìm kiếm cân bằng.  Ví dụ với dãy A[]={40, 28, 45, 38, 33, 15, 25, 20, 23, 35, 30} ta sẽ có phép duyệt theo thứ tự trước của cây nhị phân tìm kiếm cân bằng với node gốc là 33 : 33, 25, 20, 15, 23, 28, 30, 40, 38, 35, 45.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T (T≤100).
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất là số tự nhiên N (N≤10<sup>6</sup>). Dòng tiếp theo là N số của mảng A[].
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 11
@@ -10109,7 +9977,7 @@ Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A
 1 2 3 4 5 6 7 8 9 10
 ```
 
-**output**
+**output:**
 ```
 30 23 15 20 25 28 38 33 35 40 45
 5 2 1 3 4 8 6 7 9 10
@@ -10119,14 +9987,14 @@ Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A
 
 Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A[] =(a0, a1, .., an-1}. Đưa ra phép duyệt theo thứ tự sau (post-order) của cây tìm kiếm cân bằng.  Ví dụ với dãy A[]={40, 28, 45, 38, 33, 15, 25, 20, 23, 35, 30} ta sẽ có phép duyệt theo thứ tự trước của cây nhị phân tìm kiếm cân bằng với node gốc là 33 : 15, 23, 20, 30, 28, 25, 35, 38, 45, 40, 33.  
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T (T≤100).
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất là số tự nhiên N (N≤10<sup>6</sup>). Dòng tiếp theo là N số của mảng A[].
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 11
@@ -10135,7 +10003,7 @@ Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A
 1 2 3 4 5 6 7 8 9 10
 ```
 
-**output**
+**output:**
 ```
 20 15 28 25 23 35 33 45 40 38 30
 1 4 3 2 7 6 10 9 8 5
@@ -10145,14 +10013,14 @@ Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A
 
 Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A[] =(a0, a1, .., an-1}. Đếm số node lá của cây nhị phân tìm kiếm cân bằng.  Ví dụ với dãy A[]={40, 28, 45, 38, 33, 15, 25, 20, 23, 35, 30} ta sẽ có phép duyệt theo thứ tự trước của cây nhị phân tìm kiếm cân bằng với số node lá là 5 : 15, 23, 30, 35 45.  
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T (T≤100).
 - Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test gồm 2 dòng: dòng thứ nhất là số tự nhiên N (N≤1000). Dòng tiếp theo là N số của mảng A[].
 
-**Output:** 
+**Đầu ra:**
 - Đưa ra kết quả mỗi test theo từng dòng.
 
-**input**
+**input:**
 ```
 2
 11
@@ -10161,7 +10029,7 @@ Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A
 1 2 3 4 5 6 7 8 9 10
 ```
 
-**output**
+**output:**
 ```
 5
 4
@@ -10171,15 +10039,15 @@ Hãy xây dựng một cây nhị phân tìm kiếm cân bằng từ dãy số A
 
 Cho một cây có N node, gốc tại  1. Độ cao của một node u được tính bằng khoảng cách từ u tới node gốc. Độ cao của node gốc bằng 0. Nhiệm vụ của bạn là hãy tìm node xa node gốc nhất và in ra độ cao của node này.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T( T≤ 20).
 - Mỗi test bắt đầu bằng số nguyên N (1 ≤ N ≤ 100 000).
 - N-1 dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết node u nối với node v.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra một số nguyên là độ cao của cây.
 
-**input**
+**input:**
 ```
 2
 5
@@ -10193,7 +10061,7 @@ Cho một cây có N node, gốc tại  1. Độ cao của một node u được
 3 4
 ```
 
-**output**
+**output:**
 ```
 2
 3
@@ -10202,18 +10070,17 @@ Cho một cây có N node, gốc tại  1. Độ cao của một node u được
 ###	DSA11029 - ĐƯỜNG ĐI TỚI NODE LÁ
 
 Cho một cây có N node, gốc tại 1. Với mỗi node lá, bạn hãy in ra đường đi từ node gốc tới nó.
-
 ![DSA11029](image/DSA11029.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T( T≤ 20).
 - Mỗi test bắt đầu bằng số nguyên N (1 ≤ N ≤ 1000).
 - N-1 dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết node u nối với node v.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra K dòng, trong đó K là số lượng node lá. Mỗi dòng là đường đi từ node gốc tới node lá X. Node lá nào có nhãn nhỏ hơn, in ra trước.
 
-**input**
+**input:**
 ```
 2
 5
@@ -10227,7 +10094,7 @@ Cho một cây có N node, gốc tại 1. Với mỗi node lá, bạn hãy in ra
 3 4
 ```
 
-**output**
+**output:**
 ```
 1 3
 1 2 4
@@ -10238,18 +10105,17 @@ Cho một cây có N node, gốc tại 1. Với mỗi node lá, bạn hãy in ra
 ###	DSA11030 - KHOẢNG CÁCH GIỮA HAI NODE
 
 Cho một cây có N node, gốc tại 1. Có Q truy vấn, mỗi truy vấn yêu cầu bạn tìm khoảng cách giữa hai node u và v.
-
 ![DSA11030](image/DSA11030.png)
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên là số lượng bộ test T( T≤ 20).
 - Mỗi test bắt đầu bằng số nguyên N (1 ≤ N ≤ 1000). N-1 dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết node u nối với node v.
 - Dòng tiếp theo là số lượng truy vấn Q (1 ≤ Q ≤ 1000). Q dòng tiếp theo, mỗi dòng gồm 2 số nguyên u và v.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi test, in ra Q dòng là đáp án với mỗi truy vấn.
 
-**input**
+**input:**
 ```
 1
 8
@@ -10268,7 +10134,7 @@ Cho một cây có N node, gốc tại 1. Có Q truy vấn, mỗi truy vấn yê
 8 5
 ```
 
-**output**
+**output:**
 ```
 2
 4
@@ -10285,15 +10151,15 @@ q L R: yêu cầu xác định xâu con S[L, L+1, …, R] có phải là một x
 
 c U x: thay đổi kí tự thứ U thành chữ số x.
 
-**Input:** 
+**Đầu vào:**
 - Dòng đầu tiên chứa số nguyên S gồm N kí tự (N  <= 10^5).
 - Tiếp theo là số lượng truy vấn Q (Q <= 10^5)
 - Q dòng tiếp theo, mỗi dòng gồm một loại truy vấn.
 
-**Output:** 
+**Đầu ra:**
 - Với mỗi truy vấn loại 1, nếu xâu con là một số đối xứng, hãy in ra “YES”, ngược lại in ra “NO”.
 
-**input**
+**input:**
 ```
 12345
 5
@@ -10304,7 +10170,7 @@ q 3 5
 q 3 4
 ```
 
-**output**
+**output:**
 ```
 NO
 YES
