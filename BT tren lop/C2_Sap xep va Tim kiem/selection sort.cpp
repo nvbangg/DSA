@@ -17,7 +17,8 @@ int main()
                 min = j;
         }
         swap(a[i], a[min]);
+        for (auto x : a)
+            cout << x << " ";
+        cout << endl;
     }
-    for (auto x : a)
-        cout << x << " ";
 }
