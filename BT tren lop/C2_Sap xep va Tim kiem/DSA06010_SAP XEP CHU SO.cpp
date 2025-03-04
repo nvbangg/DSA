@@ -17,14 +17,32 @@ vector<int> selection_sort(vector<int> a)
     }
     return a;
 }
-int main()
+void TestCase()
 {
     int n;
     cin >> n;
-    vector<int> a(n);
+    vector<int> a(n), res;
     for (int &x : a)
         cin >> x;
-    a = selection_sort(a);
+    for (int x : a)
+    {
+        while (x)
+        {
+            if (find(res.begin(), res.end(), x % 10) == res.end())
+                res.push_back(x % 10);
+            x /= 10;
+        }
+    }
+    res = selection_sort(res);
     for (int x : a)
         cout << x << " ";
+    cout << endl;
+}
+int main()
+{
+    int T;
+    cin >> T;
+    while (T--)
+        TestCase();
+    return 0;
 }

@@ -8,7 +8,7 @@ vector<int> selection_sort(vector<int> a)
         int idx = i;
         for (int j = i + 1; j < n; ++j)
         {
-            if (a[j] < a[i])
+            if (a[j] > a[i])
             {
                 idx = j;
                 swap(a[i], a[idx]);
@@ -17,7 +17,7 @@ vector<int> selection_sort(vector<int> a)
     }
     return a;
 }
-int main()
+void TestCase()
 {
     int n;
     cin >> n;
@@ -25,6 +25,17 @@ int main()
     for (int &x : a)
         cin >> x;
     a = selection_sort(a);
-    for (int x : a)
-        cout << x << " ";
+    for (int i = 0; i < n / 2; ++i)
+        cout << a[i] << " " << a[n - i - 1] << " ";
+    if (n % 2 != 0)
+        cout << a[n / 2];
+    cout << endl;
+}
+int main()
+{
+    int T;
+    cin >> T;
+    while (T--)
+        TestCase();
+    return 0;
 }
