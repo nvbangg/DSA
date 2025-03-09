@@ -5210,7 +5210,7 @@ Cho số tự nhiên N. Hãy tìm cặp số nguyên tố đầu tiên có tổn
 **output:**
 ```
 2 2
-2 5
+3 5
 ```
 
 ### DSA06015 - MERGE SORT

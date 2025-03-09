@@ -13,10 +13,10 @@ void selectionSort(vector<int> &a)
                 min_idx = j;
             }
         }
-        // Hoán đổi phần tử nhỏ nhất với phần tử ở vị trí i
         swap(a[i], a[min_idx]);
     }
 }
+
 void insertionSort(vector<int> &a)
 {
     int n = a.size();
@@ -32,6 +32,7 @@ void insertionSort(vector<int> &a)
         a[j + 1] = key;
     }
 }
+
 void bubbleSort(vector<int> &a)
 {
     int n = a.size();
@@ -41,12 +42,12 @@ void bubbleSort(vector<int> &a)
         {
             if (a[j] > a[j + 1])
             {
-                // Hoán đổi hai phần tử
                 swap(a[j], a[j + 1]);
             }
         }
     }
 }
+
 int partition(vector<int> &a, int low, int high)
 {
     int pivot = a[high]; // Chọn phần tử cuối làm pivot
@@ -72,6 +73,7 @@ void quickSort(vector<int> &a, int low, int high)
         quickSort(a, pi + 1, high);
     }
 }
+
 void merge(vector<int> &a, int left, int mid, int right)
 {
     int n1 = mid - left + 1;

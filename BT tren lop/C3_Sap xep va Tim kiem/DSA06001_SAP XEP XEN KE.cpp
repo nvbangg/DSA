@@ -11,7 +11,7 @@ vector<int> selection_sort(vector<int> a)
             if (a[j] > a[i])
             {
                 idx = j;
-                        }
+            }
             swap(a[i], a[idx]);
         }
     }
