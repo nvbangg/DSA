@@ -126,82 +126,59 @@ void mergeSort(vector<int> &a, int left, int right)
     }
 }
 
-// Hàm đo thời gian thực thi
-double measureTime(void (*sortFunc)(vector<int> &), vector<int> &a)
+// Gọi hàm chỉ có 1 tham số
+void QuickSort(vector<int> &a)
 {
-    vector<int> temp = a;
-    auto start = chrono::high_resolution_clock::now();
-    sortFunc(temp);
-    auto end = chrono::high_resolution_clock::now();
-    chrono::duration<double, milli> duration = end - start;
-    return duration.count();
+    quickSort(a, 0, a.size() - 1);
+}
+void MergeSort(vector<int> &a)
+{
+    mergeSort(a, 0, a.size() - 1);
 }
 
-double measureTimeMergeSort(vector<int> &a)
+// Hàm doTime đơn giản hóa
+double doTime(auto sortFunc, vector<int> a)
 {
-    vector<int> temp = a;
     auto start = chrono::high_resolution_clock::now();
-    mergeSort(temp, 0, temp.size() - 1);
+    sortFunc(a);
     auto end = chrono::high_resolution_clock::now();
-    chrono::duration<double, milli> duration = end - start;
-    return duration.count();
-}
-
-double measureTimeQuickSort(vector<int> &a)
-{
-    vector<int> temp = a;
-    auto start = chrono::high_resolution_clock::now();
-    quickSort(temp, 0, temp.size() - 1);
-    auto end = chrono::high_resolution_clock::now();
-    chrono::duration<double, milli> duration = end - start;
-    return duration.count();
+    return chrono::duration<double, milli>(end - start).count();
 }
 
 int main()
 {
-    // Tạo dãy số ngẫu nhiên với kích thước tối đa
     const int MAX_N = 10000;
     vector<int> original(MAX_N);
 
-    // Tạo số ngẫu nhiên cố định (dùng seed để tái tạo dãy)
-    mt19937 gen(42);
-    uniform_int_distribution<> dis(1, 10000);
+    // Cố định bộ số ngẫu nhiên cho mỗi lần chạy
+    srand(42);  
     for (int i = 0; i < MAX_N; i++)
-    {
-        original[i] = dis(gen);
-    }
+        original[i] = rand() % 10000 + 1;
 
-    // Các giá trị n để khảo sát
     vector<int> sizes = {100, 1000, 5000, 10000};
 
-    // In tiêu đề bảng
-    cout << "Thoi gian thuc thi (mili giay) voi cung 1 day so:\n";
-    cout << "------------------------------------------------------\n";
-    cout << setw(8) << "n" << setw(10) << "Select" << setw(10) << "Insert"
-         << setw(10) << "Bubble" << setw(10) << "Quick" << setw(10) << "Merge" << "\n";
-    cout << "------------------------------------------------------\n";
+    vector<string> algoNames = {"Select", "Insert", "Bubble", "Quick", "Merge"};
+    auto algoFuncs = vector{selectionSort, insertionSort, bubbleSort, QuickSort, MergeSort};
+
+    cout << "Thoi gian thuc thi (mili giay) voi cung 1 day so:";
+    cout << "\n-------------------------------------------------------------\n";
+    cout << setw(8) << "n";
+    for (const auto &name : algoNames)
+        cout << setw(10) << name;
+    cout << "\n-------------------------------------------------------------\n";
 
     for (int n : sizes)
     {
-        // Lấy đoạn con của dãy gốc với kích thước n
         vector<int> a(original.begin(), original.begin() + n);
-
-        // Đo thời gian cho từng thuật toán
-        double selectTime = measureTime(selectionSort, a);
-        double insertTime = measureTime(insertionSort, a);
-        double bubbleTime = measureTime(bubbleSort, a);
-        double quickTime = measureTimeQuickSort(a);
-        double mergeTime = measureTimeMergeSort(a);
-
-        // In kết quả với căn chỉnh
-        cout << setw(8) << n
-             << setw(10) << fixed << setprecision(2) << selectTime
-             << setw(10) << fixed << setprecision(2) << insertTime
-             << setw(10) << fixed << setprecision(2) << bubbleTime
-             << setw(10) << fixed << setprecision(2) << quickTime
-             << setw(10) << fixed << setprecision(2) << mergeTime << "\n";
+        cout << setw(8) << n;
+        for (auto i = 0; i < algoFuncs.size(); i++)
+        {
+            double time = doTime(algoFuncs[i], a);
+            cout << setw(10) << fixed << setprecision(2) << time;
+        }
+        cout << "\n";
     }
-    cout << "------------------------------------------------------\n";
+    cout << "-------------------------------------------------------------\n";
 
     return 0;
 }
