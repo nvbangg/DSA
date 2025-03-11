@@ -147,32 +147,28 @@ double doTime(auto sortFunc, vector<int> a)
 int main()
 {
     const int MAX_N = 10000;
-    vector<int> original(MAX_N);
-
-    // Cố định bộ số ngẫu nhiên cho mỗi lần chạy
-    srand(42);  
+    vector<int> arr(MAX_N);
     for (int i = 0; i < MAX_N; i++)
-        original[i] = rand() % 10000 + 1;
+        arr[i] = rand() % 10000 + 1;
 
-    vector<int> sizes = {100, 1000, 5000, 10000};
-
-    vector<string> algoNames = {"Select", "Insert", "Bubble", "Quick", "Merge"};
-    auto algoFuncs = vector{selectionSort, insertionSort, bubbleSort, QuickSort, MergeSort};
+    vector<int> N = {100, 1000, 5000, 10000};
+    vector<string> NameList = {"Select", "Insert", "Bubble", "Quick", "Merge"};
+    auto FuncList = vector{selectionSort, insertionSort, bubbleSort, QuickSort, MergeSort};
 
     cout << "Thoi gian thuc thi (mili giay) voi cung 1 day so:";
     cout << "\n-------------------------------------------------------------\n";
     cout << setw(8) << "n";
-    for (const auto &name : algoNames)
+    for (auto &name : NameList)
         cout << setw(10) << name;
     cout << "\n-------------------------------------------------------------\n";
 
-    for (int n : sizes)
+    for (int n : N)
     {
-        vector<int> a(original.begin(), original.begin() + n);
+        vector<int> a(arr.begin(), arr.begin() + n);
         cout << setw(8) << n;
-        for (auto i = 0; i < algoFuncs.size(); i++)
+        for (auto i = 0; i < FuncList.size(); i++)
         {
-            double time = doTime(algoFuncs[i], a);
+            double time = doTime(FuncList[i], a);
             cout << setw(10) << fixed << setprecision(2) << time;
         }
         cout << "\n";
