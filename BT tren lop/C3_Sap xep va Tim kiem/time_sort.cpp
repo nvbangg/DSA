@@ -126,7 +126,7 @@ void mergeSort(vector<int> &a, int left, int right)
     }
 }
 
-// Gọi hàm chỉ có 1 tham số
+// Gọi lại hàm chỉ có 1 tham số
 void QuickSort(vector<int> &a)
 {
     quickSort(a, 0, a.size() - 1);
@@ -136,7 +136,6 @@ void MergeSort(vector<int> &a)
     mergeSort(a, 0, a.size() - 1);
 }
 
-// Hàm doTime đơn giản hóa
 double doTime(auto sortFunc, vector<int> a)
 {
     auto start = chrono::high_resolution_clock::now();
